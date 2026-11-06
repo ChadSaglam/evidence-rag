@@ -1,0 +1,43 @@
+{
+  "additionalProperties": false,
+  "description": "Attribution for a document, retained on every derived chunk.",
+  "properties": {
+    "uri": {
+      "minLength": 1,
+      "title": "Uri",
+      "type": "string"
+    },
+    "title": {
+      "minLength": 1,
+      "title": "Title",
+      "type": "string"
+    },
+    "language": {
+      "description": "BCP 47 language tag, for example en or de-CH.",
+      "minLength": 2,
+      "title": "Language",
+      "type": "string"
+    },
+    "retrieved_at": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "ISO 8601 retrieval date.",
+      "title": "Retrieved At"
+    }
+  },
+  "required": [
+    "uri",
+    "title",
+    "language"
+  ],
+  "title": "Source",
+  "type": "object",
+  "$id": "https://example.test/evidence-rag/schemas/source.schema.json"
+}

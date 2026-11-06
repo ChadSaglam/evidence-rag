@@ -1,0 +1,393 @@
+{
+  "$defs": {
+    "Chunk": {
+      "additionalProperties": false,
+      "description": "A text span with stable identity and exact source offsets.",
+      "properties": {
+        "schema_version": {
+          "const": "1.0",
+          "default": "1.0",
+          "title": "Schema Version",
+          "type": "string"
+        },
+        "chunk_id": {
+          "minLength": 1,
+          "title": "Chunk Id",
+          "type": "string"
+        },
+        "document_id": {
+          "minLength": 1,
+          "title": "Document Id",
+          "type": "string"
+        },
+        "text": {
+          "minLength": 1,
+          "title": "Text",
+          "type": "string"
+        },
+        "start_char": {
+          "minimum": 0,
+          "title": "Start Char",
+          "type": "integer"
+        },
+        "end_char": {
+          "minimum": 1,
+          "title": "End Char",
+          "type": "integer"
+        },
+        "source": {
+          "$ref": "#/$defs/Source"
+        },
+        "metadata": {
+          "additionalProperties": true,
+          "title": "Metadata",
+          "type": "object"
+        }
+      },
+      "required": [
+        "chunk_id",
+        "document_id",
+        "text",
+        "start_char",
+        "end_char",
+        "source"
+      ],
+      "title": "Chunk",
+      "type": "object"
+    },
+    "DecomposedHit": {
+      "additionalProperties": false,
+      "description": "A fused hit that retains every contributing subquery ranking.",
+      "properties": {
+        "rank": {
+          "minimum": 1,
+          "title": "Rank",
+          "type": "integer"
+        },
+        "score": {
+          "title": "Score",
+          "type": "number"
+        },
+        "retriever": {
+          "minLength": 1,
+          "title": "Retriever",
+          "type": "string"
+        },
+        "chunk": {
+          "$ref": "#/$defs/Chunk"
+        },
+        "contributions": {
+          "items": {
+            "$ref": "#/$defs/RetrievalContribution"
+          },
+          "minItems": 1,
+          "title": "Contributions",
+          "type": "array"
+        }
+      },
+      "required": [
+        "rank",
+        "score",
+        "retriever",
+        "chunk",
+        "contributions"
+      ],
+      "title": "DecomposedHit",
+      "type": "object"
+    },
+    "Query": {
+      "additionalProperties": false,
+      "description": "A retrieval request; language is metadata, not a routing restriction.",
+      "properties": {
+        "schema_version": {
+          "const": "1.0",
+          "default": "1.0",
+          "title": "Schema Version",
+          "type": "string"
+        },
+        "query_id": {
+          "minLength": 1,
+          "title": "Query Id",
+          "type": "string"
+        },
+        "text": {
+          "minLength": 1,
+          "title": "Text",
+          "type": "string"
+        },
+        "language": {
+          "anyOf": [
+            {
+              "minLength": 2,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Language"
+        },
+        "top_k": {
+          "default": 10,
+          "maximum": 100,
+          "minimum": 1,
+          "title": "Top K",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "query_id",
+        "text"
+      ],
+      "title": "Query",
+      "type": "object"
+    },
+    "QueryDecomposition": {
+      "additionalProperties": false,
+      "description": "Auditable decomposition output; one subquery means no split occurred.",
+      "properties": {
+        "schema_version": {
+          "const": "1.0",
+          "default": "1.0",
+          "title": "Schema Version",
+          "type": "string"
+        },
+        "query": {
+          "$ref": "#/$defs/Query"
+        },
+        "strategy": {
+          "minLength": 1,
+          "title": "Strategy",
+          "type": "string"
+        },
+        "subqueries": {
+          "items": {
+            "$ref": "#/$defs/SubQuery"
+          },
+          "minItems": 1,
+          "title": "Subqueries",
+          "type": "array"
+        }
+      },
+      "required": [
+        "query",
+        "strategy",
+        "subqueries"
+      ],
+      "title": "QueryDecomposition",
+      "type": "object"
+    },
+    "RerankedHit": {
+      "additionalProperties": false,
+      "description": "A cross-encoder score together with its untouched first-stage hit.",
+      "properties": {
+        "rank": {
+          "minimum": 1,
+          "title": "Rank",
+          "type": "integer"
+        },
+        "score": {
+          "title": "Score",
+          "type": "number"
+        },
+        "reranker": {
+          "minLength": 1,
+          "title": "Reranker",
+          "type": "string"
+        },
+        "base_hit": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/RetrievalHit"
+            },
+            {
+              "$ref": "#/$defs/DecomposedHit"
+            }
+          ],
+          "title": "Base Hit"
+        }
+      },
+      "required": [
+        "rank",
+        "score",
+        "reranker",
+        "base_hit"
+      ],
+      "title": "RerankedHit",
+      "type": "object"
+    },
+    "RetrievalContribution": {
+      "additionalProperties": false,
+      "description": "The rank and score contributed by one subquery to a fused hit.",
+      "properties": {
+        "subquery_id": {
+          "minLength": 1,
+          "title": "Subquery Id",
+          "type": "string"
+        },
+        "rank": {
+          "minimum": 1,
+          "title": "Rank",
+          "type": "integer"
+        },
+        "score": {
+          "title": "Score",
+          "type": "number"
+        },
+        "retriever": {
+          "minLength": 1,
+          "title": "Retriever",
+          "type": "string"
+        }
+      },
+      "required": [
+        "subquery_id",
+        "rank",
+        "score",
+        "retriever"
+      ],
+      "title": "RetrievalContribution",
+      "type": "object"
+    },
+    "RetrievalHit": {
+      "additionalProperties": false,
+      "description": "A ranked chunk and the retriever-specific score that selected it.",
+      "properties": {
+        "rank": {
+          "minimum": 1,
+          "title": "Rank",
+          "type": "integer"
+        },
+        "score": {
+          "title": "Score",
+          "type": "number"
+        },
+        "retriever": {
+          "minLength": 1,
+          "title": "Retriever",
+          "type": "string"
+        },
+        "chunk": {
+          "$ref": "#/$defs/Chunk"
+        }
+      },
+      "required": [
+        "rank",
+        "score",
+        "retriever",
+        "chunk"
+      ],
+      "title": "RetrievalHit",
+      "type": "object"
+    },
+    "Source": {
+      "additionalProperties": false,
+      "description": "Attribution for a document, retained on every derived chunk.",
+      "properties": {
+        "uri": {
+          "minLength": 1,
+          "title": "Uri",
+          "type": "string"
+        },
+        "title": {
+          "minLength": 1,
+          "title": "Title",
+          "type": "string"
+        },
+        "language": {
+          "description": "BCP 47 language tag, for example en or de-CH.",
+          "minLength": 2,
+          "title": "Language",
+          "type": "string"
+        },
+        "retrieved_at": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "ISO 8601 retrieval date.",
+          "title": "Retrieved At"
+        }
+      },
+      "required": [
+        "uri",
+        "title",
+        "language"
+      ],
+      "title": "Source",
+      "type": "object"
+    },
+    "SubQuery": {
+      "additionalProperties": false,
+      "description": "One deterministic retrieval request derived from an original query.",
+      "properties": {
+        "subquery_id": {
+          "minLength": 1,
+          "title": "Subquery Id",
+          "type": "string"
+        },
+        "text": {
+          "minLength": 1,
+          "title": "Text",
+          "type": "string"
+        }
+      },
+      "required": [
+        "subquery_id",
+        "text"
+      ],
+      "title": "SubQuery",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "description": "Serializable two-stage retrieval output with model identity.",
+  "properties": {
+    "schema_version": {
+      "const": "1.0",
+      "default": "1.0",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "query": {
+      "$ref": "#/$defs/Query"
+    },
+    "decomposition": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/QueryDecomposition"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    },
+    "reranker_model": {
+      "minLength": 1,
+      "title": "Reranker Model",
+      "type": "string"
+    },
+    "hits": {
+      "items": {
+        "$ref": "#/$defs/RerankedHit"
+      },
+      "title": "Hits",
+      "type": "array"
+    }
+  },
+  "required": [
+    "query",
+    "reranker_model",
+    "hits"
+  ],
+  "title": "RerankedResponse",
+  "type": "object",
+  "$id": "https://example.test/evidence-rag/schemas/rerankedresponse.schema.json"
+}

@@ -1,0 +1,82 @@
+{
+  "$defs": {
+    "Source": {
+      "additionalProperties": false,
+      "description": "Attribution for a document, retained on every derived chunk.",
+      "properties": {
+        "uri": {
+          "minLength": 1,
+          "title": "Uri",
+          "type": "string"
+        },
+        "title": {
+          "minLength": 1,
+          "title": "Title",
+          "type": "string"
+        },
+        "language": {
+          "description": "BCP 47 language tag, for example en or de-CH.",
+          "minLength": 2,
+          "title": "Language",
+          "type": "string"
+        },
+        "retrieved_at": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "ISO 8601 retrieval date.",
+          "title": "Retrieved At"
+        }
+      },
+      "required": [
+        "uri",
+        "title",
+        "language"
+      ],
+      "title": "Source",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "description": "A source text before chunking.",
+  "properties": {
+    "schema_version": {
+      "const": "1.0",
+      "default": "1.0",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "document_id": {
+      "minLength": 1,
+      "title": "Document Id",
+      "type": "string"
+    },
+    "text": {
+      "minLength": 1,
+      "title": "Text",
+      "type": "string"
+    },
+    "source": {
+      "$ref": "#/$defs/Source"
+    },
+    "metadata": {
+      "additionalProperties": true,
+      "title": "Metadata",
+      "type": "object"
+    }
+  },
+  "required": [
+    "document_id",
+    "text",
+    "source"
+  ],
+  "title": "Document",
+  "type": "object",
+  "$id": "https://example.test/evidence-rag/schemas/document.schema.json"
+}

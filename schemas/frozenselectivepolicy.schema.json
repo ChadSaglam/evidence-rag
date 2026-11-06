@@ -1,0 +1,81 @@
+{
+  "additionalProperties": false,
+  "description": "Frozen retrieval and threshold configuration for an untouched test split.",
+  "properties": {
+    "schema_version": {
+      "const": "1.0",
+      "default": "1.0",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "policy_id": {
+      "minLength": 1,
+      "title": "Policy Id",
+      "type": "string"
+    },
+    "status": {
+      "const": "frozen_for_independent_evaluation",
+      "title": "Status",
+      "type": "string"
+    },
+    "frozen_at": {
+      "minLength": 1,
+      "title": "Frozen At",
+      "type": "string"
+    },
+    "min_top_score": {
+      "title": "Min Top Score",
+      "type": "number"
+    },
+    "top_k": {
+      "const": 1,
+      "title": "Top K",
+      "type": "integer"
+    },
+    "require_citations": {
+      "title": "Require Citations",
+      "type": "boolean"
+    },
+    "decision_rule": {
+      "minLength": 1,
+      "title": "Decision Rule",
+      "type": "string"
+    },
+    "retriever": {
+      "additionalProperties": true,
+      "title": "Retriever",
+      "type": "object"
+    },
+    "calibration": {
+      "additionalProperties": true,
+      "title": "Calibration",
+      "type": "object"
+    },
+    "corpus": {
+      "additionalProperties": true,
+      "title": "Corpus",
+      "type": "object"
+    },
+    "evaluation": {
+      "additionalProperties": true,
+      "title": "Evaluation",
+      "type": "object"
+    }
+  },
+  "required": [
+    "policy_id",
+    "status",
+    "frozen_at",
+    "min_top_score",
+    "top_k",
+    "require_citations",
+    "decision_rule",
+    "retriever",
+    "calibration",
+    "corpus",
+    "evaluation"
+  ],
+  "title": "FrozenSelectivePolicy",
+  "type": "object",
+  "$id": "https://example.test/evidence-rag/schemas/frozenselectivepolicy.schema.json"
+}

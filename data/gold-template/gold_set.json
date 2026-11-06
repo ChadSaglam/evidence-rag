@@ -1,0 +1,7 @@
+{
+  "schema_version": "1.0",
+  "name": "human-gold-template",
+  "description": "Template only; no human annotations have been collected. Populate queries and judgments before evaluation.",
+  "label_source": "human",
+  "queries": []
+}

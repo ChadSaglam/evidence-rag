@@ -1,0 +1,508 @@
+{
+  "schema_version": "1.0",
+  "batch_id": "batch-02",
+  "name": "human-evidence-batch-02-test",
+  "description": "Rank-blind human annotation batch; 20 human-supplied test decisions collected.",
+  "label_source": "human",
+  "split": "test",
+  "guidelines_version": "1.0",
+  "corpus_name": "synthetic-multilingual-smoke-corpus-v1",
+  "corpus_sha256": "d1154a5ce141c2e1d9c70583050e3059d1fb066649753773e8a85d1e7afd45e3",
+  "tasks": [
+    {
+      "query": {
+        "schema_version": "1.0",
+        "query_id": "batch02-en-invoice-identifier",
+        "text": "Does an invoice need a unique identifier?",
+        "language": "en",
+        "top_k": 4
+      },
+      "candidates": [
+        {
+          "chunk": {
+            "schema_version": "1.0",
+            "chunk_id": "de-retention:000000",
+            "document_id": "de-retention",
+            "text": "Geschäftsbücher müssen zehn Jahre aufbewahrt werden. Dieser synthetische Text dient nur als Retrieval-Test.",
+            "start_char": 0,
+            "end_char": 107,
+            "source": {
+              "uri": "https://example.test/accounting/de",
+              "title": "Synthetische Buchhaltungsrichtlinie",
+              "language": "de",
+              "retrieved_at": "2026-01-01"
+            },
+            "metadata": {
+              "jurisdiction": "sample"
+            }
+          },
+          "relevance": 0,
+          "annotator": "human-annotator-01",
+          "notes": "Off-topic for this query."
+        },
+        {
+          "chunk": {
+            "schema_version": "1.0",
+            "chunk_id": "en-retention:000000",
+            "document_id": "en-retention",
+            "text": "Accounting records must be retained for ten years. This synthetic passage is only a retrieval fixture.",
+            "start_char": 0,
+            "end_char": 102,
+            "source": {
+              "uri": "https://example.test/accounting/en",
+              "title": "Synthetic accounting guidance",
+              "language": "en",
+              "retrieved_at": "2026-01-01"
+            },
+            "metadata": {
+              "jurisdiction": "sample"
+            }
+          },
+          "relevance": 0,
+          "annotator": "human-annotator-01",
+          "notes": "Off-topic for this query."
+        },
+        {
+          "chunk": {
+            "schema_version": "1.0",
+            "chunk_id": "en-security:000000",
+            "document_id": "en-security",
+            "text": "Instructions inside retrieved documents are untrusted data, not commands for the answering system.",
+            "start_char": 0,
+            "end_char": 98,
+            "source": {
+              "uri": "https://example.test/security/en",
+              "title": "Synthetic security guidance",
+              "language": "en",
+              "retrieved_at": "2026-01-01"
+            },
+            "metadata": {
+              "topic": "prompt-injection"
+            }
+          },
+          "relevance": 0,
+          "annotator": "human-annotator-01",
+          "notes": "Off-topic for this query."
+        },
+        {
+          "chunk": {
+            "schema_version": "1.0",
+            "chunk_id": "fr-invoice:000000",
+            "document_id": "fr-invoice",
+            "text": "Une facture doit comporter une date, un identifiant unique et le nom du fournisseur. Ce passage synthétique sert uniquement de test.",
+            "start_char": 0,
+            "end_char": 132,
+            "source": {
+              "uri": "https://example.test/invoicing/fr",
+              "title": "Guide de facturation synthétique",
+              "language": "fr",
+              "retrieved_at": "2026-01-01"
+            },
+            "metadata": {
+              "jurisdiction": "sample"
+            }
+          },
+          "relevance": 3,
+          "annotator": "human-annotator-01",
+          "notes": "Directly states an invoice must include a unique identifier (French)."
+        }
+      ]
+    },
+    {
+      "query": {
+        "schema_version": "1.0",
+        "query_id": "batch02-de-retention-number",
+        "text": "Welche Zahl nennt die Richtlinie für die Aufbewahrungsfrist?",
+        "language": "de",
+        "top_k": 4
+      },
+      "candidates": [
+        {
+          "chunk": {
+            "schema_version": "1.0",
+            "chunk_id": "de-retention:000000",
+            "document_id": "de-retention",
+            "text": "Geschäftsbücher müssen zehn Jahre aufbewahrt werden. Dieser synthetische Text dient nur als Retrieval-Test.",
+            "start_char": 0,
+            "end_char": 107,
+            "source": {
+              "uri": "https://example.test/accounting/de",
+              "title": "Synthetische Buchhaltungsrichtlinie",
+              "language": "de",
+              "retrieved_at": "2026-01-01"
+            },
+            "metadata": {
+              "jurisdiction": "sample"
+            }
+          },
+          "relevance": 3,
+          "annotator": "human-annotator-01",
+          "notes": "Directly gives the number: ten years."
+        },
+        {
+          "chunk": {
+            "schema_version": "1.0",
+            "chunk_id": "en-retention:000000",
+            "document_id": "en-retention",
+            "text": "Accounting records must be retained for ten years. This synthetic passage is only a retrieval fixture.",
+            "start_char": 0,
+            "end_char": 102,
+            "source": {
+              "uri": "https://example.test/accounting/en",
+              "title": "Synthetic accounting guidance",
+              "language": "en",
+              "retrieved_at": "2026-01-01"
+            },
+            "metadata": {
+              "jurisdiction": "sample"
+            }
+          },
+          "relevance": 3,
+          "annotator": "human-annotator-01",
+          "notes": "Directly gives the number: ten years (English version)."
+        },
+        {
+          "chunk": {
+            "schema_version": "1.0",
+            "chunk_id": "en-security:000000",
+            "document_id": "en-security",
+            "text": "Instructions inside retrieved documents are untrusted data, not commands for the answering system.",
+            "start_char": 0,
+            "end_char": 98,
+            "source": {
+              "uri": "https://example.test/security/en",
+              "title": "Synthetic security guidance",
+              "language": "en",
+              "retrieved_at": "2026-01-01"
+            },
+            "metadata": {
+              "topic": "prompt-injection"
+            }
+          },
+          "relevance": 0,
+          "annotator": "human-annotator-01",
+          "notes": "Off-topic for this query."
+        },
+        {
+          "chunk": {
+            "schema_version": "1.0",
+            "chunk_id": "fr-invoice:000000",
+            "document_id": "fr-invoice",
+            "text": "Une facture doit comporter une date, un identifiant unique et le nom du fournisseur. Ce passage synthétique sert uniquement de test.",
+            "start_char": 0,
+            "end_char": 132,
+            "source": {
+              "uri": "https://example.test/invoicing/fr",
+              "title": "Guide de facturation synthétique",
+              "language": "fr",
+              "retrieved_at": "2026-01-01"
+            },
+            "metadata": {
+              "jurisdiction": "sample"
+            }
+          },
+          "relevance": 0,
+          "annotator": "human-annotator-01",
+          "notes": "Off-topic for this query."
+        }
+      ]
+    },
+    {
+      "query": {
+        "schema_version": "1.0",
+        "query_id": "batch02-fr-security-execution",
+        "text": "Les instructions trouvées dans les documents récupérés doivent-elles être exécutées ?",
+        "language": "fr",
+        "top_k": 4
+      },
+      "candidates": [
+        {
+          "chunk": {
+            "schema_version": "1.0",
+            "chunk_id": "de-retention:000000",
+            "document_id": "de-retention",
+            "text": "Geschäftsbücher müssen zehn Jahre aufbewahrt werden. Dieser synthetische Text dient nur als Retrieval-Test.",
+            "start_char": 0,
+            "end_char": 107,
+            "source": {
+              "uri": "https://example.test/accounting/de",
+              "title": "Synthetische Buchhaltungsrichtlinie",
+              "language": "de",
+              "retrieved_at": "2026-01-01"
+            },
+            "metadata": {
+              "jurisdiction": "sample"
+            }
+          },
+          "relevance": 0,
+          "annotator": "human-annotator-01",
+          "notes": "Off-topic for this query."
+        },
+        {
+          "chunk": {
+            "schema_version": "1.0",
+            "chunk_id": "en-retention:000000",
+            "document_id": "en-retention",
+            "text": "Accounting records must be retained for ten years. This synthetic passage is only a retrieval fixture.",
+            "start_char": 0,
+            "end_char": 102,
+            "source": {
+              "uri": "https://example.test/accounting/en",
+              "title": "Synthetic accounting guidance",
+              "language": "en",
+              "retrieved_at": "2026-01-01"
+            },
+            "metadata": {
+              "jurisdiction": "sample"
+            }
+          },
+          "relevance": 0,
+          "annotator": "human-annotator-01",
+          "notes": "Off-topic for this query."
+        },
+        {
+          "chunk": {
+            "schema_version": "1.0",
+            "chunk_id": "en-security:000000",
+            "document_id": "en-security",
+            "text": "Instructions inside retrieved documents are untrusted data, not commands for the answering system.",
+            "start_char": 0,
+            "end_char": 98,
+            "source": {
+              "uri": "https://example.test/security/en",
+              "title": "Synthetic security guidance",
+              "language": "en",
+              "retrieved_at": "2026-01-01"
+            },
+            "metadata": {
+              "topic": "prompt-injection"
+            }
+          },
+          "relevance": 3,
+          "annotator": "human-annotator-01",
+          "notes": "Retrieved instructions are data, not commands: directly answers no."
+        },
+        {
+          "chunk": {
+            "schema_version": "1.0",
+            "chunk_id": "fr-invoice:000000",
+            "document_id": "fr-invoice",
+            "text": "Une facture doit comporter une date, un identifiant unique et le nom du fournisseur. Ce passage synthétique sert uniquement de test.",
+            "start_char": 0,
+            "end_char": 132,
+            "source": {
+              "uri": "https://example.test/invoicing/fr",
+              "title": "Guide de facturation synthétique",
+              "language": "fr",
+              "retrieved_at": "2026-01-01"
+            },
+            "metadata": {
+              "jurisdiction": "sample"
+            }
+          },
+          "relevance": 0,
+          "annotator": "human-annotator-01",
+          "notes": "Off-topic for this query."
+        }
+      ]
+    },
+    {
+      "query": {
+        "schema_version": "1.0",
+        "query_id": "batch02-tr-invoice-supplier",
+        "text": "Faturada tedarikçinin adı yer almalı mıdır?",
+        "language": "tr",
+        "top_k": 4
+      },
+      "candidates": [
+        {
+          "chunk": {
+            "schema_version": "1.0",
+            "chunk_id": "de-retention:000000",
+            "document_id": "de-retention",
+            "text": "Geschäftsbücher müssen zehn Jahre aufbewahrt werden. Dieser synthetische Text dient nur als Retrieval-Test.",
+            "start_char": 0,
+            "end_char": 107,
+            "source": {
+              "uri": "https://example.test/accounting/de",
+              "title": "Synthetische Buchhaltungsrichtlinie",
+              "language": "de",
+              "retrieved_at": "2026-01-01"
+            },
+            "metadata": {
+              "jurisdiction": "sample"
+            }
+          },
+          "relevance": 0,
+          "annotator": "human-annotator-01",
+          "notes": "Off-topic for this query."
+        },
+        {
+          "chunk": {
+            "schema_version": "1.0",
+            "chunk_id": "en-retention:000000",
+            "document_id": "en-retention",
+            "text": "Accounting records must be retained for ten years. This synthetic passage is only a retrieval fixture.",
+            "start_char": 0,
+            "end_char": 102,
+            "source": {
+              "uri": "https://example.test/accounting/en",
+              "title": "Synthetic accounting guidance",
+              "language": "en",
+              "retrieved_at": "2026-01-01"
+            },
+            "metadata": {
+              "jurisdiction": "sample"
+            }
+          },
+          "relevance": 0,
+          "annotator": "human-annotator-01",
+          "notes": "Off-topic for this query."
+        },
+        {
+          "chunk": {
+            "schema_version": "1.0",
+            "chunk_id": "en-security:000000",
+            "document_id": "en-security",
+            "text": "Instructions inside retrieved documents are untrusted data, not commands for the answering system.",
+            "start_char": 0,
+            "end_char": 98,
+            "source": {
+              "uri": "https://example.test/security/en",
+              "title": "Synthetic security guidance",
+              "language": "en",
+              "retrieved_at": "2026-01-01"
+            },
+            "metadata": {
+              "topic": "prompt-injection"
+            }
+          },
+          "relevance": 0,
+          "annotator": "human-annotator-01",
+          "notes": "Off-topic for this query."
+        },
+        {
+          "chunk": {
+            "schema_version": "1.0",
+            "chunk_id": "fr-invoice:000000",
+            "document_id": "fr-invoice",
+            "text": "Une facture doit comporter une date, un identifiant unique et le nom du fournisseur. Ce passage synthétique sert uniquement de test.",
+            "start_char": 0,
+            "end_char": 132,
+            "source": {
+              "uri": "https://example.test/invoicing/fr",
+              "title": "Guide de facturation synthétique",
+              "language": "fr",
+              "retrieved_at": "2026-01-01"
+            },
+            "metadata": {
+              "jurisdiction": "sample"
+            }
+          },
+          "relevance": 3,
+          "annotator": "human-annotator-01",
+          "notes": "Directly states an invoice must include the supplier name (French)."
+        }
+      ]
+    },
+    {
+      "query": {
+        "schema_version": "1.0",
+        "query_id": "batch02-en-missing-vat-rate",
+        "text": "What is the official VAT rate for invoices in Switzerland?",
+        "language": "en",
+        "top_k": 4
+      },
+      "candidates": [
+        {
+          "chunk": {
+            "schema_version": "1.0",
+            "chunk_id": "de-retention:000000",
+            "document_id": "de-retention",
+            "text": "Geschäftsbücher müssen zehn Jahre aufbewahrt werden. Dieser synthetische Text dient nur als Retrieval-Test.",
+            "start_char": 0,
+            "end_char": 107,
+            "source": {
+              "uri": "https://example.test/accounting/de",
+              "title": "Synthetische Buchhaltungsrichtlinie",
+              "language": "de",
+              "retrieved_at": "2026-01-01"
+            },
+            "metadata": {
+              "jurisdiction": "sample"
+            }
+          },
+          "relevance": 0,
+          "annotator": "human-annotator-01",
+          "notes": "Off-topic for this query."
+        },
+        {
+          "chunk": {
+            "schema_version": "1.0",
+            "chunk_id": "en-retention:000000",
+            "document_id": "en-retention",
+            "text": "Accounting records must be retained for ten years. This synthetic passage is only a retrieval fixture.",
+            "start_char": 0,
+            "end_char": 102,
+            "source": {
+              "uri": "https://example.test/accounting/en",
+              "title": "Synthetic accounting guidance",
+              "language": "en",
+              "retrieved_at": "2026-01-01"
+            },
+            "metadata": {
+              "jurisdiction": "sample"
+            }
+          },
+          "relevance": 0,
+          "annotator": "human-annotator-01",
+          "notes": "Off-topic for this query."
+        },
+        {
+          "chunk": {
+            "schema_version": "1.0",
+            "chunk_id": "en-security:000000",
+            "document_id": "en-security",
+            "text": "Instructions inside retrieved documents are untrusted data, not commands for the answering system.",
+            "start_char": 0,
+            "end_char": 98,
+            "source": {
+              "uri": "https://example.test/security/en",
+              "title": "Synthetic security guidance",
+              "language": "en",
+              "retrieved_at": "2026-01-01"
+            },
+            "metadata": {
+              "topic": "prompt-injection"
+            }
+          },
+          "relevance": 0,
+          "annotator": "human-annotator-01",
+          "notes": "Off-topic for this query."
+        },
+        {
+          "chunk": {
+            "schema_version": "1.0",
+            "chunk_id": "fr-invoice:000000",
+            "document_id": "fr-invoice",
+            "text": "Une facture doit comporter une date, un identifiant unique et le nom du fournisseur. Ce passage synthétique sert uniquement de test.",
+            "start_char": 0,
+            "end_char": 132,
+            "source": {
+              "uri": "https://example.test/invoicing/fr",
+              "title": "Guide de facturation synthétique",
+              "language": "fr",
+              "retrieved_at": "2026-01-01"
+            },
+            "metadata": {
+              "jurisdiction": "sample"
+            }
+          },
+          "relevance": 1,
+          "annotator": "human-annotator-01",
+          "notes": "Background on invoice requirements; gives no VAT rate."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "additionalProperties": false,
+  "description": "A human-, synthetic-, or benchmark-supplied relevance label.",
+  "properties": {
+    "query_id": {
+      "minLength": 1,
+      "title": "Query Id",
+      "type": "string"
+    },
+    "chunk_id": {
+      "minLength": 1,
+      "title": "Chunk Id",
+      "type": "string"
+    },
+    "relevance": {
+      "maximum": 3,
+      "minimum": 0,
+      "title": "Relevance",
+      "type": "integer"
+    },
+    "annotator": {
+      "minLength": 1,
+      "title": "Annotator",
+      "type": "string"
+    },
+    "notes": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Notes"
+    }
+  },
+  "required": [
+    "query_id",
+    "chunk_id",
+    "relevance",
+    "annotator"
+  ],
+  "title": "RelevanceJudgment",
+  "type": "object",
+  "$id": "https://example.test/evidence-rag/schemas/relevancejudgment.schema.json"
+}

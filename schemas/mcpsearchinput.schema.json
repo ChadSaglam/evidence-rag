@@ -1,0 +1,24 @@
+{
+  "additionalProperties": false,
+  "description": "Read-only MCP evidence search arguments.",
+  "properties": {
+    "text": {
+      "minLength": 1,
+      "title": "Text",
+      "type": "string"
+    },
+    "top_k": {
+      "default": 5,
+      "maximum": 100,
+      "minimum": 1,
+      "title": "Top K",
+      "type": "integer"
+    }
+  },
+  "required": [
+    "text"
+  ],
+  "title": "McpSearchInput",
+  "type": "object",
+  "$id": "https://example.test/evidence-rag/schemas/mcpsearchinput.schema.json"
+}

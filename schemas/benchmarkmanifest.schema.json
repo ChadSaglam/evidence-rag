@@ -1,0 +1,103 @@
+{
+  "$defs": {
+    "BenchmarkFile": {
+      "additionalProperties": false,
+      "description": "A relative dataset file with its deterministic content identity.",
+      "properties": {
+        "path": {
+          "minLength": 1,
+          "title": "Path",
+          "type": "string"
+        },
+        "sha256": {
+          "pattern": "^[0-9a-f]{64}$",
+          "title": "Sha256",
+          "type": "string"
+        },
+        "size_bytes": {
+          "minimum": 0,
+          "title": "Size Bytes",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "path",
+        "sha256",
+        "size_bytes"
+      ],
+      "title": "BenchmarkFile",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "description": "A self-contained, reproducible benchmark dataset configuration.",
+  "properties": {
+    "schema_version": {
+      "const": "1.0",
+      "default": "1.0",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "name": {
+      "minLength": 1,
+      "title": "Name",
+      "type": "string"
+    },
+    "description": {
+      "minLength": 1,
+      "title": "Description",
+      "type": "string"
+    },
+    "dataset_id": {
+      "minLength": 3,
+      "title": "Dataset Id",
+      "type": "string"
+    },
+    "gold_set": {
+      "minLength": 1,
+      "title": "Gold Set",
+      "type": "string"
+    },
+    "label_source": {
+      "enum": [
+        "human",
+        "synthetic",
+        "benchmark"
+      ],
+      "title": "Label Source",
+      "type": "string"
+    },
+    "retriever": {
+      "const": "bm25",
+      "default": "bm25",
+      "title": "Retriever",
+      "type": "string"
+    },
+    "k": {
+      "maximum": 100,
+      "minimum": 1,
+      "title": "K",
+      "type": "integer"
+    },
+    "files": {
+      "items": {
+        "$ref": "#/$defs/BenchmarkFile"
+      },
+      "minItems": 1,
+      "title": "Files",
+      "type": "array"
+    }
+  },
+  "required": [
+    "name",
+    "description",
+    "dataset_id",
+    "gold_set",
+    "label_source",
+    "k",
+    "files"
+  ],
+  "title": "BenchmarkManifest",
+  "type": "object",
+  "$id": "https://example.test/evidence-rag/schemas/benchmarkmanifest.schema.json"
+}

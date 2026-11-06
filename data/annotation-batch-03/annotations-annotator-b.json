@@ -1,0 +1,1390 @@
+{
+  "schema_version": "1.0",
+  "batch_id": "batch-03",
+  "name": "gdpr-two-annotator-batch-03",
+  "description": "Independent annotator B copy. 7 queries, 50 pooled query-chunk pairs (BM25 top-5 union intfloat/multilingual-e5-base top-5). Do not look at the other copy.",
+  "label_source": "human",
+  "split": "test",
+  "guidelines_version": "1.0",
+  "corpus_name": "gdpr-selected-articles-multilingual-v1",
+  "corpus_sha256": "46e3e5899975674b5852e42df690f71d7b3ba1ffe66a543e665dfd31a97e95bc",
+  "tasks": [
+    {
+      "query": {
+        "schema_version": "1.0",
+        "query_id": "en-breach-deadline",
+        "text": "How quickly must a controller notify a personal data breach to the supervisory authority?",
+        "language": "en",
+        "top_k": 10
+      },
+      "candidates": [
+        {
+          "chunk": {
+            "schema_version": "1.0",
+            "chunk_id": "gdpr-en-article-12:000001",
+            "document_id": "gdpr-en-article-12",
+            "text": "demonstrates that it is not in a position to identify the data subject. 3. The controller shall provide information on action taken on a request under Articles 15 to 22 to the data subject without undue delay and in any event within one month of receipt of the request. That period may be extended by two further months where necessary, taking into account the complexity and number of the requests. The controller shall inform the data subject of any such extension within one month of receipt of the request, together with the reasons for the delay. Where the data subject makes the request by electronic form means, the information shall be provided by electronic means where possible, unless otherwise requested by the data subject. 4. If the controller does not take action on the request of the data subject, the controller shall inform the data subject without delay and at the latest within one month of receipt of the request of the reasons for not taking action and on the possibility of lodging a complaint with a supervisory authority and seeking a judicial remedy. 5. Information provided under Articles 13 and 14 and any communication and any actions taken under Articles 15 to 22 and 3",
+            "start_char": 1050,
+            "end_char": 2250,
+            "source": {
+              "uri": "https://eur-lex.europa.eu/eli/reg/2016/679/oj/eng",
+              "title": "Regulation (EU) 2016/679 — Article 12: Transparent information, communication and modalities for the exercise of the rights of the data subject",
+              "language": "en",
+              "retrieved_at": "2026-10-31"
+            },
+            "metadata": {
+              "authority": "European Union Publications Office",
+              "celex": "32016R0679",
+              "article": 12,
+              "article_title": "Transparent information, communication and modalities for the exercise of the rights of the data subject",
+              "reuse_notice": "EUR-Lex legal document reuse; source acknowledged; whitespace normalized and selected articles extracted."
+            }
+          },
+          "relevance": null,
+          "annotator": null,
+          "notes": null
+        },
+        {
+          "chunk": {
+            "schema_version": "1.0",
+            "chunk_id": "gdpr-en-article-13:000001",
+            "document_id": "gdpr-en-article-13",
+            "text": "n the case of transfers referred to in Article 46 or 47, or the second subparagraph of Article 49(1), reference to the appropriate or suitable safeguards and the means by which to obtain a copy of them or where they have been made available. 2. In addition to the information referred to in paragraph 1, the controller shall, at the time when personal data are obtained, provide the data subject with the following further information necessary to ensure fair and transparent processing: (a) the period for which the personal data will be stored, or if that is not possible, the criteria used to determine that period; (b) the existence of the right to request from the controller access to and rectification or erasure of personal data or restriction of processing concerning the data subject or to object to processing as well as the right to data portability; (c) where the processing is based on point (a) of Article 6(1) or point (a) of Article 9(2), the existence of the right to withdraw consent at any time, without affecting the lawfulness of processing based on consent before its withdrawal; (d) the right to lodge a complaint with a supervisory authority; (e) whether the provision of per",
+            "start_char": 1050,
+            "end_char": 2250,
+            "source": {
+              "uri": "https://eur-lex.europa.eu/eli/reg/2016/679/oj/eng",
+              "title": "Regulation (EU) 2016/679 — Article 13: Information to be provided where personal data are collected from the data subject",
+              "language": "en",
+              "retrieved_at": "2026-10-31"
+            },
+            "metadata": {
+              "authority": "European Union Publications Office",
+              "celex": "32016R0679",
+              "article": 13,
+              "article_title": "Information to be provided where personal data are collected from the data subject",
+              "reuse_notice": "EUR-Lex legal document reuse; source acknowledged; whitespace normalized and selected articles extracted."
+            }
+          },
+          "relevance": null,
+          "annotator": null,
+          "notes": null
+        },
+        {
+          "chunk": {
+            "schema_version": "1.0",
+            "chunk_id": "gdpr-en-article-13:000002",
+            "document_id": "gdpr-en-article-13",
+            "text": "f processing based on consent before its withdrawal; (d) the right to lodge a complaint with a supervisory authority; (e) whether the provision of personal data is a statutory or contractual requirement, or a requirement necessary to enter into a contract, as well as whether the data subject is obliged to provide the personal data and of the possible consequences of failure to provide such data; (f) the existence of automated decision-making, including profiling, referred to in Article 22(1) and (4) and, at least in those cases, meaningful information about the logic involved, as well as the significance and the envisaged consequences of such processing for the data subject. 3. Where the controller intends to further process the personal data for a purpose other than that for which the personal data were collected, the controller shall provide the data subject prior to that further processing with information on that other purpose and with any relevant further information as referred to in paragraph 2. 4. Paragraphs 1, 2 and 3 shall not apply where and insofar as the data subject already has the information.",
+            "start_char": 2100,
+            "end_char": 3225,
+            "source": {
+              "uri": "https://eur-lex.europa.eu/eli/reg/2016/679/oj/eng",
+              "title": "Regulation (EU) 2016/679 — Article 13: Information to be provided where personal data are collected from the data subject",
+              "language": "en",
+              "retrieved_at": "2026-10-31"
+            },
+            "metadata": {
+              "authority": "European Union Publications Office",
+              "celex": "32016R0679",
+              "article": 13,
+              "article_title": "Information to be provided where personal data are collected from the data subject",
+              "reuse_notice": "EUR-Lex legal document reuse; source acknowledged; whitespace normalized and selected articles extracted."
+            }
+          },
+          "relevance": null,
+          "annotator": null,
+          "notes": null
+        },
+        {
+          "chunk": {
+            "schema_version": "1.0",
+            "chunk_id": "gdpr-en-article-15:000000",
+            "document_id": "gdpr-en-article-15",
+            "text": "Article 15 Right of access by the data subject 1. The data subject shall have the right to obtain from the controller confirmation as to whether or not personal data concerning him or her are being processed, and, where that is the case, access to the personal data and the following information: (a) the purposes of the processing; (b) the categories of personal data concerned; (c) the recipients or categories of recipient to whom the personal data have been or will be disclosed, in particular recipients in third countries or international organisations; (d) where possible, the envisaged period for which the personal data will be stored, or, if not possible, the criteria used to determine that period; (e) the existence of the right to request from the controller rectification or erasure of personal data or restriction of processing of personal data concerning the data subject or to object to such processing; (f) the right to lodge a complaint with a supervisory authority; (g) where the personal data are not collected from the data subject, any available information as to their source; (h) the existence of automated decision-making, including profiling, referred to in Article 22(1) a",
+            "start_char": 0,
+            "end_char": 1200,
+            "source": {
+              "uri": "https://eur-lex.europa.eu/eli/reg/2016/679/oj/eng",
+              "title": "Regulation (EU) 2016/679 — Article 15: Right of access by the data subject",
+              "language": "en",
+              "retrieved_at": "2026-10-31"
+            },
+            "metadata": {
+              "authority": "European Union Publications Office",
+              "celex": "32016R0679",
+              "article": 15,
+              "article_title": "Right of access by the data subject",
+              "reuse_notice": "EUR-Lex legal document reuse; source acknowledged; whitespace normalized and selected articles extracted."
+            }
+          },
+          "relevance": null,
+          "annotator": null,
+          "notes": null
+        },
+        {
+          "chunk": {
+            "schema_version": "1.0",
+            "chunk_id": "gdpr-en-article-33:000000",
+            "document_id": "gdpr-en-article-33",
+            "text": "Article 33 Notification of a personal data breach to the supervisory authority 1. In the case of a personal data breach, the controller shall without undue delay and, where feasible, not later than 72 hours after having become aware of it, notify the personal data breach to the supervisory authority competent in accordance with Article 55, unless the personal data breach is unlikely to result in a risk to the rights and freedoms of natural persons. Where the notification to the supervisory authority is not made within 72 hours, it shall be accompanied by reasons for the delay. 2. The processor shall notify the controller without undue delay after becoming aware of a personal data breach. 3. The notification referred to in paragraph 1 shall at least: (a) describe the nature of the personal data breach including where possible, the categories and approximate number of data subjects concerned and the categories and approximate number of personal data records concerned; (b) communicate the name and contact details of the data protection officer or other contact point where more information can be obtained; (c) describe the likely consequences of the personal data breach; (d) describe t",
+            "start_char": 0,
+            "end_char": 1200,
+            "source": {
+              "uri": "https://eur-lex.europa.eu/eli/reg/2016/679/oj/eng",
+              "title": "Regulation (EU) 2016/679 — Article 33: Notification of a personal data breach to the supervisory authority",
+              "language": "en",
+              "retrieved_at": "2026-10-31"
+            },
+            "metadata": {
+              "authority": "European Union Publications Office",
+              "celex": "32016R0679",
+              "article": 33,
+              "article_title": "Notification of a personal data breach to the supervisory authority",
+              "reuse_notice": "EUR-Lex legal document reuse; source acknowledged; whitespace normalized and selected articles extracted."
+            }
+          },
+          "relevance": null,
+          "annotator": null,
+          "notes": null
+        },
+        {
+          "chunk": {
+            "schema_version": "1.0",
+            "chunk_id": "gdpr-en-article-33:000001",
+            "document_id": "gdpr-en-article-33",
+            "text": "fficer or other contact point where more information can be obtained; (c) describe the likely consequences of the personal data breach; (d) describe the measures taken or proposed to be taken by the controller to address the personal data breach, including, where appropriate, measures to mitigate its possible adverse effects. 4. Where, and in so far as, it is not possible to provide the information at the same time, the information may be provided in phases without undue further delay. 5. The controller shall document any personal data breaches, comprising the facts relating to the personal data breach, its effects and the remedial action taken. That documentation shall enable the supervisory authority to verify compliance with this Article.",
+            "start_char": 1050,
+            "end_char": 1801,
+            "source": {
+              "uri": "https://eur-lex.europa.eu/eli/reg/2016/679/oj/eng",
+              "title": "Regulation (EU) 2016/679 — Article 33: Notification of a personal data breach to the supervisory authority",
+              "language": "en",
+              "retrieved_at": "2026-10-31"
+            },
+            "metadata": {
+              "authority": "European Union Publications Office",
+              "celex": "32016R0679",
+              "article": 33,
+              "article_title": "Notification of a personal data breach to the supervisory authority",
+              "reuse_notice": "EUR-Lex legal document reuse; source acknowledged; whitespace normalized and selected articles extracted."
+            }
+          },
+          "relevance": null,
+          "annotator": null,
+          "notes": null
+        },
+        {
+          "chunk": {
+            "schema_version": "1.0",
+            "chunk_id": "gdpr-en-article-35:000001",
+            "document_id": "gdpr-en-article-35",
+            "text": "arly significantly affect the natural person; (b) processing on a large scale of special categories of data referred to in Article 9(1), or of personal data relating to criminal convictions and offences referred to in Article 10; or (c) a systematic monitoring of a publicly accessible area on a large scale. 4. The supervisory authority shall establish and make public a list of the kind of processing operations which are subject to the requirement for a data protection impact assessment pursuant to paragraph 1. The supervisory authority shall communicate those lists to the Board referred to in Article 68. 5. The supervisory authority may also establish and make public a list of the kind of processing operations for which no data protection impact assessment is required. The supervisory authority shall communicate those lists to the Board. 6. Prior to the adoption of the lists referred to in paragraphs 4 and 5, the competent supervisory authority shall apply the consistency mechanism referred to in Article 63 where such lists involve processing activities which are related to the offering of goods or services to data subjects or to the monitoring of their behaviour in several Member ",
+            "start_char": 1050,
+            "end_char": 2250,
+            "source": {
+              "uri": "https://eur-lex.europa.eu/eli/reg/2016/679/oj/eng",
+              "title": "Regulation (EU) 2016/679 — Article 35: Data protection impact assessment",
+              "language": "en",
+              "retrieved_at": "2026-10-31"
+            },
+            "metadata": {
+              "authority": "European Union Publications Office",
+              "celex": "32016R0679",
+              "article": 35,
+              "article_title": "Data protection impact assessment",
+              "reuse_notice": "EUR-Lex legal document reuse; source acknowledged; whitespace normalized and selected articles extracted."
+            }
+          },
+          "relevance": null,
+          "annotator": null,
+          "notes": null
+        }
+      ]
+    },
+    {
+      "query": {
+        "schema_version": "1.0",
+        "query_id": "en-dpia",
+        "text": "When is a data protection impact assessment required?",
+        "language": "en",
+        "top_k": 10
+      },
+      "candidates": [
+        {
+          "chunk": {
+            "schema_version": "1.0",
+            "chunk_id": "gdpr-en-article-35:000000",
+            "document_id": "gdpr-en-article-35",
+            "text": "Article 35 Data protection impact assessment 1. Where a type of processing in particular using new technologies, and taking into account the nature, scope, context and purposes of the processing, is likely to result in a high risk to the rights and freedoms of natural persons, the controller shall, prior to the processing, carry out an assessment of the impact of the envisaged processing operations on the protection of personal data. A single assessment may address a set of similar processing operations that present similar high risks. 2. The controller shall seek the advice of the data protection officer, where designated, when carrying out a data protection impact assessment. 3. A data protection impact assessment referred to in paragraph 1 shall in particular be required in the case of: (a) a systematic and extensive evaluation of personal aspects relating to natural persons which is based on automated processing, including profiling, and on which decisions are based that produce legal effects concerning the natural person or similarly significantly affect the natural person; (b) processing on a large scale of special categories of data referred to in Article 9(1), or of persona",
+            "start_char": 0,
+            "end_char": 1200,
+            "source": {
+              "uri": "https://eur-lex.europa.eu/eli/reg/2016/679/oj/eng",
+              "title": "Regulation (EU) 2016/679 — Article 35: Data protection impact assessment",
+              "language": "en",
+              "retrieved_at": "2026-10-31"
+            },
+            "metadata": {
+              "authority": "European Union Publications Office",
+              "celex": "32016R0679",
+              "article": 35,
+              "article_title": "Data protection impact assessment",
+              "reuse_notice": "EUR-Lex legal document reuse; source acknowledged; whitespace normalized and selected articles extracted."
+            }
+          },
+          "relevance": null,
+          "annotator": null,
+          "notes": null
+        },
+        {
+          "chunk": {
+            "schema_version": "1.0",
+            "chunk_id": "gdpr-en-article-35:000001",
+            "document_id": "gdpr-en-article-35",
+            "text": "arly significantly affect the natural person; (b) processing on a large scale of special categories of data referred to in Article 9(1), or of personal data relating to criminal convictions and offences referred to in Article 10; or (c) a systematic monitoring of a publicly accessible area on a large scale. 4. The supervisory authority shall establish and make public a list of the kind of processing operations which are subject to the requirement for a data protection impact assessment pursuant to paragraph 1. The supervisory authority shall communicate those lists to the Board referred to in Article 68. 5. The supervisory authority may also establish and make public a list of the kind of processing operations for which no data protection impact assessment is required. The supervisory authority shall communicate those lists to the Board. 6. Prior to the adoption of the lists referred to in paragraphs 4 and 5, the competent supervisory authority shall apply the consistency mechanism referred to in Article 63 where such lists involve processing activities which are related to the offering of goods or services to data subjects or to the monitoring of their behaviour in several Member ",
+            "start_char": 1050,
+            "end_char": 2250,
+            "source": {
+              "uri": "https://eur-lex.europa.eu/eli/reg/2016/679/oj/eng",
+              "title": "Regulation (EU) 2016/679 — Article 35: Data protection impact assessment",
+              "language": "en",
+              "retrieved_at": "2026-10-31"
+            },
+            "metadata": {
+              "authority": "European Union Publications Office",
+              "celex": "32016R0679",
+              "article": 35,
+              "article_title": "Data protection impact assessment",
+              "reuse_notice": "EUR-Lex legal document reuse; source acknowledged; whitespace normalized and selected articles extracted."
+            }
+          },
+          "relevance": null,
+          "annotator": null,
+          "notes": null
+        },
+        {
+          "chunk": {
+            "schema_version": "1.0",
+            "chunk_id": "gdpr-en-article-35:000002",
+            "document_id": "gdpr-en-article-35",
+            "text": "ocessing activities which are related to the offering of goods or services to data subjects or to the monitoring of their behaviour in several Member States, or may substantially affect the free movement of personal data within the Union. 7. The assessment shall contain at least: (a) a systematic description of the envisaged processing operations and the purposes of the processing, including, where applicable, the legitimate interest pursued by the controller; (b) an assessment of the necessity and proportionality of the processing operations in relation to the purposes; (c) an assessment of the risks to the rights and freedoms of data subjects referred to in paragraph 1; and (d) the measures envisaged to address the risks, including safeguards, security measures and mechanisms to ensure the protection of personal data and to demonstrate compliance with this Regulation taking into account the rights and legitimate interests of data subjects and other persons concerned. 8. Compliance with approved codes of conduct referred to in Article 40 by the relevant controllers or processors shall be taken into due account in assessing the impact of the processing operations performed by such ",
+            "start_char": 2100,
+            "end_char": 3300,
+            "source": {
+              "uri": "https://eur-lex.europa.eu/eli/reg/2016/679/oj/eng",
+              "title": "Regulation (EU) 2016/679 — Article 35: Data protection impact assessment",
+              "language": "en",
+              "retrieved_at": "2026-10-31"
+            },
+            "metadata": {
+              "authority": "European Union Publications Office",
+              "celex": "32016R0679",
+              "article": 35,
+              "article_title": "Data protection impact assessment",
+              "reuse_notice": "EUR-Lex legal document reuse; source acknowledged; whitespace normalized and selected articles extracted."
+            }
+          },
+          "relevance": null,
+          "annotator": null,
+          "notes": null
+        },
+        {
+          "chunk": {
+            "schema_version": "1.0",
+            "chunk_id": "gdpr-en-article-35:000003",
+            "document_id": "gdpr-en-article-35",
+            "text": "e 40 by the relevant controllers or processors shall be taken into due account in assessing the impact of the processing operations performed by such controllers or processors, in particular for the purposes of a data protection impact assessment. 9. Where appropriate, the controller shall seek the views of data subjects or their representatives on the intended processing, without prejudice to the protection of commercial or public interests or the security of processing operations. 10. Where processing pursuant to point (c) or (e) of Article 6(1) has a legal basis in Union law or in the law of the Member State to which the controller is subject, that law regulates the specific processing operation or set of operations in question, and a data protection impact assessment has already been carried out as part of a general impact assessment in the context of the adoption of that legal basis, paragraphs 1 to 7 shall not apply unless Member States deem it to be necessary to carry out such an assessment prior to processing activities. 11. Where necessary, the controller shall carry out a review to assess if processing is performed in accordance with the data protection impact assessment ",
+            "start_char": 3150,
+            "end_char": 4350,
+            "source": {
+              "uri": "https://eur-lex.europa.eu/eli/reg/2016/679/oj/eng",
+              "title": "Regulation (EU) 2016/679 — Article 35: Data protection impact assessment",
+              "language": "en",
+              "retrieved_at": "2026-10-31"
+            },
+            "metadata": {
+              "authority": "European Union Publications Office",
+              "celex": "32016R0679",
+              "article": 35,
+              "article_title": "Data protection impact assessment",
+              "reuse_notice": "EUR-Lex legal document reuse; source acknowledged; whitespace normalized and selected articles extracted."
+            }
+          },
+          "relevance": null,
+          "annotator": null,
+          "notes": null
+        },
+        {
+          "chunk": {
+            "schema_version": "1.0",
+            "chunk_id": "gdpr-en-article-35:000004",
+            "document_id": "gdpr-en-article-35",
+            "text": "here necessary, the controller shall carry out a review to assess if processing is performed in accordance with the data protection impact assessment at least when there is a change of the risk represented by processing operations.",
+            "start_char": 4200,
+            "end_char": 4431,
+            "source": {
+              "uri": "https://eur-lex.europa.eu/eli/reg/2016/679/oj/eng",
+              "title": "Regulation (EU) 2016/679 — Article 35: Data protection impact assessment",
+              "language": "en",
+              "retrieved_at": "2026-10-31"
+            },
+            "metadata": {
+              "authority": "European Union Publications Office",
+              "celex": "32016R0679",
+              "article": 35,
+              "article_title": "Data protection impact assessment",
+              "reuse_notice": "EUR-Lex legal document reuse; source acknowledged; whitespace normalized and selected articles extracted."
+            }
+          },
+          "relevance": null,
+          "annotator": null,
+          "notes": null
+        },
+        {
+          "chunk": {
+            "schema_version": "1.0",
+            "chunk_id": "gdpr-fr-article-35:000000",
+            "document_id": "gdpr-fr-article-35",
+            "text": "Article 35 Analyse d'impact relative à la protection des données 1. Lorsqu'un type de traitement, en particulier par le recours à de nouvelles technologies, et compte tenu de la nature, de la portée, du contexte et des finalités du traitement, est susceptible d'engendrer un risque élevé pour les droits et libertés des personnes physiques, le responsable du traitement effectue, avant le traitement, une analyse de l'impact des opérations de traitement envisagées sur la protection des données à caractère personnel. Une seule et même analyse peut porter sur un ensemble d'opérations de traitement similaires qui présentent des risques élevés similaires. 2. Lorsqu'il effectue une analyse d'impact relative à la protection des données, le responsable du traitement demande conseil au délégué à la protection des données, si un tel délégué a été désigné. 3. L'analyse d'impact relative à la protection des données visée au paragraphe 1 est, en particulier, requise dans les cas suivants: a) l'évaluation systématique et approfondie d'aspects personnels concernant des personnes physiques, qui est fondée sur un traitement automatisé, y compris le profilage, et sur la base de laquelle sont prises des",
+            "start_char": 0,
+            "end_char": 1200,
+            "source": {
+              "uri": "https://eur-lex.europa.eu/eli/reg/2016/679/oj/fra",
+              "title": "Regulation (EU) 2016/679 — Article 35: Analyse d'impact relative à la protection des données",
+              "language": "fr",
+              "retrieved_at": "2026-10-31"
+            },
+            "metadata": {
+              "authority": "European Union Publications Office",
+              "celex": "32016R0679",
+              "article": 35,
+              "article_title": "Analyse d'impact relative à la protection des données",
+              "reuse_notice": "EUR-Lex legal document reuse; source acknowledged; whitespace normalized and selected articles extracted."
+            }
+          },
+          "relevance": null,
+          "annotator": null,
+          "notes": null
+        }
+      ]
+    },
+    {
+      "query": {
+        "schema_version": "1.0",
+        "query_id": "de-erasure",
+        "text": "Wann besteht ein Recht der betroffenen Person auf Löschung?",
+        "language": "de",
+        "top_k": 10
+      },
+      "candidates": [
+        {
+          "chunk": {
+            "schema_version": "1.0",
+            "chunk_id": "gdpr-de-article-06:000003",
+            "document_id": "gdpr-de-article-06",
+            "text": "arbeitung, wie solche für sonstige besondere Verarbeitungssituationen gemäß Kapitel IX. Das Unionsrecht oder das Recht der Mitgliedstaaten müssen ein im öffentlichen Interesse liegendes Ziel verfolgen und in einem angemessenen Verhältnis zu dem verfolgten legitimen Zweck stehen. (4) Beruht die Verarbeitung zu einem anderen Zweck als zu demjenigen, zu dem die personenbezogenen Daten erhoben wurden, nicht auf der Einwilligung der betroffenen Person oder auf einer Rechtsvorschrift der Union oder der Mitgliedstaaten, die in einer demokratischen Gesellschaft eine notwendige und verhältnismäßige Maßnahme zum Schutz der in Artikel 23 Absatz 1 genannten Ziele darstellt, so berücksichtigt der Verantwortliche — um festzustellen, ob die Verarbeitung zu einem anderen Zweck mit demjenigen, zu dem die personenbezogenen Daten ursprünglich erhoben wurden, vereinbar ist — unter anderem a) jede Verbindung zwischen den Zwecken, für die die personenbezogenen Daten erhoben wurden, und den Zwecken der beabsichtigten Weiterverarbeitung, b) den Zusammenhang, in dem die personenbezogenen Daten erhoben wurden, insbesondere hinsichtlich des Verhältnisses zwischen den betroffenen Personen und dem Verantwortli",
+            "start_char": 3150,
+            "end_char": 4350,
+            "source": {
+              "uri": "https://eur-lex.europa.eu/eli/reg/2016/679/oj/deu",
+              "title": "Regulation (EU) 2016/679 — Article 6: Rechtmäßigkeit der Verarbeitung",
+              "language": "de",
+              "retrieved_at": "2026-10-31"
+            },
+            "metadata": {
+              "authority": "European Union Publications Office",
+              "celex": "32016R0679",
+              "article": 6,
+              "article_title": "Rechtmäßigkeit der Verarbeitung",
+              "reuse_notice": "EUR-Lex legal document reuse; source acknowledged; whitespace normalized and selected articles extracted."
+            }
+          },
+          "relevance": null,
+          "annotator": null,
+          "notes": null
+        },
+        {
+          "chunk": {
+            "schema_version": "1.0",
+            "chunk_id": "gdpr-de-article-12:000001",
+            "document_id": "gdpr-de-article-12",
+            "text": "rund des Antrags der betroffenen Person auf Wahrnehmung ihrer Rechte gemäß den Artikeln 15 bis 22 tätig zu werden, wenn er glaubhaft macht, dass er nicht in der Lage ist, die betroffene Person zu identifizieren. (3) Der Verantwortliche stellt der betroffenen Person Informationen über die auf Antrag gemäß den Artikeln 15 bis 22 ergriffenen Maßnahmen unverzüglich, in jedem Fall aber innerhalb eines Monats nach Eingang des Antrags zur Verfügung. Diese Frist kann um weitere zwei Monate verlängert werden, wenn dies unter Berücksichtigung der Komplexität und der Anzahl von Anträgen erforderlich ist. Der Verantwortliche unterrichtet die betroffene Person innerhalb eines Monats nach Eingang des Antrags über eine Fristverlängerung, zusammen mit den Gründen für die Verzögerung. Stellt die betroffene Person den Antrag elektronisch, so ist sie nach Möglichkeit auf elektronischem Weg zu unterrichten, sofern sie nichts anderes angibt. (4) Wird der Verantwortliche auf den Antrag der betroffenen Person hin nicht tätig, so unterrichtet er die betroffene Person ohne Verzögerung, spätestens aber innerhalb eines Monats nach Eingang des Antrags über die Gründe hierfür und über die Möglichkeit, bei eine",
+            "start_char": 1050,
+            "end_char": 2250,
+            "source": {
+              "uri": "https://eur-lex.europa.eu/eli/reg/2016/679/oj/deu",
+              "title": "Regulation (EU) 2016/679 — Article 12: Transparente Information, Kommunikation und Modalitäten für die Ausübung der Rechte der betroffenen Person",
+              "language": "de",
+              "retrieved_at": "2026-10-31"
+            },
+            "metadata": {
+              "authority": "European Union Publications Office",
+              "celex": "32016R0679",
+              "article": 12,
+              "article_title": "Transparente Information, Kommunikation und Modalitäten für die Ausübung der Rechte der betroffenen Person",
+              "reuse_notice": "EUR-Lex legal document reuse; source acknowledged; whitespace normalized and selected articles extracted."
+            }
+          },
+          "relevance": null,
+          "annotator": null,
+          "notes": null
+        },
+        {
+          "chunk": {
+            "schema_version": "1.0",
+            "chunk_id": "gdpr-de-article-13:000003",
+            "document_id": "gdpr-de-article-13",
+            "text": "rhoben wurden, so stellt er der betroffenen Person vor dieser Weiterverarbeitung Informationen über diesen anderen Zweck und alle anderen maßgeblichen Informationen gemäß Absatz 2 zur Verfügung. (4) Die Absätze 1, 2 und 3 finden keine Anwendung, wenn und soweit die betroffene Person bereits über die Informationen verfügt.",
+            "start_char": 3150,
+            "end_char": 3473,
+            "source": {
+              "uri": "https://eur-lex.europa.eu/eli/reg/2016/679/oj/deu",
+              "title": "Regulation (EU) 2016/679 — Article 13: Informationspflicht bei Erhebung von personenbezogenen Daten bei der betroffenen Person",
+              "language": "de",
+              "retrieved_at": "2026-10-31"
+            },
+            "metadata": {
+              "authority": "European Union Publications Office",
+              "celex": "32016R0679",
+              "article": 13,
+              "article_title": "Informationspflicht bei Erhebung von personenbezogenen Daten bei der betroffenen Person",
+              "reuse_notice": "EUR-Lex legal document reuse; source acknowledged; whitespace normalized and selected articles extracted."
+            }
+          },
+          "relevance": null,
+          "annotator": null,
+          "notes": null
+        },
+        {
+          "chunk": {
+            "schema_version": "1.0",
+            "chunk_id": "gdpr-de-article-15:000000",
+            "document_id": "gdpr-de-article-15",
+            "text": "Artikel 15 Auskunftsrecht der betroffenen Person (1) Die betroffene Person hat das Recht, von dem Verantwortlichen eine Bestätigung darüber zu verlangen, ob sie betreffende personenbezogene Daten verarbeitet werden; ist dies der Fall, so hat sie ein Recht auf Auskunft über diese personenbezogenen Daten und auf folgende Informationen: a) die Verarbeitungszwecke; b) die Kategorien personenbezogener Daten, die verarbeitet werden; c) die Empfänger oder Kategorien von Empfängern, gegenüber denen die personenbezogenen Daten offengelegt worden sind oder noch offengelegt werden, insbesondere bei Empfängern in Drittländern oder bei internationalen Organisationen; d) falls möglich die geplante Dauer, für die die personenbezogenen Daten gespeichert werden, oder, falls dies nicht möglich ist, die Kriterien für die Festlegung dieser Dauer; e) das Bestehen eines Rechts auf Berichtigung oder Löschung der sie betreffenden personenbezogenen Daten oder auf Einschränkung der Verarbeitung durch den Verantwortlichen oder eines Widerspruchsrechts gegen diese Verarbeitung; f) das Bestehen eines Beschwerderechts bei einer Aufsichtsbehörde; g) wenn die personenbezogenen Daten nicht bei der betroffenen Pers",
+            "start_char": 0,
+            "end_char": 1200,
+            "source": {
+              "uri": "https://eur-lex.europa.eu/eli/reg/2016/679/oj/deu",
+              "title": "Regulation (EU) 2016/679 — Article 15: Auskunftsrecht der betroffenen Person",
+              "language": "de",
+              "retrieved_at": "2026-10-31"
+            },
+            "metadata": {
+              "authority": "European Union Publications Office",
+              "celex": "32016R0679",
+              "article": 15,
+              "article_title": "Auskunftsrecht der betroffenen Person",
+              "reuse_notice": "EUR-Lex legal document reuse; source acknowledged; whitespace normalized and selected articles extracted."
+            }
+          },
+          "relevance": null,
+          "annotator": null,
+          "notes": null
+        },
+        {
+          "chunk": {
+            "schema_version": "1.0",
+            "chunk_id": "gdpr-de-article-15:000001",
+            "document_id": "gdpr-de-article-15",
+            "text": "se Verarbeitung; f) das Bestehen eines Beschwerderechts bei einer Aufsichtsbehörde; g) wenn die personenbezogenen Daten nicht bei der betroffenen Person erhoben werden, alle verfügbaren Informationen über die Herkunft der Daten; h) das Bestehen einer automatisierten Entscheidungsfindung einschließlich Profiling gemäß Artikel 22 Absätze 1 und 4 und — zumindest in diesen Fällen — aussagekräftige Informationen über die involvierte Logik sowie die Tragweite und die angestrebten Auswirkungen einer derartigen Verarbeitung für die betroffene Person. (2) Werden personenbezogene Daten an ein Drittland oder an eine internationale Organisation übermittelt, so hat die betroffene Person das Recht, über die geeigneten Garantien gemäß Artikel 46 im Zusammenhang mit der Übermittlung unterrichtet zu werden. (3) Der Verantwortliche stellt eine Kopie der personenbezogenen Daten, die Gegenstand der Verarbeitung sind, zur Verfügung. Für alle weiteren Kopien, die die betroffene Person beantragt, kann der Verantwortliche ein angemessenes Entgelt auf der Grundlage der Verwaltungskosten verlangen. Stellt die betroffene Person den Antrag elektronisch, so sind die Informationen in einem gängigen elektronisch",
+            "start_char": 1050,
+            "end_char": 2250,
+            "source": {
+              "uri": "https://eur-lex.europa.eu/eli/reg/2016/679/oj/deu",
+              "title": "Regulation (EU) 2016/679 — Article 15: Auskunftsrecht der betroffenen Person",
+              "language": "de",
+              "retrieved_at": "2026-10-31"
+            },
+            "metadata": {
+              "authority": "European Union Publications Office",
+              "celex": "32016R0679",
+              "article": 15,
+              "article_title": "Auskunftsrecht der betroffenen Person",
+              "reuse_notice": "EUR-Lex legal document reuse; source acknowledged; whitespace normalized and selected articles extracted."
+            }
+          },
+          "relevance": null,
+          "annotator": null,
+          "notes": null
+        },
+        {
+          "chunk": {
+            "schema_version": "1.0",
+            "chunk_id": "gdpr-de-article-17:000000",
+            "document_id": "gdpr-de-article-17",
+            "text": "Artikel 17 Recht auf Löschung („Recht auf Vergessenwerden“) (1) Die betroffene Person hat das Recht, von dem Verantwortlichen zu verlangen, dass sie betreffende personenbezogene Daten unverzüglich gelöscht werden, und der Verantwortliche ist verpflichtet, personenbezogene Daten unverzüglich zu löschen, sofern einer der folgenden Gründe zutrifft: a) Die personenbezogenen Daten sind für die Zwecke, für die sie erhoben oder auf sonstige Weise verarbeitet wurden, nicht mehr notwendig. b) Die betroffene Person widerruft ihre Einwilligung, auf die sich die Verarbeitung gemäß Artikel 6 Absatz 1 Buchstabe a oder Artikel 9 Absatz 2 Buchstabe a stützte, und es fehlt an einer anderweitigen Rechtsgrundlage für die Verarbeitung. c) Die betroffene Person legt gemäß Artikel 21 Absatz 1 Widerspruch gegen die Verarbeitung ein und es liegen keine vorrangigen berechtigten Gründe für die Verarbeitung vor, oder die betroffene Person legt gemäß Artikel 21 Absatz 2 Widerspruch gegen die Verarbeitung ein. d) Die personenbezogenen Daten wurden unrechtmäßig verarbeitet. e) Die Löschung der personenbezogenen Daten ist zur Erfüllung einer rechtlichen Verpflichtung nach dem Unionsrecht oder dem Recht der Mitgl",
+            "start_char": 0,
+            "end_char": 1200,
+            "source": {
+              "uri": "https://eur-lex.europa.eu/eli/reg/2016/679/oj/deu",
+              "title": "Regulation (EU) 2016/679 — Article 17: Recht auf Löschung („Recht auf Vergessenwerden“)",
+              "language": "de",
+              "retrieved_at": "2026-10-31"
+            },
+            "metadata": {
+              "authority": "European Union Publications Office",
+              "celex": "32016R0679",
+              "article": 17,
+              "article_title": "Recht auf Löschung („Recht auf Vergessenwerden“)",
+              "reuse_notice": "EUR-Lex legal document reuse; source acknowledged; whitespace normalized and selected articles extracted."
+            }
+          },
+          "relevance": null,
+          "annotator": null,
+          "notes": null
+        },
+        {
+          "chunk": {
+            "schema_version": "1.0",
+            "chunk_id": "gdpr-de-article-17:000001",
+            "document_id": "gdpr-de-article-17",
+            "text": "rarbeitet. e) Die Löschung der personenbezogenen Daten ist zur Erfüllung einer rechtlichen Verpflichtung nach dem Unionsrecht oder dem Recht der Mitgliedstaaten erforderlich, dem der Verantwortliche unterliegt. f) Die personenbezogenen Daten wurden in Bezug auf angebotene Dienste der Informationsgesellschaft gemäß Artikel 8 Absatz 1 erhoben. (2) Hat der Verantwortliche die personenbezogenen Daten öffentlich gemacht und ist er gemäß Absatz 1 zu deren Löschung verpflichtet, so trifft er unter Berücksichtigung der verfügbaren Technologie und der Implementierungskosten angemessene Maßnahmen, auch technischer Art, um für die Datenverarbeitung Verantwortliche, die die personenbezogenen Daten verarbeiten, darüber zu informieren, dass eine betroffene Person von ihnen die Löschung aller Links zu diesen personenbezogenen Daten oder von Kopien oder Replikationen dieser personenbezogenen Daten verlangt hat. (3) Die Absätze 1 und 2 gelten nicht, soweit die Verarbeitung erforderlich ist a) zur Ausübung des Rechts auf freie Meinungsäußerung und Information; b) zur Erfüllung einer rechtlichen Verpflichtung, die die Verarbeitung nach dem Recht der Union oder der Mitgliedstaaten, dem der Verantwortl",
+            "start_char": 1050,
+            "end_char": 2250,
+            "source": {
+              "uri": "https://eur-lex.europa.eu/eli/reg/2016/679/oj/deu",
+              "title": "Regulation (EU) 2016/679 — Article 17: Recht auf Löschung („Recht auf Vergessenwerden“)",
+              "language": "de",
+              "retrieved_at": "2026-10-31"
+            },
+            "metadata": {
+              "authority": "European Union Publications Office",
+              "celex": "32016R0679",
+              "article": 17,
+              "article_title": "Recht auf Löschung („Recht auf Vergessenwerden“)",
+              "reuse_notice": "EUR-Lex legal document reuse; source acknowledged; whitespace normalized and selected articles extracted."
+            }
+          },
+          "relevance": null,
+          "annotator": null,
+          "notes": null
+        }
+      ]
+    },
+    {
+      "query": {
+        "schema_version": "1.0",
+        "query_id": "de-access",
+        "text": "Welche Informationen erhält die betroffene Person durch das Auskunftsrecht?",
+        "language": "de",
+        "top_k": 10
+      },
+      "candidates": [
+        {
+          "chunk": {
+            "schema_version": "1.0",
+            "chunk_id": "gdpr-de-article-06:000002",
+            "document_id": "gdpr-de-article-06",
+            "text": " der Verantwortliche unterliegt. Der Zweck der Verarbeitung muss in dieser Rechtsgrundlage festgelegt oder hinsichtlich der Verarbeitung gemäß Absatz 1 Buchstabe e für die Erfüllung einer Aufgabe erforderlich sein, die im öffentlichen Interesse liegt oder in Ausübung öffentlicher Gewalt erfolgt, die dem Verantwortlichen übertragen wurde. Diese Rechtsgrundlage kann spezifische Bestimmungen zur Anpassung der Anwendung der Vorschriften dieser Verordnung enthalten, unter anderem Bestimmungen darüber, welche allgemeinen Bedingungen für die Regelung der Rechtmäßigkeit der Verarbeitung durch den Verantwortlichen gelten, welche Arten von Daten verarbeitet werden, welche Personen betroffen sind, an welche Einrichtungen und für welche Zwecke die personenbezogenen Daten offengelegt werden dürfen, welcher Zweckbindung sie unterliegen, wie lange sie gespeichert werden dürfen und welche Verarbeitungsvorgänge und -verfahren angewandt werden dürfen, einschließlich Maßnahmen zur Gewährleistung einer rechtmäßig und nach Treu und Glauben erfolgenden Verarbeitung, wie solche für sonstige besondere Verarbeitungssituationen gemäß Kapitel IX. Das Unionsrecht oder das Recht der Mitgliedstaaten müssen ein ",
+            "start_char": 2100,
+            "end_char": 3300,
+            "source": {
+              "uri": "https://eur-lex.europa.eu/eli/reg/2016/679/oj/deu",
+              "title": "Regulation (EU) 2016/679 — Article 6: Rechtmäßigkeit der Verarbeitung",
+              "language": "de",
+              "retrieved_at": "2026-10-31"
+            },
+            "metadata": {
+              "authority": "European Union Publications Office",
+              "celex": "32016R0679",
+              "article": 6,
+              "article_title": "Rechtmäßigkeit der Verarbeitung",
+              "reuse_notice": "EUR-Lex legal document reuse; source acknowledged; whitespace normalized and selected articles extracted."
+            }
+          },
+          "relevance": null,
+          "annotator": null,
+          "notes": null
+        },
+        {
+          "chunk": {
+            "schema_version": "1.0",
+            "chunk_id": "gdpr-de-article-12:000000",
+            "document_id": "gdpr-de-article-12",
+            "text": "Artikel 12 Transparente Information, Kommunikation und Modalitäten für die Ausübung der Rechte der betroffenen Person (1) Der Verantwortliche trifft geeignete Maßnahmen, um der betroffenen Person alle Informationen gemäß den Artikeln 13 und 14 und alle Mitteilungen gemäß den Artikeln 15 bis 22 und Artikel 34, die sich auf die Verarbeitung beziehen, in präziser, transparenter, verständlicher und leicht zugänglicher Form in einer klaren und einfachen Sprache zu übermitteln; dies gilt insbesondere für Informationen, die sich speziell an Kinder richten. Die Übermittlung der Informationen erfolgt schriftlich oder in anderer Form, gegebenenfalls auch elektronisch. Falls von der betroffenen Person verlangt, kann die Information mündlich erteilt werden, sofern die Identität der betroffenen Person in anderer Form nachgewiesen wurde. (2) Der Verantwortliche erleichtert der betroffenen Person die Ausübung ihrer Rechte gemäß den Artikeln 15 bis 22. In den in Artikel 11 Absatz 2 genannten Fällen darf sich der Verantwortliche nur dann weigern, aufgrund des Antrags der betroffenen Person auf Wahrnehmung ihrer Rechte gemäß den Artikeln 15 bis 22 tätig zu werden, wenn er glaubhaft macht, dass er ni",
+            "start_char": 0,
+            "end_char": 1200,
+            "source": {
+              "uri": "https://eur-lex.europa.eu/eli/reg/2016/679/oj/deu",
+              "title": "Regulation (EU) 2016/679 — Article 12: Transparente Information, Kommunikation und Modalitäten für die Ausübung der Rechte der betroffenen Person",
+              "language": "de",
+              "retrieved_at": "2026-10-31"
+            },
+            "metadata": {
+              "authority": "European Union Publications Office",
+              "celex": "32016R0679",
+              "article": 12,
+              "article_title": "Transparente Information, Kommunikation und Modalitäten für die Ausübung der Rechte der betroffenen Person",
+              "reuse_notice": "EUR-Lex legal document reuse; source acknowledged; whitespace normalized and selected articles extracted."
+            }
+          },
+          "relevance": null,
+          "annotator": null,
+          "notes": null
+        },
+        {
+          "chunk": {
+            "schema_version": "1.0",
+            "chunk_id": "gdpr-de-article-13:000000",
+            "document_id": "gdpr-de-article-13",
+            "text": "Artikel 13 Informationspflicht bei Erhebung von personenbezogenen Daten bei der betroffenen Person (1) Werden personenbezogene Daten bei der betroffenen Person erhoben, so teilt der Verantwortliche der betroffenen Person zum Zeitpunkt der Erhebung dieser Daten Folgendes mit: a) den Namen und die Kontaktdaten des Verantwortlichen sowie gegebenenfalls seines Vertreters; b) gegebenenfalls die Kontaktdaten des Datenschutzbeauftragten; c) die Zwecke, für die die personenbezogenen Daten verarbeitet werden sollen, sowie die Rechtsgrundlage für die Verarbeitung; d) wenn die Verarbeitung auf Artikel 6 Absatz 1 Buchstabe f beruht, die berechtigten Interessen, die von dem Verantwortlichen oder einem Dritten verfolgt werden; e) gegebenenfalls die Empfänger oder Kategorien von Empfängern der personenbezogenen Daten und f) gegebenenfalls die Absicht des Verantwortlichen, die personenbezogenen Daten an ein Drittland oder eine internationale Organisation zu übermitteln, sowie das Vorhandensein oder das Fehlen eines Angemessenheitsbeschlusses der Kommission oder im Falle von Übermittlungen gemäß Artikel 46 oder Artikel 47 oder Artikel 49 Absatz 1 Unterabsatz 2 einen Verweis auf die geeigneten oder ",
+            "start_char": 0,
+            "end_char": 1200,
+            "source": {
+              "uri": "https://eur-lex.europa.eu/eli/reg/2016/679/oj/deu",
+              "title": "Regulation (EU) 2016/679 — Article 13: Informationspflicht bei Erhebung von personenbezogenen Daten bei der betroffenen Person",
+              "language": "de",
+              "retrieved_at": "2026-10-31"
+            },
+            "metadata": {
+              "authority": "European Union Publications Office",
+              "celex": "32016R0679",
+              "article": 13,
+              "article_title": "Informationspflicht bei Erhebung von personenbezogenen Daten bei der betroffenen Person",
+              "reuse_notice": "EUR-Lex legal document reuse; source acknowledged; whitespace normalized and selected articles extracted."
+            }
+          },
+          "relevance": null,
+          "annotator": null,
+          "notes": null
+        },
+        {
+          "chunk": {
+            "schema_version": "1.0",
+            "chunk_id": "gdpr-de-article-13:000002",
+            "document_id": "gdpr-de-article-13",
+            "text": "Absatz 2 Buchstabe a beruht, das Bestehen eines Rechts, die Einwilligung jederzeit zu widerrufen, ohne dass die Rechtmäßigkeit der aufgrund der Einwilligung bis zum Widerruf erfolgten Verarbeitung berührt wird; d) das Bestehen eines Beschwerderechts bei einer Aufsichtsbehörde; e) ob die Bereitstellung der personenbezogenen Daten gesetzlich oder vertraglich vorgeschrieben oder für einen Vertragsabschluss erforderlich ist, ob die betroffene Person verpflichtet ist, die personenbezogenen Daten bereitzustellen, und welche mögliche Folgen die Nichtbereitstellung hätte und f) das Bestehen einer automatisierten Entscheidungsfindung einschließlich Profiling gemäß Artikel 22 Absätze 1 und 4 und — zumindest in diesen Fällen — aussagekräftige Informationen über die involvierte Logik sowie die Tragweite und die angestrebten Auswirkungen einer derartigen Verarbeitung für die betroffene Person. (3) Beabsichtigt der Verantwortliche, die personenbezogenen Daten für einen anderen Zweck weiterzuverarbeiten als den, für den die personenbezogenen Daten erhoben wurden, so stellt er der betroffenen Person vor dieser Weiterverarbeitung Informationen über diesen anderen Zweck und alle anderen maßgeblichen",
+            "start_char": 2100,
+            "end_char": 3300,
+            "source": {
+              "uri": "https://eur-lex.europa.eu/eli/reg/2016/679/oj/deu",
+              "title": "Regulation (EU) 2016/679 — Article 13: Informationspflicht bei Erhebung von personenbezogenen Daten bei der betroffenen Person",
+              "language": "de",
+              "retrieved_at": "2026-10-31"
+            },
+            "metadata": {
+              "authority": "European Union Publications Office",
+              "celex": "32016R0679",
+              "article": 13,
+              "article_title": "Informationspflicht bei Erhebung von personenbezogenen Daten bei der betroffenen Person",
+              "reuse_notice": "EUR-Lex legal document reuse; source acknowledged; whitespace normalized and selected articles extracted."
+            }
+          },
+          "relevance": null,
+          "annotator": null,
+          "notes": null
+        },
+        {
+          "chunk": {
+            "schema_version": "1.0",
+            "chunk_id": "gdpr-de-article-13:000003",
+            "document_id": "gdpr-de-article-13",
+            "text": "rhoben wurden, so stellt er der betroffenen Person vor dieser Weiterverarbeitung Informationen über diesen anderen Zweck und alle anderen maßgeblichen Informationen gemäß Absatz 2 zur Verfügung. (4) Die Absätze 1, 2 und 3 finden keine Anwendung, wenn und soweit die betroffene Person bereits über die Informationen verfügt.",
+            "start_char": 3150,
+            "end_char": 3473,
+            "source": {
+              "uri": "https://eur-lex.europa.eu/eli/reg/2016/679/oj/deu",
+              "title": "Regulation (EU) 2016/679 — Article 13: Informationspflicht bei Erhebung von personenbezogenen Daten bei der betroffenen Person",
+              "language": "de",
+              "retrieved_at": "2026-10-31"
+            },
+            "metadata": {
+              "authority": "European Union Publications Office",
+              "celex": "32016R0679",
+              "article": 13,
+              "article_title": "Informationspflicht bei Erhebung von personenbezogenen Daten bei der betroffenen Person",
+              "reuse_notice": "EUR-Lex legal document reuse; source acknowledged; whitespace normalized and selected articles extracted."
+            }
+          },
+          "relevance": null,
+          "annotator": null,
+          "notes": null
+        },
+        {
+          "chunk": {
+            "schema_version": "1.0",
+            "chunk_id": "gdpr-de-article-15:000000",
+            "document_id": "gdpr-de-article-15",
+            "text": "Artikel 15 Auskunftsrecht der betroffenen Person (1) Die betroffene Person hat das Recht, von dem Verantwortlichen eine Bestätigung darüber zu verlangen, ob sie betreffende personenbezogene Daten verarbeitet werden; ist dies der Fall, so hat sie ein Recht auf Auskunft über diese personenbezogenen Daten und auf folgende Informationen: a) die Verarbeitungszwecke; b) die Kategorien personenbezogener Daten, die verarbeitet werden; c) die Empfänger oder Kategorien von Empfängern, gegenüber denen die personenbezogenen Daten offengelegt worden sind oder noch offengelegt werden, insbesondere bei Empfängern in Drittländern oder bei internationalen Organisationen; d) falls möglich die geplante Dauer, für die die personenbezogenen Daten gespeichert werden, oder, falls dies nicht möglich ist, die Kriterien für die Festlegung dieser Dauer; e) das Bestehen eines Rechts auf Berichtigung oder Löschung der sie betreffenden personenbezogenen Daten oder auf Einschränkung der Verarbeitung durch den Verantwortlichen oder eines Widerspruchsrechts gegen diese Verarbeitung; f) das Bestehen eines Beschwerderechts bei einer Aufsichtsbehörde; g) wenn die personenbezogenen Daten nicht bei der betroffenen Pers",
+            "start_char": 0,
+            "end_char": 1200,
+            "source": {
+              "uri": "https://eur-lex.europa.eu/eli/reg/2016/679/oj/deu",
+              "title": "Regulation (EU) 2016/679 — Article 15: Auskunftsrecht der betroffenen Person",
+              "language": "de",
+              "retrieved_at": "2026-10-31"
+            },
+            "metadata": {
+              "authority": "European Union Publications Office",
+              "celex": "32016R0679",
+              "article": 15,
+              "article_title": "Auskunftsrecht der betroffenen Person",
+              "reuse_notice": "EUR-Lex legal document reuse; source acknowledged; whitespace normalized and selected articles extracted."
+            }
+          },
+          "relevance": null,
+          "annotator": null,
+          "notes": null
+        },
+        {
+          "chunk": {
+            "schema_version": "1.0",
+            "chunk_id": "gdpr-de-article-15:000001",
+            "document_id": "gdpr-de-article-15",
+            "text": "se Verarbeitung; f) das Bestehen eines Beschwerderechts bei einer Aufsichtsbehörde; g) wenn die personenbezogenen Daten nicht bei der betroffenen Person erhoben werden, alle verfügbaren Informationen über die Herkunft der Daten; h) das Bestehen einer automatisierten Entscheidungsfindung einschließlich Profiling gemäß Artikel 22 Absätze 1 und 4 und — zumindest in diesen Fällen — aussagekräftige Informationen über die involvierte Logik sowie die Tragweite und die angestrebten Auswirkungen einer derartigen Verarbeitung für die betroffene Person. (2) Werden personenbezogene Daten an ein Drittland oder an eine internationale Organisation übermittelt, so hat die betroffene Person das Recht, über die geeigneten Garantien gemäß Artikel 46 im Zusammenhang mit der Übermittlung unterrichtet zu werden. (3) Der Verantwortliche stellt eine Kopie der personenbezogenen Daten, die Gegenstand der Verarbeitung sind, zur Verfügung. Für alle weiteren Kopien, die die betroffene Person beantragt, kann der Verantwortliche ein angemessenes Entgelt auf der Grundlage der Verwaltungskosten verlangen. Stellt die betroffene Person den Antrag elektronisch, so sind die Informationen in einem gängigen elektronisch",
+            "start_char": 1050,
+            "end_char": 2250,
+            "source": {
+              "uri": "https://eur-lex.europa.eu/eli/reg/2016/679/oj/deu",
+              "title": "Regulation (EU) 2016/679 — Article 15: Auskunftsrecht der betroffenen Person",
+              "language": "de",
+              "retrieved_at": "2026-10-31"
+            },
+            "metadata": {
+              "authority": "European Union Publications Office",
+              "celex": "32016R0679",
+              "article": 15,
+              "article_title": "Auskunftsrecht der betroffenen Person",
+              "reuse_notice": "EUR-Lex legal document reuse; source acknowledged; whitespace normalized and selected articles extracted."
+            }
+          },
+          "relevance": null,
+          "annotator": null,
+          "notes": null
+        },
+        {
+          "chunk": {
+            "schema_version": "1.0",
+            "chunk_id": "gdpr-de-article-15:000002",
+            "document_id": "gdpr-de-article-15",
+            "text": "ndlage der Verwaltungskosten verlangen. Stellt die betroffene Person den Antrag elektronisch, so sind die Informationen in einem gängigen elektronischen Format zur Verfügung zu stellen, sofern sie nichts anderes angibt. (4) Das Recht auf Erhalt einer Kopie gemäß Absatz 1b darf die Rechte und Freiheiten anderer Personen nicht beeinträchtigen.",
+            "start_char": 2100,
+            "end_char": 2443,
+            "source": {
+              "uri": "https://eur-lex.europa.eu/eli/reg/2016/679/oj/deu",
+              "title": "Regulation (EU) 2016/679 — Article 15: Auskunftsrecht der betroffenen Person",
+              "language": "de",
+              "retrieved_at": "2026-10-31"
+            },
+            "metadata": {
+              "authority": "European Union Publications Office",
+              "celex": "32016R0679",
+              "article": 15,
+              "article_title": "Auskunftsrecht der betroffenen Person",
+              "reuse_notice": "EUR-Lex legal document reuse; source acknowledged; whitespace normalized and selected articles extracted."
+            }
+          },
+          "relevance": null,
+          "annotator": null,
+          "notes": null
+        }
+      ]
+    },
+    {
+      "query": {
+        "schema_version": "1.0",
+        "query_id": "fr-portability",
+        "text": "Que comprend le droit à la portabilité des données?",
+        "language": "fr",
+        "top_k": 10
+      },
+      "candidates": [
+        {
+          "chunk": {
+            "schema_version": "1.0",
+            "chunk_id": "gdpr-en-article-20:000000",
+            "document_id": "gdpr-en-article-20",
+            "text": "Article 20 Right to data portability 1. The data subject shall have the right to receive the personal data concerning him or her, which he or she has provided to a controller, in a structured, commonly used and machine-readable format and have the right to transmit those data to another controller without hindrance from the controller to which the personal data have been provided, where: (a) the processing is based on consent pursuant to point (a) of Article 6(1) or point (a) of Article 9(2) or on a contract pursuant to point (b) of Article 6(1); and (b) the processing is carried out by automated means. 2. In exercising his or her right to data portability pursuant to paragraph 1, the data subject shall have the right to have the personal data transmitted directly from one controller to another, where technically feasible. 3. The exercise of the right referred to in paragraph 1 of this Article shall be without prejudice to Article 17. That right shall not apply to processing necessary for the performance of a task carried out in the public interest or in the exercise of official authority vested in the controller. 4. The right referred to in paragraph 1 shall not adversely affect t",
+            "start_char": 0,
+            "end_char": 1200,
+            "source": {
+              "uri": "https://eur-lex.europa.eu/eli/reg/2016/679/oj/eng",
+              "title": "Regulation (EU) 2016/679 — Article 20: Right to data portability",
+              "language": "en",
+              "retrieved_at": "2026-10-31"
+            },
+            "metadata": {
+              "authority": "European Union Publications Office",
+              "celex": "32016R0679",
+              "article": 20,
+              "article_title": "Right to data portability",
+              "reuse_notice": "EUR-Lex legal document reuse; source acknowledged; whitespace normalized and selected articles extracted."
+            }
+          },
+          "relevance": null,
+          "annotator": null,
+          "notes": null
+        },
+        {
+          "chunk": {
+            "schema_version": "1.0",
+            "chunk_id": "gdpr-fr-article-13:000001",
+            "document_id": "gdpr-fr-article-13",
+            "text": " d'effectuer un transfert de données à caractère personnel vers un pays tiers ou à une organisation internationale, et l'existence ou l'absence d'une décision d'adéquation rendue par la Commission ou, dans le cas des transferts visés à l'article 46 ou 47, ou à l'article 49, paragraphe 1, deuxième alinéa, la référence aux garanties appropriées ou adaptées et les moyens d'en obtenir une copie ou l'endroit où elles ont été mises à disposition; 2. En plus des informations visées au paragraphe 1, le responsable du traitement fournit à la personne concernée, au moment où les données à caractère personnel sont obtenues, les informations complémentaires suivantes qui sont nécessaires pour garantir un traitement équitable et transparent: a) la durée de conservation des données à caractère personnel ou, lorsque ce n'est pas possible, les critères utilisés pour déterminer cette durée; b) l'existence du droit de demander au responsable du traitement l'accès aux données à caractère personnel, la rectification ou l'effacement de celles-ci, ou une limitation du traitement relatif à la personne concernée, ou du droit de s'opposer au traitement et du droit à la portabilité des données; c) lorsque l",
+            "start_char": 1050,
+            "end_char": 2250,
+            "source": {
+              "uri": "https://eur-lex.europa.eu/eli/reg/2016/679/oj/fra",
+              "title": "Regulation (EU) 2016/679 — Article 13: Informations à fournir lorsque des données à caractère personnel sont collectées auprès de la personne concernée",
+              "language": "fr",
+              "retrieved_at": "2026-10-31"
+            },
+            "metadata": {
+              "authority": "European Union Publications Office",
+              "celex": "32016R0679",
+              "article": 13,
+              "article_title": "Informations à fournir lorsque des données à caractère personnel sont collectées auprès de la personne concernée",
+              "reuse_notice": "EUR-Lex legal document reuse; source acknowledged; whitespace normalized and selected articles extracted."
+            }
+          },
+          "relevance": null,
+          "annotator": null,
+          "notes": null
+        },
+        {
+          "chunk": {
+            "schema_version": "1.0",
+            "chunk_id": "gdpr-fr-article-13:000002",
+            "document_id": "gdpr-fr-article-13",
+            "text": "imitation du traitement relatif à la personne concernée, ou du droit de s'opposer au traitement et du droit à la portabilité des données; c) lorsque le traitement est fondé sur l'article 6, paragraphe 1, point a), ou sur l'article 9, paragraphe 2, point a), l'existence du droit de retirer son consentement à tout moment, sans porter atteinte à la licéité du traitement fondé sur le consentement effectué avant le retrait de celui-ci; d) le droit d'introduire une réclamation auprès d'une autorité de contrôle; e) des informations sur la question de savoir si l'exigence de fourniture de données à caractère personnel a un caractère réglementaire ou contractuel ou si elle conditionne la conclusion d'un contrat et si la personne concernée est tenue de fournir les données à caractère personnel, ainsi que sur les conséquences éventuelles de la non-fourniture de ces données; f) l'existence d'une prise de décision automatisée, y compris un profilage, visée à l'article 22, paragraphes 1 et 4, et, au moins en pareils cas, des informations utiles concernant la logique sous-jacente, ainsi que l'importance et les conséquences prévues de ce traitement pour la personne concernée. 3. Lorsqu'il a l'inte",
+            "start_char": 2100,
+            "end_char": 3300,
+            "source": {
+              "uri": "https://eur-lex.europa.eu/eli/reg/2016/679/oj/fra",
+              "title": "Regulation (EU) 2016/679 — Article 13: Informations à fournir lorsque des données à caractère personnel sont collectées auprès de la personne concernée",
+              "language": "fr",
+              "retrieved_at": "2026-10-31"
+            },
+            "metadata": {
+              "authority": "European Union Publications Office",
+              "celex": "32016R0679",
+              "article": 13,
+              "article_title": "Informations à fournir lorsque des données à caractère personnel sont collectées auprès de la personne concernée",
+              "reuse_notice": "EUR-Lex legal document reuse; source acknowledged; whitespace normalized and selected articles extracted."
+            }
+          },
+          "relevance": null,
+          "annotator": null,
+          "notes": null
+        },
+        {
+          "chunk": {
+            "schema_version": "1.0",
+            "chunk_id": "gdpr-fr-article-15:000000",
+            "document_id": "gdpr-fr-article-15",
+            "text": "Article 15 Droit d'accès de la personne concernée 1. La personne concernée a le droit d'obtenir du responsable du traitement la confirmation que des données à caractère personnel la concernant sont ou ne sont pas traitées et, lorsqu'elles le sont, l'accès auxdites données à caractère personnel ainsi que les informations suivantes: a) les finalités du traitement; b) les catégories de données à caractère personnel concernées; c) les destinataires ou catégories de destinataires auxquels les données à caractère personnel ont été ou seront communiquées, en particulier les destinataires qui sont établis dans des pays tiers ou les organisations internationales; d) lorsque cela est possible, la durée de conservation des données à caractère personnel envisagée ou, lorsque ce n'est pas possible, les critères utilisés pour déterminer cette durée; e) l'existence du droit de demander au responsable du traitement la rectification ou l'effacement de données à caractère personnel, ou une limitation du traitement des données à caractère personnel relatives à la personne concernée, ou du droit de s'opposer à ce traitement; f) le droit d'introduire une réclamation auprès d'une autorité de contrôle; g",
+            "start_char": 0,
+            "end_char": 1200,
+            "source": {
+              "uri": "https://eur-lex.europa.eu/eli/reg/2016/679/oj/fra",
+              "title": "Regulation (EU) 2016/679 — Article 15: Droit d'accès de la personne concernée",
+              "language": "fr",
+              "retrieved_at": "2026-10-31"
+            },
+            "metadata": {
+              "authority": "European Union Publications Office",
+              "celex": "32016R0679",
+              "article": 15,
+              "article_title": "Droit d'accès de la personne concernée",
+              "reuse_notice": "EUR-Lex legal document reuse; source acknowledged; whitespace normalized and selected articles extracted."
+            }
+          },
+          "relevance": null,
+          "annotator": null,
+          "notes": null
+        },
+        {
+          "chunk": {
+            "schema_version": "1.0",
+            "chunk_id": "gdpr-fr-article-20:000000",
+            "document_id": "gdpr-fr-article-20",
+            "text": "Article 20 Droit à la portabilité des données 1. Les personnes concernées ont le droit de recevoir les données à caractère personnel les concernant qu'elles ont fournies à un responsable du traitement, dans un format structuré, couramment utilisé et lisible par machine, et ont le droit de transmettre ces données à un autre responsable du traitement sans que le responsable du traitement auquel les données à caractère personnel ont été communiquées y fasse obstacle, lorsque: a) le traitement est fondé sur le consentement en application de l'article 6, paragraphe 1, point a), ou de l'article 9, paragraphe 2, point a), ou sur un contrat en application de l'article 6, paragraphe 1, point b); et b) le traitement est effectué à l'aide de procédés automatisés. 2. Lorsque la personne concernée exerce son droit à la portabilité des données en application du paragraphe 1, elle a le droit d'obtenir que les données à caractère personnel soient transmises directement d'un responsable du traitement à un autre, lorsque cela est techniquement possible. 3. L'exercice du droit, visé au paragraphe 1 du présent article s'entend sans préjudice de l'article 17. Ce droit ne s'applique pas au traitement né",
+            "start_char": 0,
+            "end_char": 1200,
+            "source": {
+              "uri": "https://eur-lex.europa.eu/eli/reg/2016/679/oj/fra",
+              "title": "Regulation (EU) 2016/679 — Article 20: Droit à la portabilité des données",
+              "language": "fr",
+              "retrieved_at": "2026-10-31"
+            },
+            "metadata": {
+              "authority": "European Union Publications Office",
+              "celex": "32016R0679",
+              "article": 20,
+              "article_title": "Droit à la portabilité des données",
+              "reuse_notice": "EUR-Lex legal document reuse; source acknowledged; whitespace normalized and selected articles extracted."
+            }
+          },
+          "relevance": null,
+          "annotator": null,
+          "notes": null
+        },
+        {
+          "chunk": {
+            "schema_version": "1.0",
+            "chunk_id": "gdpr-fr-article-35:000004",
+            "document_id": "gdpr-fr-article-35",
+            "text": "dans le droit de l'Union ou dans le droit de l'État membre auquel le responsable du traitement est soumis, que ce droit règlemente l'opération de traitement spécifique ou l'ensemble des opérations de traitement en question et qu'une analyse d'impact relative à la protection des données a déjà été effectuée dans le cadre d'une analyse d'impact générale réalisée dans le cadre de l'adoption de la base juridique en question, les paragraphes 1 à 7 ne s'appliquent pas, à moins que les États membres n'estiment qu'il est nécessaire d'effectuer une telle analyse avant les activités de traitement. 11. Si nécessaire, le responsable du traitement procède à un examen afin d'évaluer si le traitement est effectué conformément à l'analyse d'impact relative à la protection des données, au moins quand il se produit une modification du risque présenté par les opérations de traitement.",
+            "start_char": 4200,
+            "end_char": 5078,
+            "source": {
+              "uri": "https://eur-lex.europa.eu/eli/reg/2016/679/oj/fra",
+              "title": "Regulation (EU) 2016/679 — Article 35: Analyse d'impact relative à la protection des données",
+              "language": "fr",
+              "retrieved_at": "2026-10-31"
+            },
+            "metadata": {
+              "authority": "European Union Publications Office",
+              "celex": "32016R0679",
+              "article": 35,
+              "article_title": "Analyse d'impact relative à la protection des données",
+              "reuse_notice": "EUR-Lex legal document reuse; source acknowledged; whitespace normalized and selected articles extracted."
+            }
+          },
+          "relevance": null,
+          "annotator": null,
+          "notes": null
+        }
+      ]
+    },
+    {
+      "query": {
+        "schema_version": "1.0",
+        "query_id": "fr-security",
+        "text": "Quelles mesures de sécurité les responsables du traitement et les sous-traitants doivent-ils mettre en œuvre?",
+        "language": "fr",
+        "top_k": 10
+      },
+      "candidates": [
+        {
+          "chunk": {
+            "schema_version": "1.0",
+            "chunk_id": "gdpr-fr-article-05:000002",
+            "document_id": "gdpr-fr-article-05",
+            "text": "e mesures techniques ou organisationnelles appropriées (intégrité et confidentialité); 2. Le responsable du traitement est responsable du respect du paragraphe 1 et est en mesure de démontrer que celui-ci est respecté (responsabilité).",
+            "start_char": 2100,
+            "end_char": 2335,
+            "source": {
+              "uri": "https://eur-lex.europa.eu/eli/reg/2016/679/oj/fra",
+              "title": "Regulation (EU) 2016/679 — Article 5: Principes relatifs au traitement des données à caractère personnel",
+              "language": "fr",
+              "retrieved_at": "2026-10-31"
+            },
+            "metadata": {
+              "authority": "European Union Publications Office",
+              "celex": "32016R0679",
+              "article": 5,
+              "article_title": "Principes relatifs au traitement des données à caractère personnel",
+              "reuse_notice": "EUR-Lex legal document reuse; source acknowledged; whitespace normalized and selected articles extracted."
+            }
+          },
+          "relevance": null,
+          "annotator": null,
+          "notes": null
+        },
+        {
+          "chunk": {
+            "schema_version": "1.0",
+            "chunk_id": "gdpr-fr-article-17:000001",
+            "document_id": "gdpr-fr-article-17",
+            "text": "rsonnel ont fait l'objet d'un traitement illicite; e) les données à caractère personnel doivent être effacées pour respecter une obligation légale qui est prévue par le droit de l'Union ou par le droit de l'État membre auquel le responsable du traitement est soumis; f) les données à caractère personnel ont été collectées dans le cadre de l'offre de services de la société de l'information visée à l'article 8, paragraphe 1. 2. Lorsqu'il a rendu publiques les données à caractère personnel et qu'il est tenu de les effacer en vertu du paragraphe 1, le responsable du traitement, compte tenu des technologies disponibles et des coûts de mise en œuvre, prend des mesures raisonnables, y compris d'ordre technique, pour informer les responsables du traitement qui traitent ces données à caractère personnel que la personne concernée a demandé l'effacement par ces responsables du traitement de tout lien vers ces données à caractère personnel, ou de toute copie ou reproduction de celles-ci. 3. Les paragraphes 1 et 2 ne s'appliquent pas dans la mesure où ce traitement est nécessaire: a) à l'exercice du droit à la liberté d'expression et d'information; b) pour respecter une obligation légale qui req",
+            "start_char": 1050,
+            "end_char": 2250,
+            "source": {
+              "uri": "https://eur-lex.europa.eu/eli/reg/2016/679/oj/fra",
+              "title": "Regulation (EU) 2016/679 — Article 17: Droit à l'effacement («droit à l'oubli»)",
+              "language": "fr",
+              "retrieved_at": "2026-10-31"
+            },
+            "metadata": {
+              "authority": "European Union Publications Office",
+              "celex": "32016R0679",
+              "article": 17,
+              "article_title": "Droit à l'effacement («droit à l'oubli»)",
+              "reuse_notice": "EUR-Lex legal document reuse; source acknowledged; whitespace normalized and selected articles extracted."
+            }
+          },
+          "relevance": null,
+          "annotator": null,
+          "notes": null
+        },
+        {
+          "chunk": {
+            "schema_version": "1.0",
+            "chunk_id": "gdpr-fr-article-25:000000",
+            "document_id": "gdpr-fr-article-25",
+            "text": "Article 25 Protection des données dès la conception et protection des données par défaut 1. Compte tenu de l'état des connaissances, des coûts de mise en œuvre et de la nature, de la portée, du contexte et des finalités du traitement ainsi que des risques, dont le degré de probabilité et de gravité varie, que présente le traitement pour les droits et libertés des personnes physiques, le responsable du traitement met en œuvre, tant au moment de la détermination des moyens du traitement qu'au moment du traitement lui-même, des mesures techniques et organisationnelles appropriées, telles que la pseudonymisation, qui sont destinées à mettre en œuvre les principes relatifs à la protection des données, par exemple la minimisation des données, de façon effective et à assortir le traitement des garanties nécessaires afin de répondre aux exigences du présent règlement et de protéger les droits de la personne concernée. 2. Le responsable du traitement met en œuvre les mesures techniques et organisationnelles appropriées pour garantir que, par défaut, seules les données à caractère personnel qui sont nécessaires au regard de chaque finalité spécifique du traitement sont traitées. Cela s'appli",
+            "start_char": 0,
+            "end_char": 1200,
+            "source": {
+              "uri": "https://eur-lex.europa.eu/eli/reg/2016/679/oj/fra",
+              "title": "Regulation (EU) 2016/679 — Article 25: Protection des données dès la conception et protection des données par défaut",
+              "language": "fr",
+              "retrieved_at": "2026-10-31"
+            },
+            "metadata": {
+              "authority": "European Union Publications Office",
+              "celex": "32016R0679",
+              "article": 25,
+              "article_title": "Protection des données dès la conception et protection des données par défaut",
+              "reuse_notice": "EUR-Lex legal document reuse; source acknowledged; whitespace normalized and selected articles extracted."
+            }
+          },
+          "relevance": null,
+          "annotator": null,
+          "notes": null
+        },
+        {
+          "chunk": {
+            "schema_version": "1.0",
+            "chunk_id": "gdpr-fr-article-30:000001",
+            "document_id": "gdpr-fr-article-30",
+            "text": " le cas des transferts visés à l'article 49, paragraphe 1, deuxième alinéa, les documents attestant de l'existence de garanties appropriées; f) dans la mesure du possible, les délais prévus pour l'effacement des différentes catégories de données; g) dans la mesure du possible, une description générale des mesures de sécurité techniques et organisationnelles visées à l'article 32, paragraphe 1. 2. Chaque sous-traitant et, le cas échéant, le représentant du sous-traitant tiennent un registre de toutes les catégories d'activités de traitement effectuées pour le compte du responsable du traitement, comprenant: a) le nom et les coordonnées du ou des sous-traitants et de chaque responsable du traitement pour le compte duquel le sous-traitant agit ainsi que, le cas échéant, les noms et les coordonnées du représentant du responsable du traitement ou du sous-traitant et celles du délégué à la protection des données; b) les catégories de traitements effectués pour le compte de chaque responsable du traitement; c) le cas échéant, les transferts de données à caractère personnel vers un pays tiers ou à une organisation internationale, y compris l'identification de ce pays tiers ou de cette orga",
+            "start_char": 1050,
+            "end_char": 2250,
+            "source": {
+              "uri": "https://eur-lex.europa.eu/eli/reg/2016/679/oj/fra",
+              "title": "Regulation (EU) 2016/679 — Article 30: Registre des activités de traitement",
+              "language": "fr",
+              "retrieved_at": "2026-10-31"
+            },
+            "metadata": {
+              "authority": "European Union Publications Office",
+              "celex": "32016R0679",
+              "article": 30,
+              "article_title": "Registre des activités de traitement",
+              "reuse_notice": "EUR-Lex legal document reuse; source acknowledged; whitespace normalized and selected articles extracted."
+            }
+          },
+          "relevance": null,
+          "annotator": null,
+          "notes": null
+        },
+        {
+          "chunk": {
+            "schema_version": "1.0",
+            "chunk_id": "gdpr-fr-article-32:000000",
+            "document_id": "gdpr-fr-article-32",
+            "text": "Article 32 Sécurité du traitement 1. Compte tenu de l'état des connaissances, des coûts de mise en œuvre et de la nature, de la portée, du contexte et des finalités du traitement ainsi que des risques, dont le degré de probabilité et de gravité varie, pour les droits et libertés des personnes physiques, le responsable du traitement et le sous-traitant mettent en œuvre les mesures techniques et organisationnelles appropriées afin de garantir un niveau de sécurité adapté au risque, y compris entre autres, selon les besoins: a) la pseudonymisation et le chiffrement des données à caractère personnel; b) des moyens permettant de garantir la confidentialité, l'intégrité, la disponibilité et la résilience constantes des systèmes et des services de traitement; c) des moyens permettant de rétablir la disponibilité des données à caractère personnel et l'accès à celles-ci dans des délais appropriés en cas d'incident physique ou technique; d) une procédure visant à tester, à analyser et à évaluer régulièrement l'efficacité des mesures techniques et organisationnelles pour assurer la sécurité du traitement. 2. Lors de l'évaluation du niveau de sécurité approprié, il est tenu compte en particuli",
+            "start_char": 0,
+            "end_char": 1200,
+            "source": {
+              "uri": "https://eur-lex.europa.eu/eli/reg/2016/679/oj/fra",
+              "title": "Regulation (EU) 2016/679 — Article 32: Sécurité du traitement",
+              "language": "fr",
+              "retrieved_at": "2026-10-31"
+            },
+            "metadata": {
+              "authority": "European Union Publications Office",
+              "celex": "32016R0679",
+              "article": 32,
+              "article_title": "Sécurité du traitement",
+              "reuse_notice": "EUR-Lex legal document reuse; source acknowledged; whitespace normalized and selected articles extracted."
+            }
+          },
+          "relevance": null,
+          "annotator": null,
+          "notes": null
+        },
+        {
+          "chunk": {
+            "schema_version": "1.0",
+            "chunk_id": "gdpr-fr-article-32:000001",
+            "document_id": "gdpr-fr-article-32",
+            "text": "et organisationnelles pour assurer la sécurité du traitement. 2. Lors de l'évaluation du niveau de sécurité approprié, il est tenu compte en particulier des risques que présente le traitement, résultant notamment de la destruction, de la perte, de l'altération, de la divulgation non autorisée de données à caractère personnel transmises, conservées ou traitées d'une autre manière, ou de l'accès non autorisé à de telles données, de manière accidentelle ou illicite. 3. L'application d'un code de conduite approuvé comme le prévoit l'article 40 ou d'un mécanisme de certification approuvé comme le prévoit l'article 42 peut servir d'élément pour démontrer le respect des exigences prévues au paragraphe 1 du présent article. 4. Le responsable du traitement et le sous-traitant prennent des mesures afin de garantir que toute personne physique agissant sous l'autorité du responsable du traitement ou sous celle du sous-traitant, qui a accès à des données à caractère personnel, ne les traite pas, excepté sur instruction du responsable du traitement, à moins d'y être obligée par le droit de l'Union ou le droit d'un État membre.",
+            "start_char": 1050,
+            "end_char": 2180,
+            "source": {
+              "uri": "https://eur-lex.europa.eu/eli/reg/2016/679/oj/fra",
+              "title": "Regulation (EU) 2016/679 — Article 32: Sécurité du traitement",
+              "language": "fr",
+              "retrieved_at": "2026-10-31"
+            },
+            "metadata": {
+              "authority": "European Union Publications Office",
+              "celex": "32016R0679",
+              "article": 32,
+              "article_title": "Sécurité du traitement",
+              "reuse_notice": "EUR-Lex legal document reuse; source acknowledged; whitespace normalized and selected articles extracted."
+            }
+          },
+          "relevance": null,
+          "annotator": null,
+          "notes": null
+        },
+        {
+          "chunk": {
+            "schema_version": "1.0",
+            "chunk_id": "gdpr-fr-article-35:000003",
+            "document_id": "gdpr-fr-article-35",
+            "text": "risques, y compris les garanties, mesures et mécanismes de sécurité visant à assurer la protection des données à caractère personnel et à apporter la preuve du respect du présent règlement, compte tenu des droits et des intérêts légitimes des personnes concernées et des autres personnes affectées. 8. Le respect, par les responsables du traitement ou sous-traitants concernés, de codes de conduite approuvés visés à l'article 40 est dûment pris en compte lors de l'évaluation de l'impact des opérations de traitement effectuées par lesdits responsables du traitement ou sous-traitants, en particulier aux fins d'une analyse d'impact relative à la protection des données. 9. Le cas échéant, le responsable du traitement demande l'avis des personnes concernées ou de leurs représentants au sujet du traitement prévu, sans préjudice de la protection des intérêts généraux ou commerciaux ou de la sécurité des opérations de traitement. 10. Lorsque le traitement effectué en application de l'article 6, paragraphe 1, point c) ou e), a une base juridique dans le droit de l'Union ou dans le droit de l'État membre auquel le responsable du traitement est soumis, que ce droit règlemente l'opération de trai",
+            "start_char": 3150,
+            "end_char": 4350,
+            "source": {
+              "uri": "https://eur-lex.europa.eu/eli/reg/2016/679/oj/fra",
+              "title": "Regulation (EU) 2016/679 — Article 35: Analyse d'impact relative à la protection des données",
+              "language": "fr",
+              "retrieved_at": "2026-10-31"
+            },
+            "metadata": {
+              "authority": "European Union Publications Office",
+              "celex": "32016R0679",
+              "article": 35,
+              "article_title": "Analyse d'impact relative à la protection des données",
+              "reuse_notice": "EUR-Lex legal document reuse; source acknowledged; whitespace normalized and selected articles extracted."
+            }
+          },
+          "relevance": null,
+          "annotator": null,
+          "notes": null
+        }
+      ]
+    },
+    {
+      "query": {
+        "schema_version": "1.0",
+        "query_id": "de-accounting-retention",
+        "text": "Welche feste Aufbewahrungsfrist für Buchhaltungsunterlagen schreibt die DSGVO vor?",
+        "language": "de",
+        "top_k": 10
+      },
+      "candidates": [
+        {
+          "chunk": {
+            "schema_version": "1.0",
+            "chunk_id": "gdpr-de-article-05:000001",
+            "document_id": "gdpr-de-article-05",
+            "text": "hrer Verarbeitung unrichtig sind, unverzüglich gelöscht oder berichtigt werden („Richtigkeit“); e) in einer Form gespeichert werden, die die Identifizierung der betroffenen Personen nur so lange ermöglicht, wie es für die Zwecke, für die sie verarbeitet werden, erforderlich ist; personenbezogene Daten dürfen länger gespeichert werden, soweit die personenbezogenen Daten vorbehaltlich der Durchführung geeigneter technischer und organisatorischer Maßnahmen, die von dieser Verordnung zum Schutz der Rechte und Freiheiten der betroffenen Person gefordert werden, ausschließlich für im öffentlichen Interesse liegende Archivzwecke oder für wissenschaftliche und historische Forschungszwecke oder für statistische Zwecke gemäß Artikel 89 Absatz 1 verarbeitet werden („Speicherbegrenzung“); f) in einer Weise verarbeitet werden, die eine angemessene Sicherheit der personenbezogenen Daten gewährleistet, einschließlich Schutz vor unbefugter oder unrechtmäßiger Verarbeitung und vor unbeabsichtigtem Verlust, unbeabsichtigter Zerstörung oder unbeabsichtigter Schädigung durch geeignete technische und organisatorische Maßnahmen („Integrität und Vertraulichkeit“); (2) Der Verantwortliche ist für die Einh",
+            "start_char": 1050,
+            "end_char": 2250,
+            "source": {
+              "uri": "https://eur-lex.europa.eu/eli/reg/2016/679/oj/deu",
+              "title": "Regulation (EU) 2016/679 — Article 5: Grundsätze für die Verarbeitung personenbezogener Daten",
+              "language": "de",
+              "retrieved_at": "2026-10-31"
+            },
+            "metadata": {
+              "authority": "European Union Publications Office",
+              "celex": "32016R0679",
+              "article": 5,
+              "article_title": "Grundsätze für die Verarbeitung personenbezogener Daten",
+              "reuse_notice": "EUR-Lex legal document reuse; source acknowledged; whitespace normalized and selected articles extracted."
+            }
+          },
+          "relevance": null,
+          "annotator": null,
+          "notes": null
+        },
+        {
+          "chunk": {
+            "schema_version": "1.0",
+            "chunk_id": "gdpr-de-article-06:000002",
+            "document_id": "gdpr-de-article-06",
+            "text": " der Verantwortliche unterliegt. Der Zweck der Verarbeitung muss in dieser Rechtsgrundlage festgelegt oder hinsichtlich der Verarbeitung gemäß Absatz 1 Buchstabe e für die Erfüllung einer Aufgabe erforderlich sein, die im öffentlichen Interesse liegt oder in Ausübung öffentlicher Gewalt erfolgt, die dem Verantwortlichen übertragen wurde. Diese Rechtsgrundlage kann spezifische Bestimmungen zur Anpassung der Anwendung der Vorschriften dieser Verordnung enthalten, unter anderem Bestimmungen darüber, welche allgemeinen Bedingungen für die Regelung der Rechtmäßigkeit der Verarbeitung durch den Verantwortlichen gelten, welche Arten von Daten verarbeitet werden, welche Personen betroffen sind, an welche Einrichtungen und für welche Zwecke die personenbezogenen Daten offengelegt werden dürfen, welcher Zweckbindung sie unterliegen, wie lange sie gespeichert werden dürfen und welche Verarbeitungsvorgänge und -verfahren angewandt werden dürfen, einschließlich Maßnahmen zur Gewährleistung einer rechtmäßig und nach Treu und Glauben erfolgenden Verarbeitung, wie solche für sonstige besondere Verarbeitungssituationen gemäß Kapitel IX. Das Unionsrecht oder das Recht der Mitgliedstaaten müssen ein ",
+            "start_char": 2100,
+            "end_char": 3300,
+            "source": {
+              "uri": "https://eur-lex.europa.eu/eli/reg/2016/679/oj/deu",
+              "title": "Regulation (EU) 2016/679 — Article 6: Rechtmäßigkeit der Verarbeitung",
+              "language": "de",
+              "retrieved_at": "2026-10-31"
+            },
+            "metadata": {
+              "authority": "European Union Publications Office",
+              "celex": "32016R0679",
+              "article": 6,
+              "article_title": "Rechtmäßigkeit der Verarbeitung",
+              "reuse_notice": "EUR-Lex legal document reuse; source acknowledged; whitespace normalized and selected articles extracted."
+            }
+          },
+          "relevance": null,
+          "annotator": null,
+          "notes": null
+        },
+        {
+          "chunk": {
+            "schema_version": "1.0",
+            "chunk_id": "gdpr-de-article-13:000001",
+            "document_id": "gdpr-de-article-13",
+            "text": "ission oder im Falle von Übermittlungen gemäß Artikel 46 oder Artikel 47 oder Artikel 49 Absatz 1 Unterabsatz 2 einen Verweis auf die geeigneten oder angemessenen Garantien und die Möglichkeit, wie eine Kopie von ihnen zu erhalten ist, oder wo sie verfügbar sind. (2) Zusätzlich zu den Informationen gemäß Absatz 1 stellt der Verantwortliche der betroffenen Person zum Zeitpunkt der Erhebung dieser Daten folgende weitere Informationen zur Verfügung, die notwendig sind, um eine faire und transparente Verarbeitung zu gewährleisten: a) die Dauer, für die die personenbezogenen Daten gespeichert werden oder, falls dies nicht möglich ist, die Kriterien für die Festlegung dieser Dauer; b) das Bestehen eines Rechts auf Auskunft seitens des Verantwortlichen über die betreffenden personenbezogenen Daten sowie auf Berichtigung oder Löschung oder auf Einschränkung der Verarbeitung oder eines Widerspruchsrechts gegen die Verarbeitung sowie des Rechts auf Datenübertragbarkeit; c) wenn die Verarbeitung auf Artikel 6 Absatz 1 Buchstabe a oder Artikel 9 Absatz 2 Buchstabe a beruht, das Bestehen eines Rechts, die Einwilligung jederzeit zu widerrufen, ohne dass die Rechtmäßigkeit der aufgrund der Einwil",
+            "start_char": 1050,
+            "end_char": 2250,
+            "source": {
+              "uri": "https://eur-lex.europa.eu/eli/reg/2016/679/oj/deu",
+              "title": "Regulation (EU) 2016/679 — Article 13: Informationspflicht bei Erhebung von personenbezogenen Daten bei der betroffenen Person",
+              "language": "de",
+              "retrieved_at": "2026-10-31"
+            },
+            "metadata": {
+              "authority": "European Union Publications Office",
+              "celex": "32016R0679",
+              "article": 13,
+              "article_title": "Informationspflicht bei Erhebung von personenbezogenen Daten bei der betroffenen Person",
+              "reuse_notice": "EUR-Lex legal document reuse; source acknowledged; whitespace normalized and selected articles extracted."
+            }
+          },
+          "relevance": null,
+          "annotator": null,
+          "notes": null
+        },
+        {
+          "chunk": {
+            "schema_version": "1.0",
+            "chunk_id": "gdpr-de-article-13:000002",
+            "document_id": "gdpr-de-article-13",
+            "text": "Absatz 2 Buchstabe a beruht, das Bestehen eines Rechts, die Einwilligung jederzeit zu widerrufen, ohne dass die Rechtmäßigkeit der aufgrund der Einwilligung bis zum Widerruf erfolgten Verarbeitung berührt wird; d) das Bestehen eines Beschwerderechts bei einer Aufsichtsbehörde; e) ob die Bereitstellung der personenbezogenen Daten gesetzlich oder vertraglich vorgeschrieben oder für einen Vertragsabschluss erforderlich ist, ob die betroffene Person verpflichtet ist, die personenbezogenen Daten bereitzustellen, und welche mögliche Folgen die Nichtbereitstellung hätte und f) das Bestehen einer automatisierten Entscheidungsfindung einschließlich Profiling gemäß Artikel 22 Absätze 1 und 4 und — zumindest in diesen Fällen — aussagekräftige Informationen über die involvierte Logik sowie die Tragweite und die angestrebten Auswirkungen einer derartigen Verarbeitung für die betroffene Person. (3) Beabsichtigt der Verantwortliche, die personenbezogenen Daten für einen anderen Zweck weiterzuverarbeiten als den, für den die personenbezogenen Daten erhoben wurden, so stellt er der betroffenen Person vor dieser Weiterverarbeitung Informationen über diesen anderen Zweck und alle anderen maßgeblichen",
+            "start_char": 2100,
+            "end_char": 3300,
+            "source": {
+              "uri": "https://eur-lex.europa.eu/eli/reg/2016/679/oj/deu",
+              "title": "Regulation (EU) 2016/679 — Article 13: Informationspflicht bei Erhebung von personenbezogenen Daten bei der betroffenen Person",
+              "language": "de",
+              "retrieved_at": "2026-10-31"
+            },
+            "metadata": {
+              "authority": "European Union Publications Office",
+              "celex": "32016R0679",
+              "article": 13,
+              "article_title": "Informationspflicht bei Erhebung von personenbezogenen Daten bei der betroffenen Person",
+              "reuse_notice": "EUR-Lex legal document reuse; source acknowledged; whitespace normalized and selected articles extracted."
+            }
+          },
+          "relevance": null,
+          "annotator": null,
+          "notes": null
+        },
+        {
+          "chunk": {
+            "schema_version": "1.0",
+            "chunk_id": "gdpr-de-article-17:000000",
+            "document_id": "gdpr-de-article-17",
+            "text": "Artikel 17 Recht auf Löschung („Recht auf Vergessenwerden“) (1) Die betroffene Person hat das Recht, von dem Verantwortlichen zu verlangen, dass sie betreffende personenbezogene Daten unverzüglich gelöscht werden, und der Verantwortliche ist verpflichtet, personenbezogene Daten unverzüglich zu löschen, sofern einer der folgenden Gründe zutrifft: a) Die personenbezogenen Daten sind für die Zwecke, für die sie erhoben oder auf sonstige Weise verarbeitet wurden, nicht mehr notwendig. b) Die betroffene Person widerruft ihre Einwilligung, auf die sich die Verarbeitung gemäß Artikel 6 Absatz 1 Buchstabe a oder Artikel 9 Absatz 2 Buchstabe a stützte, und es fehlt an einer anderweitigen Rechtsgrundlage für die Verarbeitung. c) Die betroffene Person legt gemäß Artikel 21 Absatz 1 Widerspruch gegen die Verarbeitung ein und es liegen keine vorrangigen berechtigten Gründe für die Verarbeitung vor, oder die betroffene Person legt gemäß Artikel 21 Absatz 2 Widerspruch gegen die Verarbeitung ein. d) Die personenbezogenen Daten wurden unrechtmäßig verarbeitet. e) Die Löschung der personenbezogenen Daten ist zur Erfüllung einer rechtlichen Verpflichtung nach dem Unionsrecht oder dem Recht der Mitgl",
+            "start_char": 0,
+            "end_char": 1200,
+            "source": {
+              "uri": "https://eur-lex.europa.eu/eli/reg/2016/679/oj/deu",
+              "title": "Regulation (EU) 2016/679 — Article 17: Recht auf Löschung („Recht auf Vergessenwerden“)",
+              "language": "de",
+              "retrieved_at": "2026-10-31"
+            },
+            "metadata": {
+              "authority": "European Union Publications Office",
+              "celex": "32016R0679",
+              "article": 17,
+              "article_title": "Recht auf Löschung („Recht auf Vergessenwerden“)",
+              "reuse_notice": "EUR-Lex legal document reuse; source acknowledged; whitespace normalized and selected articles extracted."
+            }
+          },
+          "relevance": null,
+          "annotator": null,
+          "notes": null
+        },
+        {
+          "chunk": {
+            "schema_version": "1.0",
+            "chunk_id": "gdpr-de-article-30:000000",
+            "document_id": "gdpr-de-article-30",
+            "text": "Artikel 30 Verzeichnis von Verarbeitungstätigkeiten (1) Jeder Verantwortliche und gegebenenfalls sein Vertreter führen ein Verzeichnis aller Verarbeitungstätigkeiten, die ihrer Zuständigkeit unterliegen. Dieses Verzeichnis enthält sämtliche folgenden Angaben: a) den Namen und die Kontaktdaten des Verantwortlichen und gegebenenfalls des gemeinsam mit ihm Verantwortlichen, des Vertreters des Verantwortlichen sowie eines etwaigen Datenschutzbeauftragten; b) die Zwecke der Verarbeitung; c) eine Beschreibung der Kategorien betroffener Personen und der Kategorien personenbezogener Daten; d) die Kategorien von Empfängern, gegenüber denen die personenbezogenen Daten offengelegt worden sind oder noch offengelegt werden, einschließlich Empfänger in Drittländern oder internationalen Organisationen; e) gegebenenfalls Übermittlungen von personenbezogenen Daten an ein Drittland oder an eine internationale Organisation, einschließlich der Angabe des betreffenden Drittlands oder der betreffenden internationalen Organisation, sowie bei den in Artikel 49 Absatz 1 Unterabsatz 2 genannten Datenübermittlungen die Dokumentierung geeigneter Garantien; f) wenn möglich, die vorgesehenen Fristen für die Lös",
+            "start_char": 0,
+            "end_char": 1200,
+            "source": {
+              "uri": "https://eur-lex.europa.eu/eli/reg/2016/679/oj/deu",
+              "title": "Regulation (EU) 2016/679 — Article 30: Verzeichnis von Verarbeitungstätigkeiten",
+              "language": "de",
+              "retrieved_at": "2026-10-31"
+            },
+            "metadata": {
+              "authority": "European Union Publications Office",
+              "celex": "32016R0679",
+              "article": 30,
+              "article_title": "Verzeichnis von Verarbeitungstätigkeiten",
+              "reuse_notice": "EUR-Lex legal document reuse; source acknowledged; whitespace normalized and selected articles extracted."
+            }
+          },
+          "relevance": null,
+          "annotator": null,
+          "notes": null
+        },
+        {
+          "chunk": {
+            "schema_version": "1.0",
+            "chunk_id": "gdpr-de-article-33:000000",
+            "document_id": "gdpr-de-article-33",
+            "text": "Artikel 33 Meldung von Verletzungen des Schutzes personenbezogener Daten an die Aufsichtsbehörde (1) Im Falle einer Verletzung des Schutzes personenbezogener Daten meldet der Verantwortliche unverzüglich und möglichst binnen 72 Stunden, nachdem ihm die Verletzung bekannt wurde, diese der gemäß Artikel 51 zuständigen Aufsichtsbehörde, es sei denn, dass die Verletzung des Schutzes personenbezogener Daten voraussichtlich nicht zu einem Risiko für die Rechte und Freiheiten natürlicher Personen führt. Erfolgt die Meldung an die Aufsichtsbehörde nicht binnen 72 Stunden, so ist ihr eine Begründung für die Verzögerung beizufügen. (2) Wenn dem Auftragsverarbeiter eine Verletzung des Schutzes personenbezogener Daten bekannt wird, meldet er diese dem Verantwortlichen unverzüglich. (3) Die Meldung gemäß Absatz 1 enthält zumindest folgende Informationen: a) eine Beschreibung der Art der Verletzung des Schutzes personenbezogener Daten, soweit möglich mit Angabe der Kategorien und der ungefähren Zahl der betroffenen Personen, der betroffenen Kategorien und der ungefähren Zahl der betroffenen personenbezogenen Datensätze; b) den Namen und die Kontaktdaten des Datenschutzbeauftragten oder einer son",
+            "start_char": 0,
+            "end_char": 1200,
+            "source": {
+              "uri": "https://eur-lex.europa.eu/eli/reg/2016/679/oj/deu",
+              "title": "Regulation (EU) 2016/679 — Article 33: Meldung von Verletzungen des Schutzes personenbezogener Daten an die Aufsichtsbehörde",
+              "language": "de",
+              "retrieved_at": "2026-10-31"
+            },
+            "metadata": {
+              "authority": "European Union Publications Office",
+              "celex": "32016R0679",
+              "article": 33,
+              "article_title": "Meldung von Verletzungen des Schutzes personenbezogener Daten an die Aufsichtsbehörde",
+              "reuse_notice": "EUR-Lex legal document reuse; source acknowledged; whitespace normalized and selected articles extracted."
+            }
+          },
+          "relevance": null,
+          "annotator": null,
+          "notes": null
+        },
+        {
+          "chunk": {
+            "schema_version": "1.0",
+            "chunk_id": "gdpr-de-article-33:000001",
+            "document_id": "gdpr-de-article-33",
+            "text": "ien und der ungefähren Zahl der betroffenen personenbezogenen Datensätze; b) den Namen und die Kontaktdaten des Datenschutzbeauftragten oder einer sonstigen Anlaufstelle für weitere Informationen; c) eine Beschreibung der wahrscheinlichen Folgen der Verletzung des Schutzes personenbezogener Daten; d) eine Beschreibung der von dem Verantwortlichen ergriffenen oder vorgeschlagenen Maßnahmen zur Behebung der Verletzung des Schutzes personenbezogener Daten und gegebenenfalls Maßnahmen zur Abmilderung ihrer möglichen nachteiligen Auswirkungen. (4) Wenn und soweit die Informationen nicht zur gleichen Zeit bereitgestellt werden können, kann der Verantwortliche diese Informationen ohne unangemessene weitere Verzögerung schrittweise zur Verfügung stellen. (5) Der Verantwortliche dokumentiert Verletzungen des Schutzes personenbezogener Daten einschließlich aller im Zusammenhang mit der Verletzung des Schutzes personenbezogener Daten stehenden Fakten, von deren Auswirkungen und der ergriffenen Abhilfemaßnahmen. Diese Dokumentation muss der Aufsichtsbehörde die Überprüfung der Einhaltung der Bestimmungen dieses Artikels ermöglichen.",
+            "start_char": 1050,
+            "end_char": 2188,
+            "source": {
+              "uri": "https://eur-lex.europa.eu/eli/reg/2016/679/oj/deu",
+              "title": "Regulation (EU) 2016/679 — Article 33: Meldung von Verletzungen des Schutzes personenbezogener Daten an die Aufsichtsbehörde",
+              "language": "de",
+              "retrieved_at": "2026-10-31"
+            },
+            "metadata": {
+              "authority": "European Union Publications Office",
+              "celex": "32016R0679",
+              "article": 33,
+              "article_title": "Meldung von Verletzungen des Schutzes personenbezogener Daten an die Aufsichtsbehörde",
+              "reuse_notice": "EUR-Lex legal document reuse; source acknowledged; whitespace normalized and selected articles extracted."
+            }
+          },
+          "relevance": null,
+          "annotator": null,
+          "notes": null
+        },
+        {
+          "chunk": {
+            "schema_version": "1.0",
+            "chunk_id": "gdpr-de-article-35:000001",
+            "document_id": "gdpr-de-article-35",
+            "text": "heidungen dient, die Rechtswirkung gegenüber natürlichen Personen entfalten oder diese in ähnlich erheblicher Weise beeinträchtigen; b) umfangreiche Verarbeitung besonderer Kategorien von personenbezogenen Daten gemäß Artikel 9 Absatz 1 oder von personenbezogenen Daten über strafrechtliche Verurteilungen und Straftaten gemäß Artikel 10 oder c) systematische umfangreiche Überwachung öffentlich zugänglicher Bereiche. (4) Die Aufsichtsbehörde erstellt eine Liste der Verarbeitungsvorgänge, für die gemäß Absatz 1 eine Datenschutz-Folgenabschätzung durchzuführen ist, und veröffentlicht diese. Die Aufsichtsbehörde übermittelt diese Listen dem in Artikel 68 genannten Ausschuss. (5) Die Aufsichtsbehörde kann des Weiteren eine Liste der Arten von Verarbeitungsvorgängen erstellen und veröffentlichen, für die keine Datenschutz-Folgenabschätzung erforderlich ist. Die Aufsichtsbehörde übermittelt diese Listen dem Ausschuss. (6) Vor Festlegung der in den Absätzen 4 und 5 genannten Listen wendet die zuständige Aufsichtsbehörde das Kohärenzverfahren gemäß Artikel 63 an, wenn solche Listen Verarbeitungstätigkeiten umfassen, die mit dem Angebot von Waren oder Dienstleistungen für betroffene Personen ",
+            "start_char": 1050,
+            "end_char": 2250,
+            "source": {
+              "uri": "https://eur-lex.europa.eu/eli/reg/2016/679/oj/deu",
+              "title": "Regulation (EU) 2016/679 — Article 35: Datenschutz-Folgenabschätzung",
+              "language": "de",
+              "retrieved_at": "2026-10-31"
+            },
+            "metadata": {
+              "authority": "European Union Publications Office",
+              "celex": "32016R0679",
+              "article": 35,
+              "article_title": "Datenschutz-Folgenabschätzung",
+              "reuse_notice": "EUR-Lex legal document reuse; source acknowledged; whitespace normalized and selected articles extracted."
+            }
+          },
+          "relevance": null,
+          "annotator": null,
+          "notes": null
+        }
+      ]
+    }
+  ]
+}

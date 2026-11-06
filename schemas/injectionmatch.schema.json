@@ -1,0 +1,29 @@
+{
+  "additionalProperties": false,
+  "description": "One heuristic injection-rule match without reproducing attack text.",
+  "properties": {
+    "rule_id": {
+      "minLength": 1,
+      "title": "Rule Id",
+      "type": "string"
+    },
+    "start_char": {
+      "minimum": 0,
+      "title": "Start Char",
+      "type": "integer"
+    },
+    "end_char": {
+      "minimum": 1,
+      "title": "End Char",
+      "type": "integer"
+    }
+  },
+  "required": [
+    "rule_id",
+    "start_char",
+    "end_char"
+  ],
+  "title": "InjectionMatch",
+  "type": "object",
+  "$id": "https://example.test/evidence-rag/schemas/injectionmatch.schema.json"
+}

@@ -1,0 +1,48 @@
+{
+  "schema_version": "1.0",
+  "corpus_id": "gdpr-selected-articles-multilingual-v1",
+  "source_url": "https://publications.europa.eu/resource/celex/32016R0679",
+  "retrieved_at": "2026-10-31",
+  "articles": [
+    5,
+    6,
+    12,
+    13,
+    15,
+    17,
+    20,
+    25,
+    30,
+    32,
+    33,
+    35
+  ],
+  "languages": [
+    "en",
+    "de",
+    "fr"
+  ],
+  "documents": 36,
+  "chunks": 112,
+  "queries": 30,
+  "answerable_queries": 27,
+  "unanswerable_queries": 3,
+  "label_source": "benchmark",
+  "source_snapshots": {
+    "en": {
+      "path": "raw/gdpr-en.xhtml",
+      "sha256": "962539af03738bf552319ff4ce42d69e5f95a576307c4dfed7bf87e81b646b9d"
+    },
+    "de": {
+      "path": "raw/gdpr-de.xhtml",
+      "sha256": "219040a03cea829785c9f9752dcab9bfcee7b3c012092f5da8567640a816116d"
+    },
+    "fr": {
+      "path": "raw/gdpr-fr.xhtml",
+      "sha256": "27a2248cf0cf7c79a3ec7eae30b6e871817230d9f577632fed915181642144c2"
+    }
+  },
+  "chunks_sha256": "46e3e5899975674b5852e42df690f71d7b3ba1ffe66a543e665dfd31a97e95bc",
+  "license_notice": "https://eur-lex.europa.eu/content/legal-notice/legal-notice.html",
+  "changes": "Selected articles extracted and layout whitespace normalized; no legal text paraphrased."
+}

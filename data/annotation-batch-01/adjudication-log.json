@@ -1,0 +1,56 @@
+{
+  "schema_version": "1.0",
+  "batch_id": "batch-01",
+  "review_type": "owner-approved-relevance-scale-review",
+  "reviewed_at": "2026-10-30",
+  "guidelines_version": "1.0",
+  "corpus_sha256": "d1154a5ce141c2e1d9c70583050e3059d1fb066649753773e8a85d1e7afd45e3",
+  "decision": "Six chunks that directly answer the central request were revised from 2 Relevant to 3 Essential.",
+  "annotator_ids_preserved": true,
+  "original_submission_copy": "artifacts/annotations-submitted.txt",
+  "scope_limit": "This log records the later scale review; it does not reconstruct independent pre-adjudication annotations.",
+  "changes": [
+    {
+      "query_id": "batch01-en-invoice",
+      "chunk_id": "fr-invoice:000000",
+      "previous_relevance": 2,
+      "revised_relevance": 3,
+      "rationale": "The chunk directly lists the invoice fields requested by the query."
+    },
+    {
+      "query_id": "batch01-de-security",
+      "chunk_id": "en-security:000000",
+      "previous_relevance": 2,
+      "revised_relevance": 3,
+      "rationale": "The chunk directly identifies instructions inside retrieved documents as untrusted data."
+    },
+    {
+      "query_id": "batch01-fr-retention",
+      "chunk_id": "de-retention:000000",
+      "previous_relevance": 2,
+      "revised_relevance": 3,
+      "rationale": "The chunk directly answers the requested retention period: ten years."
+    },
+    {
+      "query_id": "batch01-fr-retention",
+      "chunk_id": "en-retention:000000",
+      "previous_relevance": 2,
+      "revised_relevance": 3,
+      "rationale": "The chunk directly answers the requested retention period: ten years."
+    },
+    {
+      "query_id": "batch01-tr-retention",
+      "chunk_id": "de-retention:000000",
+      "previous_relevance": 2,
+      "revised_relevance": 3,
+      "rationale": "The chunk directly answers the requested retention period: ten years."
+    },
+    {
+      "query_id": "batch01-tr-retention",
+      "chunk_id": "en-retention:000000",
+      "previous_relevance": 2,
+      "revised_relevance": 3,
+      "rationale": "The chunk directly answers the requested retention period: ten years."
+    }
+  ]
+}

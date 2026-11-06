@@ -1,0 +1,67 @@
+{
+  "additionalProperties": false,
+  "description": "A deterministic answer-or-abstain decision and its triggering reason.",
+  "properties": {
+    "action": {
+      "enum": [
+        "answer",
+        "abstain"
+      ],
+      "title": "Action",
+      "type": "string"
+    },
+    "reason": {
+      "minLength": 1,
+      "title": "Reason",
+      "type": "string"
+    },
+    "top_score": {
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Top Score"
+    },
+    "min_top_score": {
+      "title": "Min Top Score",
+      "type": "number"
+    },
+    "top_chunk_id": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Top Chunk Id"
+    },
+    "citation_fully_supported": {
+      "anyOf": [
+        {
+          "type": "boolean"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Citation Fully Supported"
+    }
+  },
+  "required": [
+    "action",
+    "reason",
+    "min_top_score"
+  ],
+  "title": "SelectiveDecision",
+  "type": "object",
+  "$id": "https://example.test/evidence-rag/schemas/selectivedecision.schema.json"
+}

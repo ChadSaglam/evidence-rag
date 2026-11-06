@@ -1,0 +1,44 @@
+{
+  "schema_version": "1.0",
+  "policy_id": "dense-e5-small-batch01-zero-risk-v1",
+  "status": "frozen_for_independent_evaluation",
+  "frozen_at": "2026-10-30",
+  "min_top_score": 0.822904370645214,
+  "top_k": 1,
+  "require_citations": true,
+  "decision_rule": "Answer only when top_score >= min_top_score, then require full citation support.",
+  "retriever": {
+    "method": "dense",
+    "model": "intfloat/multilingual-e5-small",
+    "model_revision": "614241f622f53c4eeff9890bdc4f31cfecc418b3",
+    "query_prefix": "query: ",
+    "passage_prefix": "passage: ",
+    "normalize_embeddings": true
+  },
+  "calibration": {
+    "split": "development",
+    "gold_set": "human-evidence-batch-01-development",
+    "gold_set_sha256": "05dae36a84a1c63cd60089500da63258e806fc091473215dae33898448a53d5c",
+    "report": "artifacts/selective-calibration-dense.json",
+    "report_sha256": "6400f6db726531e9e55ff8767c38229cdb73540c801f1f7bee3cfa2c3192ed7f",
+    "max_risk": 0.0,
+    "coverage": 0.2,
+    "selective_accuracy": 1.0,
+    "wrong_answer_rate": 0.0
+  },
+  "corpus": {
+    "name": "synthetic-multilingual-smoke-corpus-v1",
+    "chunks_sha256": "d1154a5ce141c2e1d9c70583050e3059d1fb066649753773e8a85d1e7afd45e3"
+  },
+  "evaluation": {
+    "split": "test",
+    "batch_id": "batch-02",
+    "status": "evaluation_completed",
+    "completed_at": "2026-10-31",
+    "gold_set": "artifacts/human-gold-batch-02.json",
+    "gold_set_sha256": "1ba689cbb3038b860e506425b09f736e7cd699edb62647fa99a9e4b5e5b491cd",
+    "report": "artifacts/selective-evaluation-batch-02-dense.json",
+    "report_sha256": "8df42ecfe6baaec04e7d09c68025257d0add185c9e955bde988ea2028cfc7c42",
+    "retune_allowed": false
+  }
+}

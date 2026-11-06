@@ -1,0 +1,49 @@
+{
+  "additionalProperties": false,
+  "description": "A retrieval request; language is metadata, not a routing restriction.",
+  "properties": {
+    "schema_version": {
+      "const": "1.0",
+      "default": "1.0",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "query_id": {
+      "minLength": 1,
+      "title": "Query Id",
+      "type": "string"
+    },
+    "text": {
+      "minLength": 1,
+      "title": "Text",
+      "type": "string"
+    },
+    "language": {
+      "anyOf": [
+        {
+          "minLength": 2,
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Language"
+    },
+    "top_k": {
+      "default": 10,
+      "maximum": 100,
+      "minimum": 1,
+      "title": "Top K",
+      "type": "integer"
+    }
+  },
+  "required": [
+    "query_id",
+    "text"
+  ],
+  "title": "Query",
+  "type": "object",
+  "$id": "https://example.test/evidence-rag/schemas/query.schema.json"
+}

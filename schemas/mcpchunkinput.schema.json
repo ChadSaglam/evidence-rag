@@ -1,0 +1,17 @@
+{
+  "additionalProperties": false,
+  "description": "Read-only MCP chunk lookup arguments.",
+  "properties": {
+    "chunk_id": {
+      "minLength": 1,
+      "title": "Chunk Id",
+      "type": "string"
+    }
+  },
+  "required": [
+    "chunk_id"
+  ],
+  "title": "McpChunkInput",
+  "type": "object",
+  "$id": "https://example.test/evidence-rag/schemas/mcpchunkinput.schema.json"
+}

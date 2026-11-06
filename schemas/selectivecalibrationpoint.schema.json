@@ -1,0 +1,68 @@
+{
+  "additionalProperties": false,
+  "description": "Outcomes for one deterministic top-score threshold.",
+  "properties": {
+    "threshold": {
+      "title": "Threshold",
+      "type": "number"
+    },
+    "answered_queries": {
+      "minimum": 0,
+      "title": "Answered Queries",
+      "type": "integer"
+    },
+    "correct_answers": {
+      "minimum": 0,
+      "title": "Correct Answers",
+      "type": "integer"
+    },
+    "wrong_answers": {
+      "minimum": 0,
+      "title": "Wrong Answers",
+      "type": "integer"
+    },
+    "correct_abstentions": {
+      "minimum": 0,
+      "title": "Correct Abstentions",
+      "type": "integer"
+    },
+    "coverage": {
+      "maximum": 1,
+      "minimum": 0,
+      "title": "Coverage",
+      "type": "number"
+    },
+    "selective_accuracy": {
+      "maximum": 1,
+      "minimum": 0,
+      "title": "Selective Accuracy",
+      "type": "number"
+    },
+    "wrong_answer_rate": {
+      "maximum": 1,
+      "minimum": 0,
+      "title": "Wrong Answer Rate",
+      "type": "number"
+    },
+    "decision_accuracy": {
+      "maximum": 1,
+      "minimum": 0,
+      "title": "Decision Accuracy",
+      "type": "number"
+    }
+  },
+  "required": [
+    "threshold",
+    "answered_queries",
+    "correct_answers",
+    "wrong_answers",
+    "correct_abstentions",
+    "coverage",
+    "selective_accuracy",
+    "wrong_answer_rate",
+    "decision_accuracy"
+  ],
+  "title": "SelectiveCalibrationPoint",
+  "type": "object",
+  "$id": "https://example.test/evidence-rag/schemas/selectivecalibrationpoint.schema.json"
+}

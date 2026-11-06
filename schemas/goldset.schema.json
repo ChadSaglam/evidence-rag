@@ -1,0 +1,170 @@
+{
+  "$defs": {
+    "GoldQuery": {
+      "additionalProperties": false,
+      "description": "A query and its graded relevance judgments.",
+      "properties": {
+        "query": {
+          "$ref": "#/$defs/Query"
+        },
+        "answerable": {
+          "default": true,
+          "title": "Answerable",
+          "type": "boolean"
+        },
+        "judgments": {
+          "items": {
+            "$ref": "#/$defs/RelevanceJudgment"
+          },
+          "title": "Judgments",
+          "type": "array"
+        }
+      },
+      "required": [
+        "query"
+      ],
+      "title": "GoldQuery",
+      "type": "object"
+    },
+    "Query": {
+      "additionalProperties": false,
+      "description": "A retrieval request; language is metadata, not a routing restriction.",
+      "properties": {
+        "schema_version": {
+          "const": "1.0",
+          "default": "1.0",
+          "title": "Schema Version",
+          "type": "string"
+        },
+        "query_id": {
+          "minLength": 1,
+          "title": "Query Id",
+          "type": "string"
+        },
+        "text": {
+          "minLength": 1,
+          "title": "Text",
+          "type": "string"
+        },
+        "language": {
+          "anyOf": [
+            {
+              "minLength": 2,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Language"
+        },
+        "top_k": {
+          "default": 10,
+          "maximum": 100,
+          "minimum": 1,
+          "title": "Top K",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "query_id",
+        "text"
+      ],
+      "title": "Query",
+      "type": "object"
+    },
+    "RelevanceJudgment": {
+      "additionalProperties": false,
+      "description": "A human-, synthetic-, or benchmark-supplied relevance label.",
+      "properties": {
+        "query_id": {
+          "minLength": 1,
+          "title": "Query Id",
+          "type": "string"
+        },
+        "chunk_id": {
+          "minLength": 1,
+          "title": "Chunk Id",
+          "type": "string"
+        },
+        "relevance": {
+          "maximum": 3,
+          "minimum": 0,
+          "title": "Relevance",
+          "type": "integer"
+        },
+        "annotator": {
+          "minLength": 1,
+          "title": "Annotator",
+          "type": "string"
+        },
+        "notes": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Notes"
+        }
+      },
+      "required": [
+        "query_id",
+        "chunk_id",
+        "relevance",
+        "annotator"
+      ],
+      "title": "RelevanceJudgment",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "description": "A validated collection with an explicit annotation provenance label.",
+  "properties": {
+    "schema_version": {
+      "const": "1.0",
+      "default": "1.0",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "name": {
+      "minLength": 1,
+      "title": "Name",
+      "type": "string"
+    },
+    "description": {
+      "minLength": 1,
+      "title": "Description",
+      "type": "string"
+    },
+    "label_source": {
+      "enum": [
+        "human",
+        "synthetic",
+        "benchmark"
+      ],
+      "title": "Label Source",
+      "type": "string"
+    },
+    "queries": {
+      "items": {
+        "$ref": "#/$defs/GoldQuery"
+      },
+      "title": "Queries",
+      "type": "array"
+    }
+  },
+  "required": [
+    "name",
+    "description",
+    "label_source",
+    "queries"
+  ],
+  "title": "GoldSet",
+  "type": "object",
+  "$id": "https://example.test/evidence-rag/schemas/goldset.schema.json"
+}

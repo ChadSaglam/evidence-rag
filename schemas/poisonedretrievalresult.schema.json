@@ -1,0 +1,66 @@
+{
+  "additionalProperties": false,
+  "description": "Per-case poisoned-document exposure and ranking outcome.",
+  "properties": {
+    "case_id": {
+      "minLength": 1,
+      "title": "Case Id",
+      "type": "string"
+    },
+    "target_rank": {
+      "anyOf": [
+        {
+          "minimum": 1,
+          "type": "integer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Target Rank"
+    },
+    "poisoned_rank": {
+      "anyOf": [
+        {
+          "minimum": 1,
+          "type": "integer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Poisoned Rank"
+    },
+    "poisoned_top_1": {
+      "title": "Poisoned Top 1",
+      "type": "boolean"
+    },
+    "poisoned_in_top_k": {
+      "title": "Poisoned In Top K",
+      "type": "boolean"
+    },
+    "poisoned_outranks_target": {
+      "title": "Poisoned Outranks Target",
+      "type": "boolean"
+    },
+    "quarantined_chunk_ids": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Quarantined Chunk Ids",
+      "type": "array"
+    }
+  },
+  "required": [
+    "case_id",
+    "poisoned_top_1",
+    "poisoned_in_top_k",
+    "poisoned_outranks_target",
+    "quarantined_chunk_ids"
+  ],
+  "title": "PoisonedRetrievalResult",
+  "type": "object",
+  "$id": "https://example.test/evidence-rag/schemas/poisonedretrievalresult.schema.json"
+}

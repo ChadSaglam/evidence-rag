@@ -1,0 +1,212 @@
+[
+  {
+    "schema_version": "1.0",
+    "query_id": "en-principles",
+    "text": "What principles apply to the processing of personal data?",
+    "language": "en",
+    "top_k": 10
+  },
+  {
+    "schema_version": "1.0",
+    "query_id": "en-lawfulness",
+    "text": "When is the processing of personal data lawful?",
+    "language": "en",
+    "top_k": 10
+  },
+  {
+    "schema_version": "1.0",
+    "query_id": "en-collection-information",
+    "text": "What information must a controller provide when personal data are collected from the data subject?",
+    "language": "en",
+    "top_k": 10
+  },
+  {
+    "schema_version": "1.0",
+    "query_id": "en-access",
+    "text": "What information can a data subject obtain under the right of access?",
+    "language": "en",
+    "top_k": 10
+  },
+  {
+    "schema_version": "1.0",
+    "query_id": "en-erasure",
+    "text": "When does a data subject have the right to erasure?",
+    "language": "en",
+    "top_k": 10
+  },
+  {
+    "schema_version": "1.0",
+    "query_id": "en-portability",
+    "text": "What is the right to data portability?",
+    "language": "en",
+    "top_k": 10
+  },
+  {
+    "schema_version": "1.0",
+    "query_id": "en-security",
+    "text": "What security measures must controllers and processors implement?",
+    "language": "en",
+    "top_k": 10
+  },
+  {
+    "schema_version": "1.0",
+    "query_id": "en-breach-deadline",
+    "text": "How quickly must a controller notify a personal data breach to the supervisory authority?",
+    "language": "en",
+    "top_k": 10
+  },
+  {
+    "schema_version": "1.0",
+    "query_id": "en-dpia",
+    "text": "When is a data protection impact assessment required?",
+    "language": "en",
+    "top_k": 10
+  },
+  {
+    "schema_version": "1.0",
+    "query_id": "en-accounting-retention",
+    "text": "What fixed accounting-record retention period does the GDPR prescribe?",
+    "language": "en",
+    "top_k": 10
+  },
+  {
+    "schema_version": "1.0",
+    "query_id": "de-principles",
+    "text": "Welche Grundsätze gelten für die Verarbeitung personenbezogener Daten?",
+    "language": "de",
+    "top_k": 10
+  },
+  {
+    "schema_version": "1.0",
+    "query_id": "de-lawfulness",
+    "text": "Wann ist die Verarbeitung personenbezogener Daten rechtmäßig?",
+    "language": "de",
+    "top_k": 10
+  },
+  {
+    "schema_version": "1.0",
+    "query_id": "de-collection-information",
+    "text": "Welche Informationen muss der Verantwortliche bei der Erhebung personenbezogener Daten bereitstellen?",
+    "language": "de",
+    "top_k": 10
+  },
+  {
+    "schema_version": "1.0",
+    "query_id": "de-access",
+    "text": "Welche Informationen erhält die betroffene Person durch das Auskunftsrecht?",
+    "language": "de",
+    "top_k": 10
+  },
+  {
+    "schema_version": "1.0",
+    "query_id": "de-erasure",
+    "text": "Wann besteht ein Recht der betroffenen Person auf Löschung?",
+    "language": "de",
+    "top_k": 10
+  },
+  {
+    "schema_version": "1.0",
+    "query_id": "de-portability",
+    "text": "Was umfasst das Recht auf Datenübertragbarkeit?",
+    "language": "de",
+    "top_k": 10
+  },
+  {
+    "schema_version": "1.0",
+    "query_id": "de-security",
+    "text": "Welche Sicherheitsmaßnahmen müssen Verantwortliche und Auftragsverarbeiter treffen?",
+    "language": "de",
+    "top_k": 10
+  },
+  {
+    "schema_version": "1.0",
+    "query_id": "de-breach-deadline",
+    "text": "Wie schnell muss der Verantwortliche eine Verletzung des Schutzes personenbezogener Daten der Aufsichtsbehörde melden?",
+    "language": "de",
+    "top_k": 10
+  },
+  {
+    "schema_version": "1.0",
+    "query_id": "de-dpia",
+    "text": "Wann ist eine Datenschutz-Folgenabschätzung erforderlich?",
+    "language": "de",
+    "top_k": 10
+  },
+  {
+    "schema_version": "1.0",
+    "query_id": "de-accounting-retention",
+    "text": "Welche feste Aufbewahrungsfrist für Buchhaltungsunterlagen schreibt die DSGVO vor?",
+    "language": "de",
+    "top_k": 10
+  },
+  {
+    "schema_version": "1.0",
+    "query_id": "fr-principles",
+    "text": "Quels principes s'appliquent au traitement des données à caractère personnel?",
+    "language": "fr",
+    "top_k": 10
+  },
+  {
+    "schema_version": "1.0",
+    "query_id": "fr-lawfulness",
+    "text": "Quand le traitement des données à caractère personnel est-il licite?",
+    "language": "fr",
+    "top_k": 10
+  },
+  {
+    "schema_version": "1.0",
+    "query_id": "fr-collection-information",
+    "text": "Quelles informations le responsable du traitement doit-il fournir lors de la collecte des données auprès de la personne concernée?",
+    "language": "fr",
+    "top_k": 10
+  },
+  {
+    "schema_version": "1.0",
+    "query_id": "fr-access",
+    "text": "Quelles informations la personne concernée peut-elle obtenir grâce à son droit d'accès?",
+    "language": "fr",
+    "top_k": 10
+  },
+  {
+    "schema_version": "1.0",
+    "query_id": "fr-erasure",
+    "text": "Quand la personne concernée a-t-elle le droit à l'effacement?",
+    "language": "fr",
+    "top_k": 10
+  },
+  {
+    "schema_version": "1.0",
+    "query_id": "fr-portability",
+    "text": "Que comprend le droit à la portabilité des données?",
+    "language": "fr",
+    "top_k": 10
+  },
+  {
+    "schema_version": "1.0",
+    "query_id": "fr-security",
+    "text": "Quelles mesures de sécurité les responsables du traitement et les sous-traitants doivent-ils mettre en œuvre?",
+    "language": "fr",
+    "top_k": 10
+  },
+  {
+    "schema_version": "1.0",
+    "query_id": "fr-breach-deadline",
+    "text": "Dans quel délai le responsable du traitement doit-il notifier une violation de données à l'autorité de contrôle?",
+    "language": "fr",
+    "top_k": 10
+  },
+  {
+    "schema_version": "1.0",
+    "query_id": "fr-dpia",
+    "text": "Quand une analyse d'impact relative à la protection des données est-elle obligatoire?",
+    "language": "fr",
+    "top_k": 10
+  },
+  {
+    "schema_version": "1.0",
+    "query_id": "fr-accounting-retention",
+    "text": "Quel délai fixe de conservation des documents comptables le RGPD prescrit-il?",
+    "language": "fr",
+    "top_k": 10
+  }
+]

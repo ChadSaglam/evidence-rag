@@ -1,0 +1,58 @@
+{
+  "additionalProperties": false,
+  "description": "Top-1 evidence and its gold relevance for one calibration query.",
+  "properties": {
+    "query_id": {
+      "minLength": 1,
+      "title": "Query Id",
+      "type": "string"
+    },
+    "answerable": {
+      "title": "Answerable",
+      "type": "boolean"
+    },
+    "top_score": {
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Top Score"
+    },
+    "top_chunk_id": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Top Chunk Id"
+    },
+    "top_chunk_relevance": {
+      "maximum": 3,
+      "minimum": 0,
+      "title": "Top Chunk Relevance",
+      "type": "integer"
+    },
+    "top_chunk_relevant": {
+      "title": "Top Chunk Relevant",
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "query_id",
+    "answerable",
+    "top_chunk_relevance",
+    "top_chunk_relevant"
+  ],
+  "title": "SelectiveCalibrationQuery",
+  "type": "object",
+  "$id": "https://example.test/evidence-rag/schemas/selectivecalibrationquery.schema.json"
+}

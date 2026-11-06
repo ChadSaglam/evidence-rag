@@ -1,0 +1,142 @@
+{
+  "$defs": {
+    "Claim": {
+      "additionalProperties": false,
+      "description": "One answer sentence, its source offsets, and numeric citation ranks.",
+      "properties": {
+        "claim_id": {
+          "minLength": 1,
+          "title": "Claim Id",
+          "type": "string"
+        },
+        "text": {
+          "minLength": 1,
+          "title": "Text",
+          "type": "string"
+        },
+        "start_char": {
+          "minimum": 0,
+          "title": "Start Char",
+          "type": "integer"
+        },
+        "end_char": {
+          "minimum": 1,
+          "title": "End Char",
+          "type": "integer"
+        },
+        "citation_ranks": {
+          "items": {
+            "type": "integer"
+          },
+          "title": "Citation Ranks",
+          "type": "array"
+        }
+      },
+      "required": [
+        "claim_id",
+        "text",
+        "start_char",
+        "end_char",
+        "citation_ranks"
+      ],
+      "title": "Claim",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "description": "Auditable lexical support evidence for one cited answer claim.",
+  "properties": {
+    "claim": {
+      "$ref": "#/$defs/Claim"
+    },
+    "status": {
+      "enum": [
+        "lexically_supported",
+        "semantically_supported",
+        "contradicted",
+        "insufficient_support",
+        "uncited",
+        "invalid_citation"
+      ],
+      "title": "Status",
+      "type": "string"
+    },
+    "support_score": {
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Support Score"
+    },
+    "entailment_score": {
+      "anyOf": [
+        {
+          "maximum": 1,
+          "minimum": 0,
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Entailment Score"
+    },
+    "contradiction_score": {
+      "anyOf": [
+        {
+          "maximum": 1,
+          "minimum": 0,
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Contradiction Score"
+    },
+    "cited_chunk_ids": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Cited Chunk Ids",
+      "type": "array"
+    },
+    "matched_tokens": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Matched Tokens",
+      "type": "array"
+    },
+    "missing_tokens": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Missing Tokens",
+      "type": "array"
+    },
+    "reason": {
+      "minLength": 1,
+      "title": "Reason",
+      "type": "string"
+    }
+  },
+  "required": [
+    "claim",
+    "status",
+    "cited_chunk_ids",
+    "matched_tokens",
+    "missing_tokens",
+    "reason"
+  ],
+  "title": "ClaimVerification",
+  "type": "object",
+  "$id": "https://example.test/evidence-rag/schemas/claimverification.schema.json"
+}

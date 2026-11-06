@@ -1,0 +1,48 @@
+{
+  "run": "hybrid:multilingual-e5-small",
+  "first_stage": "hybrid:multilingual-e5-small",
+  "reranked": false,
+  "models": {
+    "intfloat/multilingual-e5-small": "614241f622f53c4eeff9890bdc4f31cfecc418b3"
+  },
+  "mean_hit_at_k": 1.0,
+  "mean_recall_at_k": 0.7592592592592593,
+  "mean_reciprocal_rank": 0.9567901234567902,
+  "mean_ndcg_at_k": 0.7479756061814551,
+  "ndcg_by_language": {
+    "de": 0.724598957027032,
+    "en": 0.7848815177278615,
+    "fr": 0.7344463437894717
+  },
+  "latency_ms_p50": 11.79329099250026,
+  "latency_ms_p95": 13.257583006634377,
+  "per_query_ndcg": {
+    "en-principles": 0.6131471927654584,
+    "en-lawfulness": 0.9619991470595831,
+    "en-collection-information": 0.6713860725233041,
+    "en-access": 0.9197207891481876,
+    "en-erasure": 0.6713860725233041,
+    "en-portability": 0.6131471927654584,
+    "en-security": 0.6131471927654584,
+    "en-breach-deadline": 1.0,
+    "en-dpia": 1.0,
+    "de-principles": 0.6049306994552043,
+    "de-lawfulness": 0.6108377030333358,
+    "de-collection-information": 0.33424620450682646,
+    "de-access": 0.7039180890341348,
+    "de-erasure": 0.7039180890341348,
+    "de-portability": 0.8175295903539446,
+    "de-security": 0.8772153153380492,
+    "de-breach-deadline": 1.0,
+    "de-dpia": 0.8687949224876581,
+    "fr-principles": 0.4692787260227565,
+    "fr-lawfulness": 0.6164336326286644,
+    "fr-collection-information": 0.815931321093515,
+    "fr-access": 0.932521091954824,
+    "fr-erasure": 0.4692787260227565,
+    "fr-portability": 0.6131471927654584,
+    "fr-security": 0.6934264036172708,
+    "fr-breach-deadline": 1.0,
+    "fr-dpia": 1.0
+  }
+}

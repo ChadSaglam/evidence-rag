@@ -1,0 +1,7 @@
+{
+  "name": "evidence-rag-preview",
+  "private": true,
+  "scripts": {
+    "dev": ".venv/bin/python demo/app.py"
+  }
+}

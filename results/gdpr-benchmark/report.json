@@ -1,0 +1,251 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-10-31T19:28:30+00:00",
+  "corpus": "data/real-gdpr/chunks.jsonl",
+  "gold_set": "gdpr-multilingual-source-aligned-v1",
+  "gold_label_source": "benchmark",
+  "k": 10,
+  "candidate_k": 30,
+  "answerable_queries": 27,
+  "models": {
+    "cross-encoder/mmarco-mMiniLMv2-L12-H384-v1": "1427fd652930e4ba29e8149678df786c240d8825",
+    "intfloat/multilingual-e5-small": "614241f622f53c4eeff9890bdc4f31cfecc418b3",
+    "intfloat/multilingual-e5-base": "d128750597153bb5987e10b1c3493a34e5a4502a"
+  },
+  "environment": {
+    "python": "3.10.12",
+    "platform": "Linux-6.8.0-138-generic-aarch64-with-glibc2.35",
+    "device": "cpu"
+  },
+  "runs": [
+    {
+      "run": "bm25",
+      "first_stage": "bm25",
+      "reranked": false,
+      "models": {},
+      "mean_hit_at_k": 1.0,
+      "mean_recall_at_k": 0.7932098765432098,
+      "mean_reciprocal_rank": 0.8765432098765432,
+      "mean_ndcg_at_k": 0.7190745983554844,
+      "ndcg_by_language": {
+        "de": 0.6935755315212666,
+        "en": 0.7556838532746365,
+        "fr": 0.70796441027055
+      },
+      "latency_ms_p50": 0.23308300296775997,
+      "latency_ms_p95": 3.256000010878779
+    },
+    {
+      "run": "bm25+rerank",
+      "first_stage": "bm25",
+      "reranked": true,
+      "models": {
+        "cross-encoder/mmarco-mMiniLMv2-L12-H384-v1": "1427fd652930e4ba29e8149678df786c240d8825"
+      },
+      "mean_hit_at_k": 1.0,
+      "mean_recall_at_k": 0.7975308641975308,
+      "mean_reciprocal_rank": 1.0,
+      "mean_ndcg_at_k": 0.795074901165583,
+      "ndcg_by_language": {
+        "de": 0.7936149120196995,
+        "en": 0.811722477893462,
+        "fr": 0.7798873135835876
+      },
+      "latency_ms_p50": 3492.147835000651,
+      "latency_ms_p95": 4149.917169008404
+    },
+    {
+      "run": "dense:multilingual-e5-small",
+      "first_stage": "dense:multilingual-e5-small",
+      "reranked": false,
+      "models": {
+        "intfloat/multilingual-e5-small": "614241f622f53c4eeff9890bdc4f31cfecc418b3"
+      },
+      "mean_hit_at_k": 1.0,
+      "mean_recall_at_k": 0.7432098765432099,
+      "mean_reciprocal_rank": 0.9074074074074074,
+      "mean_ndcg_at_k": 0.7038951218535975,
+      "ndcg_by_language": {
+        "de": 0.6848856186915389,
+        "en": 0.7398472232766685,
+        "fr": 0.6869525235925851
+      },
+      "latency_ms_p50": 11.553709002328105,
+      "latency_ms_p95": 13.389416999416426
+    },
+    {
+      "run": "dense:multilingual-e5-small+rerank",
+      "first_stage": "dense:multilingual-e5-small",
+      "reranked": true,
+      "models": {
+        "intfloat/multilingual-e5-small": "614241f622f53c4eeff9890bdc4f31cfecc418b3",
+        "cross-encoder/mmarco-mMiniLMv2-L12-H384-v1": "1427fd652930e4ba29e8149678df786c240d8825"
+      },
+      "mean_hit_at_k": 1.0,
+      "mean_recall_at_k": 0.7944444444444444,
+      "mean_reciprocal_rank": 0.9814814814814815,
+      "mean_ndcg_at_k": 0.7614410921001737,
+      "ndcg_by_language": {
+        "de": 0.7669148243065463,
+        "en": 0.8078332803433795,
+        "fr": 0.7095751716505954
+      },
+      "latency_ms_p50": 1713.3633760095108,
+      "latency_ms_p95": 1861.2510840030154
+    },
+    {
+      "run": "hybrid:multilingual-e5-small",
+      "first_stage": "hybrid:multilingual-e5-small",
+      "reranked": false,
+      "models": {
+        "intfloat/multilingual-e5-small": "614241f622f53c4eeff9890bdc4f31cfecc418b3"
+      },
+      "mean_hit_at_k": 1.0,
+      "mean_recall_at_k": 0.7592592592592593,
+      "mean_reciprocal_rank": 0.9567901234567902,
+      "mean_ndcg_at_k": 0.7479756061814551,
+      "ndcg_by_language": {
+        "de": 0.724598957027032,
+        "en": 0.7848815177278615,
+        "fr": 0.7344463437894717
+      },
+      "latency_ms_p50": 11.79329099250026,
+      "latency_ms_p95": 13.257583006634377
+    },
+    {
+      "run": "hybrid:multilingual-e5-small+rerank",
+      "first_stage": "hybrid:multilingual-e5-small",
+      "reranked": true,
+      "models": {
+        "intfloat/multilingual-e5-small": "614241f622f53c4eeff9890bdc4f31cfecc418b3",
+        "cross-encoder/mmarco-mMiniLMv2-L12-H384-v1": "1427fd652930e4ba29e8149678df786c240d8825"
+      },
+      "mean_hit_at_k": 1.0,
+      "mean_recall_at_k": 0.8067901234567901,
+      "mean_reciprocal_rank": 1.0,
+      "mean_ndcg_at_k": 0.7895921406726717,
+      "ndcg_by_language": {
+        "de": 0.7805575670467632,
+        "en": 0.826260192709876,
+        "fr": 0.7619586622613759
+      },
+      "latency_ms_p50": 1648.251042002812,
+      "latency_ms_p95": 1869.1461679991335
+    },
+    {
+      "run": "dense:multilingual-e5-base",
+      "first_stage": "dense:multilingual-e5-base",
+      "reranked": false,
+      "models": {
+        "intfloat/multilingual-e5-base": "d128750597153bb5987e10b1c3493a34e5a4502a"
+      },
+      "mean_hit_at_k": 1.0,
+      "mean_recall_at_k": 0.841358024691358,
+      "mean_reciprocal_rank": 1.0,
+      "mean_ndcg_at_k": 0.8046771932264319,
+      "ndcg_by_language": {
+        "de": 0.778462628217179,
+        "en": 0.8556689222325662,
+        "fr": 0.7799000292295507
+      },
+      "latency_ms_p50": 26.150083998800255,
+      "latency_ms_p95": 31.296208006097004
+    },
+    {
+      "run": "dense:multilingual-e5-base+rerank",
+      "first_stage": "dense:multilingual-e5-base",
+      "reranked": true,
+      "models": {
+        "intfloat/multilingual-e5-base": "d128750597153bb5987e10b1c3493a34e5a4502a",
+        "cross-encoder/mmarco-mMiniLMv2-L12-H384-v1": "1427fd652930e4ba29e8149678df786c240d8825"
+      },
+      "mean_hit_at_k": 1.0,
+      "mean_recall_at_k": 0.7777777777777778,
+      "mean_reciprocal_rank": 0.9567901234567902,
+      "mean_ndcg_at_k": 0.7233650934310236,
+      "ndcg_by_language": {
+        "de": 0.7144604501490591,
+        "en": 0.7525994603443834,
+        "fr": 0.7030353697996283
+      },
+      "latency_ms_p50": 1721.1047090095235,
+      "latency_ms_p95": 1890.3457929991418
+    },
+    {
+      "run": "hybrid:multilingual-e5-base",
+      "first_stage": "hybrid:multilingual-e5-base",
+      "reranked": false,
+      "models": {
+        "intfloat/multilingual-e5-base": "d128750597153bb5987e10b1c3493a34e5a4502a"
+      },
+      "mean_hit_at_k": 1.0,
+      "mean_recall_at_k": 0.8240740740740741,
+      "mean_reciprocal_rank": 0.9814814814814815,
+      "mean_ndcg_at_k": 0.7887485317779087,
+      "ndcg_by_language": {
+        "de": 0.7820676739648799,
+        "en": 0.821240322238469,
+        "fr": 0.7629375991303773
+      },
+      "latency_ms_p50": 26.023165992228314,
+      "latency_ms_p95": 31.72416699817404
+    },
+    {
+      "run": "hybrid:multilingual-e5-base+rerank",
+      "first_stage": "hybrid:multilingual-e5-base",
+      "reranked": true,
+      "models": {
+        "intfloat/multilingual-e5-base": "d128750597153bb5987e10b1c3493a34e5a4502a",
+        "cross-encoder/mmarco-mMiniLMv2-L12-H384-v1": "1427fd652930e4ba29e8149678df786c240d8825"
+      },
+      "mean_hit_at_k": 1.0,
+      "mean_recall_at_k": 0.8160493827160493,
+      "mean_reciprocal_rank": 0.9814814814814815,
+      "mean_ndcg_at_k": 0.7805761290156413,
+      "ndcg_by_language": {
+        "de": 0.7595511790882851,
+        "en": 0.8163109954994809,
+        "fr": 0.7658662124591579
+      },
+      "latency_ms_p50": 1651.351791995694,
+      "latency_ms_p95": 1866.3222920004046
+    }
+  ],
+  "rerank_ndcg_delta_paired_bootstrap": {
+    "bm25": {
+      "mean_delta": 0.07600030281009863,
+      "ci95_low": 0.0038987613330569416,
+      "ci95_high": 0.15224911837991684,
+      "queries_improved": 12,
+      "queries_worse": 8
+    },
+    "dense:multilingual-e5-small": {
+      "mean_delta": 0.057545970246576254,
+      "ci95_low": -0.010512367000279587,
+      "ci95_high": 0.12729972889971233,
+      "queries_improved": 15,
+      "queries_worse": 10
+    },
+    "hybrid:multilingual-e5-small": {
+      "mean_delta": 0.04161653449121658,
+      "ci95_low": -0.022029622856440865,
+      "ci95_high": 0.10621149749322176,
+      "queries_improved": 12,
+      "queries_worse": 9
+    },
+    "dense:multilingual-e5-base": {
+      "mean_delta": -0.08131209979540839,
+      "ci95_low": -0.14622255075133717,
+      "ci95_high": -0.016254672327270087,
+      "queries_improved": 8,
+      "queries_worse": 15
+    },
+    "hybrid:multilingual-e5-base": {
+      "mean_delta": -0.00817240276226737,
+      "ci95_low": -0.06662602880280648,
+      "ci95_high": 0.04726686800495676,
+      "queries_improved": 11,
+      "queries_worse": 11
+    }
+  }
+}

@@ -1,0 +1,223 @@
+{
+  "$defs": {
+    "SelectiveCalibrationPoint": {
+      "additionalProperties": false,
+      "description": "Outcomes for one deterministic top-score threshold.",
+      "properties": {
+        "threshold": {
+          "title": "Threshold",
+          "type": "number"
+        },
+        "answered_queries": {
+          "minimum": 0,
+          "title": "Answered Queries",
+          "type": "integer"
+        },
+        "correct_answers": {
+          "minimum": 0,
+          "title": "Correct Answers",
+          "type": "integer"
+        },
+        "wrong_answers": {
+          "minimum": 0,
+          "title": "Wrong Answers",
+          "type": "integer"
+        },
+        "correct_abstentions": {
+          "minimum": 0,
+          "title": "Correct Abstentions",
+          "type": "integer"
+        },
+        "coverage": {
+          "maximum": 1,
+          "minimum": 0,
+          "title": "Coverage",
+          "type": "number"
+        },
+        "selective_accuracy": {
+          "maximum": 1,
+          "minimum": 0,
+          "title": "Selective Accuracy",
+          "type": "number"
+        },
+        "wrong_answer_rate": {
+          "maximum": 1,
+          "minimum": 0,
+          "title": "Wrong Answer Rate",
+          "type": "number"
+        },
+        "decision_accuracy": {
+          "maximum": 1,
+          "minimum": 0,
+          "title": "Decision Accuracy",
+          "type": "number"
+        }
+      },
+      "required": [
+        "threshold",
+        "answered_queries",
+        "correct_answers",
+        "wrong_answers",
+        "correct_abstentions",
+        "coverage",
+        "selective_accuracy",
+        "wrong_answer_rate",
+        "decision_accuracy"
+      ],
+      "title": "SelectiveCalibrationPoint",
+      "type": "object"
+    },
+    "SelectiveCalibrationQuery": {
+      "additionalProperties": false,
+      "description": "Top-1 evidence and its gold relevance for one calibration query.",
+      "properties": {
+        "query_id": {
+          "minLength": 1,
+          "title": "Query Id",
+          "type": "string"
+        },
+        "answerable": {
+          "title": "Answerable",
+          "type": "boolean"
+        },
+        "top_score": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Top Score"
+        },
+        "top_chunk_id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Top Chunk Id"
+        },
+        "top_chunk_relevance": {
+          "maximum": 3,
+          "minimum": 0,
+          "title": "Top Chunk Relevance",
+          "type": "integer"
+        },
+        "top_chunk_relevant": {
+          "title": "Top Chunk Relevant",
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "query_id",
+        "answerable",
+        "top_chunk_relevance",
+        "top_chunk_relevant"
+      ],
+      "title": "SelectiveCalibrationQuery",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "description": "Risk-constrained threshold selection with auditable candidate outcomes.",
+  "properties": {
+    "schema_version": {
+      "const": "1.0",
+      "default": "1.0",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "gold_set": {
+      "minLength": 1,
+      "title": "Gold Set",
+      "type": "string"
+    },
+    "gold_label_source": {
+      "enum": [
+        "human",
+        "synthetic",
+        "benchmark"
+      ],
+      "title": "Gold Label Source",
+      "type": "string"
+    },
+    "retriever": {
+      "minLength": 1,
+      "title": "Retriever",
+      "type": "string"
+    },
+    "objective": {
+      "const": "max_coverage_within_risk",
+      "default": "max_coverage_within_risk",
+      "title": "Objective",
+      "type": "string"
+    },
+    "max_risk": {
+      "maximum": 1,
+      "minimum": 0,
+      "title": "Max Risk",
+      "type": "number"
+    },
+    "selected_threshold": {
+      "title": "Selected Threshold",
+      "type": "number"
+    },
+    "query_count": {
+      "minimum": 1,
+      "title": "Query Count",
+      "type": "integer"
+    },
+    "answerable_queries": {
+      "minimum": 0,
+      "title": "Answerable Queries",
+      "type": "integer"
+    },
+    "unanswerable_queries": {
+      "minimum": 0,
+      "title": "Unanswerable Queries",
+      "type": "integer"
+    },
+    "selected": {
+      "$ref": "#/$defs/SelectiveCalibrationPoint"
+    },
+    "candidates": {
+      "items": {
+        "$ref": "#/$defs/SelectiveCalibrationPoint"
+      },
+      "minItems": 1,
+      "title": "Candidates",
+      "type": "array"
+    },
+    "per_query": {
+      "items": {
+        "$ref": "#/$defs/SelectiveCalibrationQuery"
+      },
+      "minItems": 1,
+      "title": "Per Query",
+      "type": "array"
+    }
+  },
+  "required": [
+    "gold_set",
+    "gold_label_source",
+    "retriever",
+    "max_risk",
+    "selected_threshold",
+    "query_count",
+    "answerable_queries",
+    "unanswerable_queries",
+    "selected",
+    "candidates",
+    "per_query"
+  ],
+  "title": "SelectiveCalibrationReport",
+  "type": "object",
+  "$id": "https://example.test/evidence-rag/schemas/selectivecalibrationreport.schema.json"
+}

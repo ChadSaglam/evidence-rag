@@ -1,0 +1,50 @@
+{
+  "additionalProperties": false,
+  "description": "Retrieval metrics for one answerable gold query.",
+  "properties": {
+    "query_id": {
+      "minLength": 1,
+      "title": "Query Id",
+      "type": "string"
+    },
+    "hit_at_k": {
+      "title": "Hit At K",
+      "type": "boolean"
+    },
+    "recall_at_k": {
+      "maximum": 1,
+      "minimum": 0,
+      "title": "Recall At K",
+      "type": "number"
+    },
+    "precision_at_k": {
+      "maximum": 1,
+      "minimum": 0,
+      "title": "Precision At K",
+      "type": "number"
+    },
+    "reciprocal_rank": {
+      "maximum": 1,
+      "minimum": 0,
+      "title": "Reciprocal Rank",
+      "type": "number"
+    },
+    "ndcg_at_k": {
+      "maximum": 1,
+      "minimum": 0,
+      "title": "Ndcg At K",
+      "type": "number"
+    }
+  },
+  "required": [
+    "query_id",
+    "hit_at_k",
+    "recall_at_k",
+    "precision_at_k",
+    "reciprocal_rank",
+    "ndcg_at_k"
+  ],
+  "title": "QueryEvaluation",
+  "type": "object",
+  "$id": "https://example.test/evidence-rag/schemas/queryevaluation.schema.json"
+}

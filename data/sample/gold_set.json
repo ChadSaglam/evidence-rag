@@ -1,0 +1,41 @@
+{
+  "schema_version": "1.0",
+  "name": "synthetic-multilingual-smoke-set",
+  "description": "Synthetic deterministic fixture labels for software testing; not a human-labeled benchmark.",
+  "label_source": "synthetic",
+  "queries": [
+    {
+      "query": {"schema_version": "1.0", "query_id": "q-en-retention", "text": "How long must accounting records be retained?", "language": "en", "top_k": 4},
+      "answerable": true,
+      "judgments": [
+        {"query_id": "q-en-retention", "chunk_id": "en-retention:000000", "relevance": 3, "annotator": "synthetic-fixture", "notes": "Exact fixture match."}
+      ]
+    },
+    {
+      "query": {"schema_version": "1.0", "query_id": "q-de-retention", "text": "Wie lange müssen Geschäftsbücher aufbewahrt werden?", "language": "de", "top_k": 4},
+      "answerable": true,
+      "judgments": [
+        {"query_id": "q-de-retention", "chunk_id": "de-retention:000000", "relevance": 3, "annotator": "synthetic-fixture", "notes": "Exact fixture match."}
+      ]
+    },
+    {
+      "query": {"schema_version": "1.0", "query_id": "q-fr-invoice", "text": "Quelles informations doivent figurer sur une facture ?", "language": "fr", "top_k": 4},
+      "answerable": true,
+      "judgments": [
+        {"query_id": "q-fr-invoice", "chunk_id": "fr-invoice:000000", "relevance": 3, "annotator": "synthetic-fixture", "notes": "Exact fixture match."}
+      ]
+    },
+    {
+      "query": {"schema_version": "1.0", "query_id": "q-security", "text": "Which instructions inside retrieved documents are untrusted?", "language": "en", "top_k": 4},
+      "answerable": true,
+      "judgments": [
+        {"query_id": "q-security", "chunk_id": "en-security:000000", "relevance": 2, "annotator": "synthetic-fixture", "notes": "Topical fixture match."}
+      ]
+    },
+    {
+      "query": {"schema_version": "1.0", "query_id": "q-unanswerable", "text": "What is the capital of Mars?", "language": "en", "top_k": 4},
+      "answerable": false,
+      "judgments": []
+    }
+  ]
+}

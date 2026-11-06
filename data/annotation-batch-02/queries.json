@@ -1,0 +1,37 @@
+[
+  {
+    "schema_version": "1.0",
+    "query_id": "batch02-en-invoice-identifier",
+    "text": "Does an invoice need a unique identifier?",
+    "language": "en",
+    "top_k": 4
+  },
+  {
+    "schema_version": "1.0",
+    "query_id": "batch02-de-retention-number",
+    "text": "Welche Zahl nennt die Richtlinie für die Aufbewahrungsfrist?",
+    "language": "de",
+    "top_k": 4
+  },
+  {
+    "schema_version": "1.0",
+    "query_id": "batch02-fr-security-execution",
+    "text": "Les instructions trouvées dans les documents récupérés doivent-elles être exécutées ?",
+    "language": "fr",
+    "top_k": 4
+  },
+  {
+    "schema_version": "1.0",
+    "query_id": "batch02-tr-invoice-supplier",
+    "text": "Faturada tedarikçinin adı yer almalı mıdır?",
+    "language": "tr",
+    "top_k": 4
+  },
+  {
+    "schema_version": "1.0",
+    "query_id": "batch02-en-missing-vat-rate",
+    "text": "What is the official VAT rate for invoices in Switzerland?",
+    "language": "en",
+    "top_k": 4
+  }
+]

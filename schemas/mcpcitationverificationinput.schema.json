@@ -1,0 +1,30 @@
+{
+  "additionalProperties": false,
+  "description": "Read-only MCP citation verification arguments.",
+  "properties": {
+    "answer": {
+      "minLength": 1,
+      "title": "Answer",
+      "type": "string"
+    },
+    "response": {
+      "additionalProperties": true,
+      "title": "Response",
+      "type": "object"
+    },
+    "support_threshold": {
+      "default": 0.6,
+      "exclusiveMinimum": 0,
+      "maximum": 1,
+      "title": "Support Threshold",
+      "type": "number"
+    }
+  },
+  "required": [
+    "answer",
+    "response"
+  ],
+  "title": "McpCitationVerificationInput",
+  "type": "object",
+  "$id": "https://example.test/evidence-rag/schemas/mcpcitationverificationinput.schema.json"
+}

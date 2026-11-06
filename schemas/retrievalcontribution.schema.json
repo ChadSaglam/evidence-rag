@@ -1,0 +1,34 @@
+{
+  "additionalProperties": false,
+  "description": "The rank and score contributed by one subquery to a fused hit.",
+  "properties": {
+    "subquery_id": {
+      "minLength": 1,
+      "title": "Subquery Id",
+      "type": "string"
+    },
+    "rank": {
+      "minimum": 1,
+      "title": "Rank",
+      "type": "integer"
+    },
+    "score": {
+      "title": "Score",
+      "type": "number"
+    },
+    "retriever": {
+      "minLength": 1,
+      "title": "Retriever",
+      "type": "string"
+    }
+  },
+  "required": [
+    "subquery_id",
+    "rank",
+    "score",
+    "retriever"
+  ],
+  "title": "RetrievalContribution",
+  "type": "object",
+  "$id": "https://example.test/evidence-rag/schemas/retrievalcontribution.schema.json"
+}

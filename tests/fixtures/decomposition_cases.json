@@ -1,0 +1,51 @@
+[
+  {
+    "case_id": "en-conjunction",
+    "query_id": "q-en",
+    "language": "en",
+    "text": "What is the retention period and what is the VAT rate?",
+    "expected": ["What is the retention period?", "what is the VAT rate?"]
+  },
+  {
+    "case_id": "de-conjunction",
+    "query_id": "q-de",
+    "language": "de",
+    "text": "Wie lange müssen Geschäftsbücher aufbewahrt werden und welche Unterlagen sind erforderlich?",
+    "expected": ["Wie lange müssen Geschäftsbücher aufbewahrt werden?", "welche Unterlagen sind erforderlich?"]
+  },
+  {
+    "case_id": "fr-conjunction",
+    "query_id": "q-fr",
+    "language": "fr",
+    "text": "Quelle est la durée de conservation et quelles informations sont obligatoires ?",
+    "expected": ["Quelle est la durée de conservation?", "quelles informations sont obligatoires?"]
+  },
+  {
+    "case_id": "tr-conjunction",
+    "query_id": "q-tr",
+    "language": "tr",
+    "text": "Kayıtlar kaç yıl saklanır ve hangi belgeler zorunludur?",
+    "expected": ["Kayıtlar kaç yıl saklanır?", "hangi belgeler zorunludur?"]
+  },
+  {
+    "case_id": "explicit-questions",
+    "query_id": "q-explicit",
+    "language": "en",
+    "text": "What is VAT? When is it due?",
+    "expected": ["What is VAT?", "When is it due?"]
+  },
+  {
+    "case_id": "short-noun-phrase",
+    "query_id": "q-single",
+    "language": "en",
+    "text": "What are bookkeeping and accounting requirements?",
+    "expected": ["What are bookkeeping and accounting requirements?"]
+  },
+  {
+    "case_id": "semicolon",
+    "query_id": "q-semicolon",
+    "language": "en",
+    "text": "Retention period; invoice requirements",
+    "expected": ["Retention period", "invoice requirements"]
+  }
+]

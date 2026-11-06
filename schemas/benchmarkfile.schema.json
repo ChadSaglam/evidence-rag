@@ -1,0 +1,29 @@
+{
+  "additionalProperties": false,
+  "description": "A relative dataset file with its deterministic content identity.",
+  "properties": {
+    "path": {
+      "minLength": 1,
+      "title": "Path",
+      "type": "string"
+    },
+    "sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "title": "Sha256",
+      "type": "string"
+    },
+    "size_bytes": {
+      "minimum": 0,
+      "title": "Size Bytes",
+      "type": "integer"
+    }
+  },
+  "required": [
+    "path",
+    "sha256",
+    "size_bytes"
+  ],
+  "title": "BenchmarkFile",
+  "type": "object",
+  "$id": "https://example.test/evidence-rag/schemas/benchmarkfile.schema.json"
+}

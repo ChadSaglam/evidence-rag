@@ -1,0 +1,152 @@
+{
+  "$defs": {
+    "QueryEvaluation": {
+      "additionalProperties": false,
+      "description": "Retrieval metrics for one answerable gold query.",
+      "properties": {
+        "query_id": {
+          "minLength": 1,
+          "title": "Query Id",
+          "type": "string"
+        },
+        "hit_at_k": {
+          "title": "Hit At K",
+          "type": "boolean"
+        },
+        "recall_at_k": {
+          "maximum": 1,
+          "minimum": 0,
+          "title": "Recall At K",
+          "type": "number"
+        },
+        "precision_at_k": {
+          "maximum": 1,
+          "minimum": 0,
+          "title": "Precision At K",
+          "type": "number"
+        },
+        "reciprocal_rank": {
+          "maximum": 1,
+          "minimum": 0,
+          "title": "Reciprocal Rank",
+          "type": "number"
+        },
+        "ndcg_at_k": {
+          "maximum": 1,
+          "minimum": 0,
+          "title": "Ndcg At K",
+          "type": "number"
+        }
+      },
+      "required": [
+        "query_id",
+        "hit_at_k",
+        "recall_at_k",
+        "precision_at_k",
+        "reciprocal_rank",
+        "ndcg_at_k"
+      ],
+      "title": "QueryEvaluation",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "description": "Macro-averaged retrieval metrics and auditable per-query values.",
+  "properties": {
+    "schema_version": {
+      "const": "1.0",
+      "default": "1.0",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "gold_set": {
+      "minLength": 1,
+      "title": "Gold Set",
+      "type": "string"
+    },
+    "gold_label_source": {
+      "enum": [
+        "human",
+        "synthetic",
+        "benchmark"
+      ],
+      "title": "Gold Label Source",
+      "type": "string"
+    },
+    "retriever": {
+      "minLength": 1,
+      "title": "Retriever",
+      "type": "string"
+    },
+    "k": {
+      "maximum": 100,
+      "minimum": 1,
+      "title": "K",
+      "type": "integer"
+    },
+    "evaluated_queries": {
+      "minimum": 0,
+      "title": "Evaluated Queries",
+      "type": "integer"
+    },
+    "skipped_unanswerable_queries": {
+      "minimum": 0,
+      "title": "Skipped Unanswerable Queries",
+      "type": "integer"
+    },
+    "mean_hit_at_k": {
+      "maximum": 1,
+      "minimum": 0,
+      "title": "Mean Hit At K",
+      "type": "number"
+    },
+    "mean_recall_at_k": {
+      "maximum": 1,
+      "minimum": 0,
+      "title": "Mean Recall At K",
+      "type": "number"
+    },
+    "mean_precision_at_k": {
+      "maximum": 1,
+      "minimum": 0,
+      "title": "Mean Precision At K",
+      "type": "number"
+    },
+    "mean_reciprocal_rank": {
+      "maximum": 1,
+      "minimum": 0,
+      "title": "Mean Reciprocal Rank",
+      "type": "number"
+    },
+    "mean_ndcg_at_k": {
+      "maximum": 1,
+      "minimum": 0,
+      "title": "Mean Ndcg At K",
+      "type": "number"
+    },
+    "per_query": {
+      "items": {
+        "$ref": "#/$defs/QueryEvaluation"
+      },
+      "title": "Per Query",
+      "type": "array"
+    }
+  },
+  "required": [
+    "gold_set",
+    "gold_label_source",
+    "retriever",
+    "k",
+    "evaluated_queries",
+    "skipped_unanswerable_queries",
+    "mean_hit_at_k",
+    "mean_recall_at_k",
+    "mean_precision_at_k",
+    "mean_reciprocal_rank",
+    "mean_ndcg_at_k",
+    "per_query"
+  ],
+  "title": "RetrievalEvaluationReport",
+  "type": "object",
+  "$id": "https://example.test/evidence-rag/schemas/retrievalevaluationreport.schema.json"
+}

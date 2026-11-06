@@ -1,0 +1,32 @@
+{
+  "query": {
+    "query_id": "q-rerank",
+    "text": "record retention period",
+    "language": "en",
+    "top_k": 3
+  },
+  "candidates": [
+    {
+      "chunk_id": "doc-en:0",
+      "text": "Accounting records are retained for ten years.",
+      "base_rank": 1,
+      "base_score": 2.1,
+      "cross_encoder_score": 0.2
+    },
+    {
+      "chunk_id": "doc-de:0",
+      "text": "Geschäftsbücher werden zehn Jahre aufbewahrt.",
+      "base_rank": 2,
+      "base_score": 1.8,
+      "cross_encoder_score": 0.95
+    },
+    {
+      "chunk_id": "doc-fr:0",
+      "text": "Une facture contient une date.",
+      "base_rank": 3,
+      "base_score": 0.4,
+      "cross_encoder_score": 0.1
+    }
+  ],
+  "expected_order": ["doc-de:0", "doc-en:0", "doc-fr:0"]
+}

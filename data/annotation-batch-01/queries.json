@@ -1,0 +1,37 @@
+[
+  {
+    "schema_version": "1.0",
+    "query_id": "batch01-en-invoice",
+    "text": "Which information must an invoice include?",
+    "language": "en",
+    "top_k": 4
+  },
+  {
+    "schema_version": "1.0",
+    "query_id": "batch01-de-security",
+    "text": "Welche Anweisungen in abgerufenen Dokumenten sind nicht vertrauenswürdig?",
+    "language": "de",
+    "top_k": 4
+  },
+  {
+    "schema_version": "1.0",
+    "query_id": "batch01-fr-retention",
+    "text": "Pendant combien de temps les livres comptables doivent-ils être conservés ?",
+    "language": "fr",
+    "top_k": 4
+  },
+  {
+    "schema_version": "1.0",
+    "query_id": "batch01-tr-retention",
+    "text": "Muhasebe kayıtları kaç yıl saklanmalıdır?",
+    "language": "tr",
+    "top_k": 4
+  },
+  {
+    "schema_version": "1.0",
+    "query_id": "batch01-en-missing-registration",
+    "text": "What is the registration number of the Swiss National Bank?",
+    "language": "en",
+    "top_k": 4
+  }
+]

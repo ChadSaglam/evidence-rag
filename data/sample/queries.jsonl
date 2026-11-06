@@ -1,0 +1,3 @@
+{"schema_version":"1.0","query_id":"q-en-retention","text":"How long must accounting records be retained?","language":"en","top_k":4}
+{"schema_version":"1.0","query_id":"q-de-retention","text":"Wie lange müssen Geschäftsbücher aufbewahrt werden?","language":"de","top_k":4}
+{"schema_version":"1.0","query_id":"q-fr-invoice","text":"Quelles informations doivent figurer sur une facture ?","language":"fr","top_k":4}

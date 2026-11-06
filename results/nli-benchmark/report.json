@@ -1,0 +1,495 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-10-31T19:28:59+00:00",
+  "dataset": "gdpr-claim-verification-v1",
+  "label_source": "benchmark",
+  "cases": 38,
+  "nli_model": {
+    "name": "MoritzLaurer/multilingual-MiniLMv2-L6-mnli-xnli",
+    "revision": "0a71e92a985b6e1ad1828cf67ce9c459639c1dca"
+  },
+  "lexical": {
+    "binary_accuracy": 0.5263157894736842,
+    "false_accept_rate": 0.5555555555555556,
+    "false_reject_rate": 0.4,
+    "three_class_accuracy": 0.42105263157894735,
+    "false_accepts": [
+      "en-breach-negation",
+      "en-extension-number-word",
+      "en-free-negation",
+      "en-erasure-negation",
+      "de-breach-negation",
+      "de-extension-number-word",
+      "de-free-negation",
+      "fr-breach-negation",
+      "fr-extension-number-word",
+      "fr-free-negation"
+    ]
+  },
+  "nli": {
+    "binary_accuracy": 0.8157894736842105,
+    "false_accept_rate": 0.05555555555555555,
+    "false_reject_rate": 0.3,
+    "three_class_accuracy": 0.7631578947368421,
+    "false_accepts": [
+      "fr-portability-unrelated"
+    ]
+  },
+  "by_perturbation": {
+    "cross_lingual": {
+      "cases": 3,
+      "lexical_binary_accuracy": 0.0,
+      "nli_binary_accuracy": 0.6666666666666666
+    },
+    "cross_lingual_negation": {
+      "cases": 1,
+      "lexical_binary_accuracy": 1.0,
+      "nli_binary_accuracy": 1.0
+    },
+    "negation": {
+      "cases": 7,
+      "lexical_binary_accuracy": 0.0,
+      "nli_binary_accuracy": 1.0
+    },
+    "number": {
+      "cases": 6,
+      "lexical_binary_accuracy": 0.5,
+      "nli_binary_accuracy": 1.0
+    },
+    "paraphrase": {
+      "cases": 5,
+      "lexical_binary_accuracy": 0.0,
+      "nli_binary_accuracy": 0.2
+    },
+    "restatement": {
+      "cases": 12,
+      "lexical_binary_accuracy": 1.0,
+      "nli_binary_accuracy": 0.9166666666666666
+    },
+    "unrelated": {
+      "cases": 4,
+      "lexical_binary_accuracy": 1.0,
+      "nli_binary_accuracy": 0.75
+    }
+  },
+  "rows": [
+    {
+      "case_id": "en-breach-restate",
+      "language": "en",
+      "perturbation": "restatement",
+      "label": "supported",
+      "lexical": "supported",
+      "lexical_score": 1.0,
+      "nli": "supported",
+      "entailment": 0.9269026517868042,
+      "contradiction": 0.722561776638031
+    },
+    {
+      "case_id": "en-breach-paraphrase",
+      "language": "en",
+      "perturbation": "paraphrase",
+      "label": "supported",
+      "lexical": "not_supported",
+      "lexical_score": 0.38461538461538464,
+      "nli": "contradicted",
+      "entailment": 0.1223863959312439,
+      "contradiction": 0.8271356821060181
+    },
+    {
+      "case_id": "en-breach-number",
+      "language": "en",
+      "perturbation": "number",
+      "label": "contradicted",
+      "lexical": "not_supported",
+      "lexical_score": 0.9333333333333333,
+      "nli": "not_supported",
+      "entailment": 0.780707836151123,
+      "contradiction": 0.3867986500263214
+    },
+    {
+      "case_id": "en-breach-negation",
+      "language": "en",
+      "perturbation": "negation",
+      "label": "contradicted",
+      "lexical": "supported",
+      "lexical_score": 0.7777777777777778,
+      "nli": "contradicted",
+      "entailment": 0.04902659356594086,
+      "contradiction": 0.9734700918197632
+    },
+    {
+      "case_id": "en-deadline-restate",
+      "language": "en",
+      "perturbation": "restatement",
+      "label": "supported",
+      "lexical": "supported",
+      "lexical_score": 1.0,
+      "nli": "supported",
+      "entailment": 0.9862885475158691,
+      "contradiction": 0.045164063572883606
+    },
+    {
+      "case_id": "en-extension-restate",
+      "language": "en",
+      "perturbation": "restatement",
+      "label": "supported",
+      "lexical": "supported",
+      "lexical_score": 0.8888888888888888,
+      "nli": "supported",
+      "entailment": 0.6894371509552002,
+      "contradiction": 0.32081788778305054
+    },
+    {
+      "case_id": "en-extension-number-word",
+      "language": "en",
+      "perturbation": "number",
+      "label": "contradicted",
+      "lexical": "supported",
+      "lexical_score": 0.7777777777777778,
+      "nli": "contradicted",
+      "entailment": 0.0394149050116539,
+      "contradiction": 0.9172415733337402
+    },
+    {
+      "case_id": "en-free-restate",
+      "language": "en",
+      "perturbation": "restatement",
+      "label": "supported",
+      "lexical": "supported",
+      "lexical_score": 0.9090909090909091,
+      "nli": "supported",
+      "entailment": 0.9451034665107727,
+      "contradiction": 0.856587290763855
+    },
+    {
+      "case_id": "en-free-negation",
+      "language": "en",
+      "perturbation": "negation",
+      "label": "contradicted",
+      "lexical": "supported",
+      "lexical_score": 0.8333333333333334,
+      "nli": "contradicted",
+      "entailment": 0.043776363134384155,
+      "contradiction": 0.9938238859176636
+    },
+    {
+      "case_id": "en-portability-paraphrase",
+      "language": "en",
+      "perturbation": "paraphrase",
+      "label": "supported",
+      "lexical": "not_supported",
+      "lexical_score": 0.18181818181818182,
+      "nli": "not_supported",
+      "entailment": 0.13180597126483917,
+      "contradiction": 0.058078583329916
+    },
+    {
+      "case_id": "en-portability-unrelated",
+      "language": "en",
+      "perturbation": "unrelated",
+      "label": "not_supported",
+      "lexical": "not_supported",
+      "lexical_score": 0.3333333333333333,
+      "nli": "not_supported",
+      "entailment": 0.012679514475166798,
+      "contradiction": 0.3810071051120758
+    },
+    {
+      "case_id": "en-erasure-restate",
+      "language": "en",
+      "perturbation": "restatement",
+      "label": "supported",
+      "lexical": "supported",
+      "lexical_score": 0.9230769230769231,
+      "nli": "supported",
+      "entailment": 0.9727668166160583,
+      "contradiction": 0.24664291739463806
+    },
+    {
+      "case_id": "en-erasure-negation",
+      "language": "en",
+      "perturbation": "negation",
+      "label": "contradicted",
+      "lexical": "supported",
+      "lexical_score": 0.9090909090909091,
+      "nli": "contradicted",
+      "entailment": 0.26366928219795227,
+      "contradiction": 0.9874894022941589
+    },
+    {
+      "case_id": "en-access-unrelated",
+      "language": "en",
+      "perturbation": "unrelated",
+      "label": "not_supported",
+      "lexical": "not_supported",
+      "lexical_score": 0.375,
+      "nli": "not_supported",
+      "entailment": 0.0016571276355534792,
+      "contradiction": 0.0399625301361084
+    },
+    {
+      "case_id": "de-breach-restate",
+      "language": "de",
+      "perturbation": "restatement",
+      "label": "supported",
+      "lexical": "supported",
+      "lexical_score": 1.0,
+      "nli": "supported",
+      "entailment": 0.9130363464355469,
+      "contradiction": 0.28628912568092346
+    },
+    {
+      "case_id": "de-breach-paraphrase",
+      "language": "de",
+      "perturbation": "paraphrase",
+      "label": "supported",
+      "lexical": "not_supported",
+      "lexical_score": 0.08333333333333333,
+      "nli": "not_supported",
+      "entailment": 0.015157733112573624,
+      "contradiction": 0.15553095936775208
+    },
+    {
+      "case_id": "de-breach-number",
+      "language": "de",
+      "perturbation": "number",
+      "label": "contradicted",
+      "lexical": "not_supported",
+      "lexical_score": 0.8181818181818182,
+      "nli": "contradicted",
+      "entailment": 0.061875294893980026,
+      "contradiction": 0.8635048866271973
+    },
+    {
+      "case_id": "de-breach-negation",
+      "language": "de",
+      "perturbation": "negation",
+      "label": "contradicted",
+      "lexical": "supported",
+      "lexical_score": 0.625,
+      "nli": "contradicted",
+      "entailment": 0.1515585482120514,
+      "contradiction": 0.9928836822509766
+    },
+    {
+      "case_id": "de-extension-restate",
+      "language": "de",
+      "perturbation": "restatement",
+      "label": "supported",
+      "lexical": "supported",
+      "lexical_score": 1.0,
+      "nli": "supported",
+      "entailment": 0.9755046367645264,
+      "contradiction": 0.03969419747591019
+    },
+    {
+      "case_id": "de-extension-number-word",
+      "language": "de",
+      "perturbation": "number",
+      "label": "contradicted",
+      "lexical": "supported",
+      "lexical_score": 0.9,
+      "nli": "contradicted",
+      "entailment": 0.014377051033079624,
+      "contradiction": 0.6913610696792603
+    },
+    {
+      "case_id": "de-free-restate",
+      "language": "de",
+      "perturbation": "restatement",
+      "label": "supported",
+      "lexical": "supported",
+      "lexical_score": 1.0,
+      "nli": "supported",
+      "entailment": 0.9893069863319397,
+      "contradiction": 0.33744949102401733
+    },
+    {
+      "case_id": "de-free-negation",
+      "language": "de",
+      "perturbation": "negation",
+      "label": "contradicted",
+      "lexical": "supported",
+      "lexical_score": 0.9,
+      "nli": "contradicted",
+      "entailment": 0.0038545492570847273,
+      "contradiction": 0.9937168955802917
+    },
+    {
+      "case_id": "de-erasure-paraphrase",
+      "language": "de",
+      "perturbation": "paraphrase",
+      "label": "supported",
+      "lexical": "not_supported",
+      "lexical_score": 0.4666666666666667,
+      "nli": "supported",
+      "entailment": 0.8089119791984558,
+      "contradiction": 0.17228271067142487
+    },
+    {
+      "case_id": "de-portability-unrelated",
+      "language": "de",
+      "perturbation": "unrelated",
+      "label": "not_supported",
+      "lexical": "not_supported",
+      "lexical_score": 0.0,
+      "nli": "contradicted",
+      "entailment": 0.03176446259021759,
+      "contradiction": 0.9439297318458557
+    },
+    {
+      "case_id": "fr-breach-restate",
+      "language": "fr",
+      "perturbation": "restatement",
+      "label": "supported",
+      "lexical": "supported",
+      "lexical_score": 1.0,
+      "nli": "supported",
+      "entailment": 0.9716904759407043,
+      "contradiction": 0.02960786037147045
+    },
+    {
+      "case_id": "fr-breach-paraphrase",
+      "language": "fr",
+      "perturbation": "paraphrase",
+      "label": "supported",
+      "lexical": "not_supported",
+      "lexical_score": 0.2727272727272727,
+      "nli": "contradicted",
+      "entailment": 0.016756493598222733,
+      "contradiction": 0.8629423975944519
+    },
+    {
+      "case_id": "fr-breach-number",
+      "language": "fr",
+      "perturbation": "number",
+      "label": "contradicted",
+      "lexical": "not_supported",
+      "lexical_score": 0.9285714285714286,
+      "nli": "contradicted",
+      "entailment": 0.12631115317344666,
+      "contradiction": 0.7340881824493408
+    },
+    {
+      "case_id": "fr-breach-negation",
+      "language": "fr",
+      "perturbation": "negation",
+      "label": "contradicted",
+      "lexical": "supported",
+      "lexical_score": 0.7777777777777778,
+      "nli": "contradicted",
+      "entailment": 0.0019253963837400079,
+      "contradiction": 0.9942453503608704
+    },
+    {
+      "case_id": "fr-extension-restate",
+      "language": "fr",
+      "perturbation": "restatement",
+      "label": "supported",
+      "lexical": "supported",
+      "lexical_score": 1.0,
+      "nli": "supported",
+      "entailment": 0.9873424768447876,
+      "contradiction": 0.019805578514933586
+    },
+    {
+      "case_id": "fr-extension-number-word",
+      "language": "fr",
+      "perturbation": "number",
+      "label": "contradicted",
+      "lexical": "supported",
+      "lexical_score": 0.8571428571428571,
+      "nli": "contradicted",
+      "entailment": 0.03068501129746437,
+      "contradiction": 0.8800892233848572
+    },
+    {
+      "case_id": "fr-free-restate",
+      "language": "fr",
+      "perturbation": "restatement",
+      "label": "supported",
+      "lexical": "supported",
+      "lexical_score": 1.0,
+      "nli": "contradicted",
+      "entailment": 0.9896573424339294,
+      "contradiction": 0.994929313659668
+    },
+    {
+      "case_id": "fr-free-negation",
+      "language": "fr",
+      "perturbation": "negation",
+      "label": "contradicted",
+      "lexical": "supported",
+      "lexical_score": 0.8888888888888888,
+      "nli": "contradicted",
+      "entailment": 0.006650165189057589,
+      "contradiction": 0.996195912361145
+    },
+    {
+      "case_id": "fr-access-restate",
+      "language": "fr",
+      "perturbation": "restatement",
+      "label": "supported",
+      "lexical": "supported",
+      "lexical_score": 1.0,
+      "nli": "supported",
+      "entailment": 0.9944149255752563,
+      "contradiction": 0.39149290323257446
+    },
+    {
+      "case_id": "fr-portability-unrelated",
+      "language": "fr",
+      "perturbation": "unrelated",
+      "label": "not_supported",
+      "lexical": "not_supported",
+      "lexical_score": 0.375,
+      "nli": "supported",
+      "entailment": 0.6248009204864502,
+      "contradiction": 0.24677136540412903
+    },
+    {
+      "case_id": "xl-en-claim-de-breach",
+      "language": "en->de",
+      "perturbation": "cross_lingual",
+      "label": "supported",
+      "lexical": "not_supported",
+      "lexical_score": 0.08333333333333333,
+      "nli": "supported",
+      "entailment": 0.858151376247406,
+      "contradiction": 0.09725725650787354
+    },
+    {
+      "case_id": "xl-en-claim-fr-free",
+      "language": "en->fr",
+      "perturbation": "cross_lingual",
+      "label": "supported",
+      "lexical": "not_supported",
+      "lexical_score": 0.375,
+      "nli": "contradicted",
+      "entailment": 0.4894464612007141,
+      "contradiction": 0.9741910099983215
+    },
+    {
+      "case_id": "xl-de-claim-en-extension",
+      "language": "de->en",
+      "perturbation": "cross_lingual",
+      "label": "supported",
+      "lexical": "not_supported",
+      "lexical_score": 0.0,
+      "nli": "supported",
+      "entailment": 0.8646268248558044,
+      "contradiction": 0.3470204770565033
+    },
+    {
+      "case_id": "xl-fr-claim-en-breach-negation",
+      "language": "fr->en",
+      "perturbation": "cross_lingual_negation",
+      "label": "contradicted",
+      "lexical": "not_supported",
+      "lexical_score": 0.0,
+      "nli": "contradicted",
+      "entailment": 0.09960310906171799,
+      "contradiction": 0.9852738976478577
+    }
+  ]
+}

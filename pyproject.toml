@@ -1,0 +1,47 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "evidence-rag"
+version = "0.1.0"
+description = "Deterministic, evidence-first retrieval baselines for multilingual RAG research."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Chad Saglam" }]
+dependencies = [
+  "numpy>=1.26,<3",
+  "pydantic>=2.8,<3",
+]
+
+[project.optional-dependencies]
+dense = ["sentence-transformers>=3,<6"]
+rerank = ["sentence-transformers>=3,<6"]
+nli = ["torch>=2.2", "transformers>=4.40,<6"]
+demo = ["gradio>=5,<7"]
+mcp = ["mcp>=1.27,<2"]
+dev = [
+  "pytest>=8,<9",
+  "ruff>=0.6,<1",
+]
+
+[project.scripts]
+evidence-rag = "evidence_rag.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+addopts = "-q --strict-config --strict-markers"
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+
+[tool.ruff.lint.per-file-ignores]
+"scripts/build_gdpr_corpus.py" = ["E501"]  # verbatim multilingual query strings

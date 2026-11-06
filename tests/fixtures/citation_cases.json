@@ -1,0 +1,70 @@
+{
+  "evidence": [
+    {
+      "rank": 1,
+      "chunk_id": "doc-retention:0",
+      "text": "Accounting records must be retained for 10 years."
+    },
+    {
+      "rank": 2,
+      "chunk_id": "doc-invoice:0",
+      "text": "Invoices must include a unique date."
+    },
+    {
+      "rank": 3,
+      "chunk_id": "doc-german:0",
+      "text": "Geschäftsbücher müssen zehn Jahre aufbewahrt werden."
+    }
+  ],
+  "cases": [
+    {
+      "case_id": "supported-english",
+      "answer": "Accounting records must be retained for 10 years [1].",
+      "expected_status": "lexically_supported",
+      "expected_score": 1.0,
+      "expected_chunk_ids": ["doc-retention:0"]
+    },
+    {
+      "case_id": "wrong-number",
+      "answer": "Accounting records must be retained for 20 years [1].",
+      "expected_status": "insufficient_support",
+      "expected_score": 0.8,
+      "expected_chunk_ids": ["doc-retention:0"]
+    },
+    {
+      "case_id": "uncited",
+      "answer": "Accounting records must be retained for 10 years.",
+      "expected_status": "uncited",
+      "expected_score": null,
+      "expected_chunk_ids": []
+    },
+    {
+      "case_id": "invalid-citation",
+      "answer": "Accounting records must be retained for 10 years [9].",
+      "expected_status": "invalid_citation",
+      "expected_score": null,
+      "expected_chunk_ids": []
+    },
+    {
+      "case_id": "combined-evidence",
+      "answer": "Records and invoices include a date [1, 2].",
+      "expected_status": "lexically_supported",
+      "expected_score": 1.0,
+      "expected_chunk_ids": ["doc-retention:0", "doc-invoice:0"]
+    },
+    {
+      "case_id": "unsupported-content",
+      "answer": "Quarterly forensic audits are published externally [1].",
+      "expected_status": "insufficient_support",
+      "expected_score": 0.0,
+      "expected_chunk_ids": ["doc-retention:0"]
+    },
+    {
+      "case_id": "supported-german",
+      "answer": "Geschäftsbücher müssen zehn Jahre aufbewahrt werden [3].",
+      "expected_status": "lexically_supported",
+      "expected_score": 1.0,
+      "expected_chunk_ids": ["doc-german:0"]
+    }
+  ]
+}

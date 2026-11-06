@@ -1,0 +1,124 @@
+{
+  "$defs": {
+    "InjectionMatch": {
+      "additionalProperties": false,
+      "description": "One heuristic injection-rule match without reproducing attack text.",
+      "properties": {
+        "rule_id": {
+          "minLength": 1,
+          "title": "Rule Id",
+          "type": "string"
+        },
+        "start_char": {
+          "minimum": 0,
+          "title": "Start Char",
+          "type": "integer"
+        },
+        "end_char": {
+          "minimum": 1,
+          "title": "End Char",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "rule_id",
+        "start_char",
+        "end_char"
+      ],
+      "title": "InjectionMatch",
+      "type": "object"
+    },
+    "QuarantinedChunk": {
+      "additionalProperties": false,
+      "description": "A chunk withheld by corpus screening and its security assessment.",
+      "properties": {
+        "chunk_id": {
+          "minLength": 1,
+          "title": "Chunk Id",
+          "type": "string"
+        },
+        "source_uri": {
+          "minLength": 1,
+          "title": "Source Uri",
+          "type": "string"
+        },
+        "assessment": {
+          "$ref": "#/$defs/SecurityAssessment"
+        }
+      },
+      "required": [
+        "chunk_id",
+        "source_uri",
+        "assessment"
+      ],
+      "title": "QuarantinedChunk",
+      "type": "object"
+    },
+    "SecurityAssessment": {
+      "additionalProperties": false,
+      "description": "Deterministic prompt-injection assessment for one text.",
+      "properties": {
+        "text_sha256": {
+          "pattern": "^[0-9a-f]{64}$",
+          "title": "Text Sha256",
+          "type": "string"
+        },
+        "flagged": {
+          "title": "Flagged",
+          "type": "boolean"
+        },
+        "matches": {
+          "items": {
+            "$ref": "#/$defs/InjectionMatch"
+          },
+          "title": "Matches",
+          "type": "array"
+        }
+      },
+      "required": [
+        "text_sha256",
+        "flagged",
+        "matches"
+      ],
+      "title": "SecurityAssessment",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "description": "Read-only corpus screening output; safe IDs are not a safety guarantee.",
+  "properties": {
+    "schema_version": {
+      "const": "1.0",
+      "default": "1.0",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "total_chunks": {
+      "minimum": 0,
+      "title": "Total Chunks",
+      "type": "integer"
+    },
+    "safe_chunk_ids": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Safe Chunk Ids",
+      "type": "array"
+    },
+    "quarantined_chunks": {
+      "items": {
+        "$ref": "#/$defs/QuarantinedChunk"
+      },
+      "title": "Quarantined Chunks",
+      "type": "array"
+    }
+  },
+  "required": [
+    "total_chunks",
+    "safe_chunk_ids",
+    "quarantined_chunks"
+  ],
+  "title": "CorpusSecurityReport",
+  "type": "object",
+  "$id": "https://example.test/evidence-rag/schemas/corpussecurityreport.schema.json"
+}
